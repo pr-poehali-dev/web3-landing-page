@@ -79,7 +79,7 @@ const PricingTimer = () => {
             size="lg"
             className="bg-[#7B68EE] hover:bg-[#6A5ACD] text-white text-xl px-12 py-6 font-bold"
           >
-            💳 Оплатить 199€
+            💳 Оплатить 199₽
           </Button>
 
           <div className="mt-8 text-sm text-gray-500">
