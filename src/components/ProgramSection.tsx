@@ -54,7 +54,7 @@ const ProgramSection = () => {
           {modules.map((module, index) => (
             <div
               key={index}
-              className="bg-accent/10 border border-accent/20 backdrop-blur-sm p-6 rounded-xl mb-4 hover:bg-accent/20 hover:shadow-lg transition-all duration-300 group cursor-pointer"
+              className="bg-white border border-gray-200 p-6 rounded-xl mb-4 hover:border-gray-300 transition-all duration-300 group cursor-pointer"
             >
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-6">

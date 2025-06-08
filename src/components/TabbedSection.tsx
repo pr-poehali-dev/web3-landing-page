@@ -88,7 +88,7 @@ const TabbedSection = () => {
             {mentors.map((mentor, index) => (
               <div
                 key={index}
-                className="bg-accent/10 border border-accent/20 backdrop-blur-sm p-6 rounded-xl hover:bg-accent/20 hover:shadow-lg transition-all duration-300 group cursor-pointer"
+                className="bg-white border border-gray-200 p-6 rounded-xl hover:border-gray-300 transition-all duration-300 group cursor-pointer"
               >
                 <div className="flex items-center gap-4">
                   <img

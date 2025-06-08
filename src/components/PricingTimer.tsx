@@ -35,9 +35,7 @@ const PricingTimer = () => {
   }, []);
 
   return (
-    <section className="py-20 bg-gradient-to-r from-accent/20 to-accent/10 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/50 to-transparent"></div>
-
+    <section className="py-20 bg-gray-50 relative overflow-hidden">
       <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-7xl relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 bg-accent text-gray-900 px-4 py-2 rounded-full text-sm font-semibold mb-8">
@@ -57,7 +55,7 @@ const PricingTimer = () => {
             {Object.entries(timeLeft).map(([unit, value]) => (
               <div
                 key={unit}
-                className="bg-accent/20 border border-accent/30 backdrop-blur-sm p-4 rounded-xl text-center shadow-lg"
+                className="bg-white border border-gray-200 p-4 rounded-xl text-center"
               >
                 <div className="text-3xl font-black text-accent-dark mb-1">
                   {value.toString().padStart(2, "0")}

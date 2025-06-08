@@ -74,7 +74,7 @@ const TestimonialsSection = () => {
   }: {
     testimonial: (typeof testimonials)[0];
   }) => (
-    <div className="bg-accent/10 border border-accent/20 backdrop-blur-sm p-6 rounded-xl hover:bg-accent/20 hover:shadow-lg transition-all duration-300 group flex-shrink-0 w-80 mx-4">
+    <div className="bg-white border border-gray-200 p-6 rounded-xl hover:border-gray-300 transition-all duration-300 group flex-shrink-0 w-80 mx-4">
       <div className="flex items-center mb-4">
         <img
           src={testimonial.avatar}
