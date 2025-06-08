@@ -21,7 +21,7 @@ const CallToAction = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
             <Button
               size="lg"
-              className="bg-gradient-to-r from-neon-purple to-neon-pink hover:from-neon-pink hover:to-neon-purple neon-glow text-xl px-10 py-6 font-bold"
+              className="bg-[#7B68EE] hover:bg-[#6A5ACD] text-white text-xl px-10 py-6 font-bold"
             >
               🚀 Записаться сейчас
             </Button>
@@ -29,7 +29,7 @@ const CallToAction = () => {
             <Button
               variant="outline"
               size="lg"
-              className="border-neon-purple text-neon-purple hover:bg-neon-purple hover:text-white transition-all duration-300 text-lg px-8 py-6"
+              className="border-[#7B68EE] text-[#7B68EE] hover:bg-[#7B68EE] hover:text-white transition-all duration-300 text-lg px-8 py-6"
             >
               📞 Получить консультацию
             </Button>

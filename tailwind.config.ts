@@ -6,7 +6,7 @@ export default {
     "./pages/**/*.{ts,tsx}",
     "./components/**/*.{ts,tsx}",
     "./app/**/*.{ts,tsx}",
-    "./src/**/*.{ts,tsx}"
+    "./src/**/*.{ts,tsx}",
   ],
   prefix: "",
   theme: {
@@ -55,7 +55,7 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        "neon-purple": "hsl(var(--neon-purple))",
+        "neon-purple": "#7B68EE",
         "neon-pink": "hsl(var(--neon-pink))",
         "cyber-blue": "hsl(var(--cyber-blue))",
       },

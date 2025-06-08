@@ -77,7 +77,7 @@ const PricingTimer = () => {
 
           <Button
             size="lg"
-            className="bg-gradient-to-r from-neon-purple to-neon-pink hover:from-neon-pink hover:to-neon-purple animate-pulse-neon text-xl px-12 py-6 font-bold"
+            className="bg-[#7B68EE] hover:bg-[#6A5ACD] text-white text-xl px-12 py-6 font-bold"
           >
             💳 Оплатить 199€
           </Button>
