@@ -80,7 +80,7 @@ const HeroSection = () => {
                 </div>
               </div>
 
-              <div className="absolute -bottom-6 -right-6 bg-blue-600 rounded-xl p-4 shadow-xl">
+              <div className="absolute -bottom-6 -right-6 rounded-xl p-4 shadow-xl bg-[#8a52bd]">
                 <div className="text-white">
                   <div className="text-2xl font-bold">10 000</div>
                   <div className="text-sm opacity-90">
