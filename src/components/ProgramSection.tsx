@@ -80,7 +80,7 @@ const ProgramSection = () => {
                   module.number
                 )}
               </div>
-              <div className="py-0 px-[196px]">
+              <div className="py-0">
                 <h3 className="font-bold text-gray-900 mb-3 group-hover:text-gray-900 transition-colors text-2xl">
                   {module.title}
                 </h3>
