@@ -54,11 +54,12 @@ const TabbedSection = () => {
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
-              className={`px-6 py-3 rounded-lg font-medium transition-all duration-300 ${
+              className={`px-6 py-3 rounded-lg font-medium transition-all duration-300 cursor-pointer ${
                 activeTab === tab
                   ? "bg-[#ECF86E] text-gray-900 shadow-lg"
                   : "bg-gray-100 border border-gray-200 text-gray-600 hover:text-gray-900 hover:bg-[#ECF86E]"
               }`}
+              type="button"
             >
               {tab}
             </button>
