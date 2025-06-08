@@ -6,7 +6,7 @@ export default {
     "./pages/**/*.{ts,tsx}",
     "./components/**/*.{ts,tsx}",
     "./app/**/*.{ts,tsx}",
-    "./src/**/*.{ts,tsx}"
+    "./src/**/*.{ts,tsx}",
   ],
   prefix: "",
   theme: {
@@ -58,6 +58,8 @@ export default {
         "neon-purple": "#7B68EE",
         "neon-pink": "hsl(var(--neon-pink))",
         "cyber-blue": "hsl(var(--cyber-blue))",
+        accent: "#ECF86E",
+        "accent-dark": "#D4E157",
       },
       borderRadius: {
         lg: "var(--radius)",

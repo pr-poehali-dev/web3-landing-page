@@ -50,10 +50,10 @@ const BenefitsSection = () => {
   }, [isPaused, benefits.length]);
 
   return (
-    <section className="py-20 bg-background relative">
+    <section className="py-20 bg-white relative">
       <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-7xl">
         <div className="mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white text-left">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900 text-left">
             Почему выбирают нас
           </h2>
         </div>
@@ -94,7 +94,7 @@ const BenefitsSection = () => {
                   onClick={() => setActiveIndex(index)}
                   className={`relative transition-all duration-500 ease-in-out ${
                     activeIndex === index
-                      ? "ring-2 ring-neon-purple scale-105"
+                      ? "ring-2 ring-accent scale-105"
                       : "opacity-70 hover:opacity-100"
                   }`}
                 >
@@ -114,7 +114,7 @@ const BenefitsSection = () => {
                     />
                   </div>
                   {activeIndex === index && (
-                    <div className="absolute inset-0 bg-neon-purple/20 animate-fade-in rounded-md"></div>
+                    <div className="absolute inset-0 bg-accent/20 animate-fade-in rounded-md"></div>
                   )}
                 </button>
               ))}
@@ -125,19 +125,19 @@ const BenefitsSection = () => {
           <div className="space-y-8">
             <div className="p-8">
               <h3
-                className="text-3xl font-bold mb-6 text-white transition-all duration-700 ease-in-out transform"
+                className="text-3xl font-bold mb-6 text-gray-900 transition-all duration-700 ease-in-out transform"
                 key={`title-${activeIndex}`}
               >
                 {activeBenefit.title}
               </h3>
               <p
-                className="text-gray-300 text-lg leading-relaxed mb-8 transition-all duration-700 ease-in-out transform"
+                className="text-gray-700 text-lg leading-relaxed mb-8 transition-all duration-700 ease-in-out transform"
                 key={`desc-${activeIndex}`}
               >
                 {activeBenefit.description}
               </p>
 
-              <div className="text-sm text-gray-400">
+              <div className="text-sm text-gray-600">
                 Кроме тренажёра, вас ждут проекты, которые максимально
                 приближены к реальным задачам фулстек-разработчиков. Эксперты из
                 крупных IT-компаний проверят ваш код и дадут подробную обратную

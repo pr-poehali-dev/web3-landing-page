@@ -43,13 +43,13 @@ const TabbedSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-background to-card relative">
+    <section className="py-20 bg-gradient-to-b from-gray-50 to-white relative">
       <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-7xl">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
             Будете заниматься сами, но не в одиночестве —
           </h2>
-          <p className="text-xl text-gray-400 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             вас поддержит заботливая команда Практикума
           </p>
         </div>
@@ -62,8 +62,8 @@ const TabbedSection = () => {
               onClick={() => setActiveTab(tab)}
               className={`px-6 py-3 rounded-lg font-medium transition-all duration-300 ${
                 activeTab === tab
-                  ? "bg-neon-purple text-white shadow-lg neon-glow"
-                  : "glass-card text-gray-300 hover:text-white hover:bg-neon-purple/20"
+                  ? "bg-accent text-gray-900 shadow-lg"
+                  : "bg-gray-100 border border-gray-200 text-gray-600 hover:text-gray-900 hover:bg-accent/20"
               }`}
             >
               {tab}
@@ -74,10 +74,10 @@ const TabbedSection = () => {
         {/* Content */}
         <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
           <div>
-            <h3 className="text-3xl font-bold text-white mb-6">
+            <h3 className="text-3xl font-bold text-gray-900 mb-6">
               Опытные наставники ведут воркшопы и отвечают на вопросы в чате
             </h3>
-            <p className="text-lg text-gray-300 leading-relaxed">
+            <p className="text-lg text-gray-700 leading-relaxed">
               Это практикующие фулстек-разработчики, которым можно задавать
               вопросы во время учёбы. Их задача — помогать вам со сложностями и
               делиться опытом.
@@ -88,20 +88,20 @@ const TabbedSection = () => {
             {mentors.map((mentor, index) => (
               <div
                 key={index}
-                className="glass-card p-6 rounded-xl hover:neon-glow transition-all duration-300 group cursor-pointer"
+                className="bg-accent/10 border border-accent/20 backdrop-blur-sm p-6 rounded-xl hover:bg-accent/20 hover:shadow-lg transition-all duration-300 group cursor-pointer"
               >
                 <div className="flex items-center gap-4">
                   <img
                     src={mentor.avatar}
                     alt={mentor.name}
-                    className="w-16 h-16 rounded-full object-cover border-2 border-neon-purple/30"
+                    className="w-16 h-16 rounded-full object-cover border-2 border-accent/30"
                   />
                   <div>
-                    <h4 className="font-semibold text-white text-lg group-hover:text-neon-purple transition-colors">
+                    <h4 className="font-semibold text-gray-900 text-lg group-hover:text-accent-dark transition-colors">
                       {mentor.name}
                     </h4>
-                    <p className="text-gray-300 text-sm mb-1">{mentor.role}</p>
-                    <p className="text-gray-400 text-sm">{mentor.experience}</p>
+                    <p className="text-gray-600 text-sm mb-1">{mentor.role}</p>
+                    <p className="text-gray-500 text-sm">{mentor.experience}</p>
                   </div>
                 </div>
               </div>

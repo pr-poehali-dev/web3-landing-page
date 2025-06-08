@@ -74,7 +74,7 @@ const TestimonialsSection = () => {
   }: {
     testimonial: (typeof testimonials)[0];
   }) => (
-    <div className="glass-card p-6 rounded-xl hover:neon-glow transition-all duration-300 group flex-shrink-0 w-80 mx-4">
+    <div className="bg-accent/10 border border-accent/20 backdrop-blur-sm p-6 rounded-xl hover:bg-accent/20 hover:shadow-lg transition-all duration-300 group flex-shrink-0 w-80 mx-4">
       <div className="flex items-center mb-4">
         <img
           src={testimonial.avatar}
@@ -82,31 +82,31 @@ const TestimonialsSection = () => {
           className="w-12 h-12 rounded-full mr-4"
         />
         <div>
-          <h4 className="font-semibold text-white">{testimonial.name}</h4>
-          <p className="text-sm text-gray-400">{testimonial.role}</p>
+          <h4 className="font-semibold text-gray-900">{testimonial.name}</h4>
+          <p className="text-sm text-gray-600">{testimonial.role}</p>
         </div>
       </div>
 
       <div className="flex mb-4">
         {[...Array(testimonial.rating)].map((_, i) => (
-          <span key={i} className="text-neon-purple text-lg">
+          <span key={i} className="text-accent text-lg">
             ⭐
           </span>
         ))}
       </div>
 
-      <p className="text-gray-300 leading-relaxed">"{testimonial.text}"</p>
+      <p className="text-gray-700 leading-relaxed">"{testimonial.text}"</p>
     </div>
   );
 
   return (
-    <section className="py-20 bg-background overflow-hidden">
+    <section className="py-20 bg-white overflow-hidden">
       <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-7xl">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
             Отзывы студентов
           </h2>
-          <p className="text-xl text-gray-400 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Реальные истории успеха наших выпускников
           </p>
         </div>

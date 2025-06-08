@@ -39,13 +39,13 @@ const ProgramSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-background to-card">
+    <section className="py-20 bg-gradient-to-b from-white to-gray-50">
       <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-7xl">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
             Программа курса
           </h2>
-          <p className="text-xl text-gray-400 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             6 модулей от теории до практики. 51 час контента + менторство
           </p>
         </div>
@@ -54,21 +54,21 @@ const ProgramSection = () => {
           {modules.map((module, index) => (
             <div
               key={index}
-              className="glass-card p-6 rounded-xl mb-4 hover:neon-glow transition-all duration-300 group cursor-pointer"
+              className="bg-accent/10 border border-accent/20 backdrop-blur-sm p-6 rounded-xl mb-4 hover:bg-accent/20 hover:shadow-lg transition-all duration-300 group cursor-pointer"
             >
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-6">
-                  <div className="text-4xl font-black text-neon-purple group-hover:text-neon-pink transition-colors">
+                  <div className="text-4xl font-black text-accent group-hover:text-accent-dark transition-colors">
                     {module.number}
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-white mb-2 group-hover:text-neon-purple transition-colors">
+                    <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-accent-dark transition-colors">
                       {module.title}
                     </h3>
-                    <p className="text-gray-400">{module.description}</p>
+                    <p className="text-gray-600">{module.description}</p>
                   </div>
                 </div>
-                <div className="text-sm text-neon-purple font-semibold bg-neon-purple/10 px-3 py-1 rounded-full">
+                <div className="text-sm text-accent-dark font-semibold bg-accent/20 px-3 py-1 rounded-full">
                   {module.duration}
                 </div>
               </div>
@@ -77,7 +77,7 @@ const ProgramSection = () => {
         </div>
 
         <div className="text-center mt-12">
-          <div className="inline-flex items-center gap-2 from-neon-purple to-neon-pink p-4 rounded-xl text-white font-semibold bg-[#7B68EE]">
+          <div className="inline-flex items-center gap-2 bg-accent px-4 py-2 rounded-xl text-gray-900 font-semibold">
             <span>🏆</span>
             <span>Сертификат о завершении курса</span>
           </div>
