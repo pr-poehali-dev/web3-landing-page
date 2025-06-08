@@ -23,7 +23,7 @@ const HeroSection = () => {
                 </span>
               </h1>
 
-              <p className="md:text-2xl text-gray-300 mt-6 leading-relaxed max-w-lg text-xl">
+              <p className="md:text-xl text-gray-300 mt-6 leading-relaxed max-w-lg text-base">
                 Освойте полный цикл блокчейн-разработки и криптовалют — с нуля
                 за 6 недель. Получите реальный опыт.
               </p>
