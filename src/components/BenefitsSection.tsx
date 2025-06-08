@@ -40,8 +40,8 @@ const BenefitsSection = () => {
   return (
     <section className="py-20 bg-background relative">
       <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-7xl">
-        <div className="mb-16 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">
+        <div className="mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white text-left">
             Почему выбирают нас
           </h2>
         </div>
