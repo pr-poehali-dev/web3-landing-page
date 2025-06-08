@@ -97,11 +97,7 @@ const HeroSection = () => {
                 </div>
               </div>
 
-              {/* Available Spots Indicator */}
-              <div className="absolute top-4 left-4 flex items-center gap-2 bg-black/70 backdrop-blur-sm rounded-full px-3 py-2">
-                <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
-                <span className="text-white text-sm">Осталось 12 мест</span>
-              </div>
+              {/* Убираем Available Spots Indicator */}
             </div>
           </div>
         </div>
