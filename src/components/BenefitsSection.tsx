@@ -23,14 +23,14 @@ const BenefitsSection = () => {
         "https://cdn.poehali.dev/files/5cc492f7-6add-440b-be1e-70c4806a07a2.png",
     },
     {
-      icon: "💰",
-      title: "Высокие зарплаты",
+      icon: "💼",
+      title: "Реальные проекты",
       description:
-        "Web3-разработчики получают от 200к₽. Окупи курс за первый месяц работы.",
+        "Создавайте Web3-приложения для портфолио: от NFT-маркетплейсов до DeFi-платформ. Поддержка в трудоустройстве и карьерном росте.",
       image:
-        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop&crop=center",
+        "https://cdn.poehali.dev/files/a1e160fc-cef9-4bfe-ad39-842399f1bc6c.png",
       thumbnail:
-        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=150&h=100&fit=crop&crop=center",
+        "https://cdn.poehali.dev/files/a1e160fc-cef9-4bfe-ad39-842399f1bc6c.png",
     },
     {
       icon: "💼",
