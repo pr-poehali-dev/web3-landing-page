@@ -69,9 +69,18 @@ const ProgramSection = () => {
           {modules.map((module, index) => (
             <div
               key={index}
-              className={`grid grid-cols-[80px_1fr_200px] items-center gap-8 pl-0 py-8 hover:bg-white/50 rounded-2xl transition-all duration-300 group cursor-pointer ${
-                module.isSpecial ? "bg-[#ECF86E]/50" : ""
-              }`}
+              className={`grid grid-cols-[80px_1fr_200px] items-center gap-8 pl-0 py-8 hover:bg-white/50 rounded-2xl transition-all duration-300 group cursor-pointer`}
+              style={
+                module.isSpecial
+                  ? {
+                      backgroundImage:
+                        "url(https://cdn.poehali.dev/files/64697558-0912-45c5-a2bb-104c85edffc1.png)",
+                      backgroundSize: "cover",
+                      backgroundPosition: "center",
+                      backgroundRepeat: "no-repeat",
+                    }
+                  : {}
+              }
             >
               <div className="text-6xl font-bold text-gray-500 group-hover:scale-110 transition-transform duration-300">
                 {module.isSpecial ? "🎓" : module.number}
