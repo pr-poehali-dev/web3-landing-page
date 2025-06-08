@@ -20,8 +20,6 @@ const HeroSection = () => {
 
           <p className="text-xl md:text-2xl text-gray-300 mb-8 font-light leading-relaxed">
             Освой блокчейн, криптовалюты и NFT за 6 недель.
-            <br />
-            Стань экспертом в самой перспективной сфере технологий.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
