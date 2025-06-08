@@ -8,9 +8,9 @@ const BenefitsSection = () => {
       description:
         "Наши преподаватели — действующие блокчейн-разработчики с опытом в Web3, DeFi и NFT. Вы будете учиться на реальных кейсах, не на теории.",
       image:
-        "https://cdn.poehali.dev/files/4a778d5c-ed4e-454b-a4de-8653a2d122d6.png",
+        "https://cdn.poehali.dev/files/cea1e332-0d28-46d8-8e3a-8443b975fad4.jpg",
       thumbnail:
-        "https://cdn.poehali.dev/files/4a778d5c-ed4e-454b-a4de-8653a2d122d6.png",
+        "https://cdn.poehali.dev/files/cea1e332-0d28-46d8-8e3a-8443b975fad4.jpg",
     },
     {
       icon: "🚀",
