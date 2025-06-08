@@ -188,13 +188,6 @@ const TabbedSection = () => {
                   avatar:
                     "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=100&h=100&fit=crop&crop=face",
                 },
-                {
-                  name: "Александр Кузнецов",
-                  role: "Lead Developer в Wildberries",
-                  experience: "Опыт — 6 лет",
-                  avatar:
-                    "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=100&h=100&fit=crop&crop=face",
-                },
               ].map((reviewer, index) => (
                 <div
                   key={index}
@@ -243,13 +236,6 @@ const TabbedSection = () => {
                   experience: "Опыт — 5 лет",
                   avatar:
                     "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100&h=100&fit=crop&crop=face",
-                },
-                {
-                  name: "Роман Никитин",
-                  role: "Engineering Manager в Авито",
-                  experience: "Опыт — 8 лет",
-                  avatar:
-                    "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face",
                 },
               ].map((curator, index) => (
                 <div
