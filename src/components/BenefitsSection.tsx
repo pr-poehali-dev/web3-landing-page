@@ -27,9 +27,7 @@ const BenefitsSection = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">
             Почему выбирают нас?
           </h2>
-          <p className="text-xl text-gray-400 max-w-2xl">
-            Практический подход и реальные результаты наших студентов
-          </p>
+          <p className="text-xl text-gray-400 max-w-2xl"></p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
