@@ -74,11 +74,7 @@ const ProgramSection = () => {
               }`}
             >
               <div className="text-6xl font-bold text-gray-500 group-hover:scale-110 transition-transform duration-300">
-                {module.isSpecial ? (
-                  <Icon name="Trophy" size={60} className="text-yellow-600" />
-                ) : (
-                  module.number
-                )}
+                {module.isSpecial ? "🎓" : module.number}
               </div>
               <div className="py-0">
                 <h3 className="font-bold text-gray-900 mb-3 group-hover:text-gray-900 transition-colors text-2xl">
