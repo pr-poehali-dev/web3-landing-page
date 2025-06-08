@@ -12,7 +12,7 @@ const TestimonialsSection = () => {
       name: "Мария Козлова",
       role: "Blockchain Consultant",
       avatar:
-        "https://images.unsplash.com/photo-1494790108755-2616b2234ad0?w=100&h=100&fit=crop&crop=face",
+        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face",
       text: "Отличная структура материала и практические задания. Создала свой NFT-проект, который приносит доход.",
       rating: 5,
     },
