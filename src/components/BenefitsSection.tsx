@@ -66,14 +66,24 @@ const BenefitsSection = () => {
           {/* Левая часть - изображения */}
           <div className="space-y-6">
             {/* Основное изображение */}
-            <div className="relative rounded-xl overflow-hidden glass-card">
-              <img
-                src={activeBenefit.image}
-                alt={activeBenefit.title}
-                className="w-full h-96 object-cover transition-all duration-1000 ease-in-out transform"
-                key={activeIndex}
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+            <div className="relative">
+              {/* Terminal frame */}
+              <div className="bg-gray-900 rounded-t-xl p-3 border border-gray-700">
+                <div className="flex gap-2">
+                  <div className="w-3 h-3 bg-red-500 rounded-full"></div>
+                  <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                  <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+                </div>
+              </div>
+              <div className="relative overflow-hidden border-x border-b border-gray-700 rounded-b-xl">
+                <img
+                  src={activeBenefit.image}
+                  alt={activeBenefit.title}
+                  className="w-full h-96 object-cover transition-all duration-1000 ease-in-out transform"
+                  key={activeIndex}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+              </div>
             </div>
 
             {/* Миниатюры */}
@@ -82,19 +92,29 @@ const BenefitsSection = () => {
                 <button
                   key={index}
                   onClick={() => setActiveIndex(index)}
-                  className={`relative rounded-lg overflow-hidden transition-all duration-500 ease-in-out ${
+                  className={`relative transition-all duration-500 ease-in-out ${
                     activeIndex === index
                       ? "ring-2 ring-neon-purple scale-105"
                       : "opacity-70 hover:opacity-100"
                   }`}
                 >
-                  <img
-                    src={benefit.thumbnail}
-                    alt={benefit.title}
-                    className="w-24 h-16 object-cover"
-                  />
+                  {/* Mini terminal frame */}
+                  <div className="bg-gray-900 rounded-t-md p-1.5 border border-gray-700">
+                    <div className="flex gap-1">
+                      <div className="w-1.5 h-1.5 bg-red-500 rounded-full"></div>
+                      <div className="w-1.5 h-1.5 bg-yellow-500 rounded-full"></div>
+                      <div className="w-1.5 h-1.5 bg-green-500 rounded-full"></div>
+                    </div>
+                  </div>
+                  <div className="relative overflow-hidden border-x border-b border-gray-700 rounded-b-md">
+                    <img
+                      src={benefit.thumbnail}
+                      alt={benefit.title}
+                      className="w-24 h-16 object-cover"
+                    />
+                  </div>
                   {activeIndex === index && (
-                    <div className="absolute inset-0 bg-neon-purple/20 animate-fade-in"></div>
+                    <div className="absolute inset-0 bg-neon-purple/20 animate-fade-in rounded-md"></div>
                   )}
                 </button>
               ))}
