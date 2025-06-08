@@ -77,7 +77,7 @@ const ProgramSection = () => {
         </div>
 
         <div className="text-center mt-12">
-          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-neon-purple to-neon-pink p-4 rounded-xl text-white font-semibold">
+          <div className="inline-flex items-center gap-2 from-neon-purple to-neon-pink p-4 rounded-xl text-white font-semibold bg-[#7B68EE]">
             <span>🏆</span>
             <span>Сертификат о завершении курса</span>
           </div>
