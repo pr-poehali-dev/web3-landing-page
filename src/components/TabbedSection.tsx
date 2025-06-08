@@ -46,7 +46,7 @@ const TabbedSection = () => {
     <section className="py-20 bg-gradient-to-b from-gray-50 to-white relative">
       <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-7xl">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
             Будете заниматься сами, но не в одиночестве —
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
