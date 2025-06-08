@@ -65,7 +65,7 @@ const ProgramSection = () => {
           </p>
         </div>
 
-        <div className="space-y-8">
+        <div className="space-y-6">
           {modules.map((module, index) => (
             <div
               key={index}
