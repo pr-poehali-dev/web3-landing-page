@@ -18,9 +18,9 @@ const BenefitsSection = () => {
       description:
         "От смарт-контрактов до фронтенда. Изучи создание dApp с интеграцией MetaMask и деплой в блокчейн.",
       image:
-        "https://cdn.poehali.dev/files/f02ce56d-d438-4b3c-bd18-dff024657621.png",
+        "https://cdn.poehali.dev/files/5cc492f7-6add-440b-be1e-70c4806a07a2.png",
       thumbnail:
-        "https://cdn.poehali.dev/files/f02ce56d-d438-4b3c-bd18-dff024657621.png",
+        "https://cdn.poehali.dev/files/5cc492f7-6add-440b-be1e-70c4806a07a2.png",
     },
     {
       icon: "💰",
