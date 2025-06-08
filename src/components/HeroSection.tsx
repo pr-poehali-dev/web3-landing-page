@@ -70,7 +70,7 @@ const HeroSection = () => {
               {/* Floating Elements */}
               <div className="absolute -top-6 -right-6 bg-gray-800 border border-gray-600 rounded-xl p-4 shadow-xl">
                 <div className="flex items-center gap-3">
-                  <div className="w-8 h-8 bg-gradient-to-r from-neon-purple to-neon-pink rounded-lg flex items-center justify-center">
+                  <div className="w-8 h-8 from-neon-purple to-neon-pink rounded-lg flex items-center justify-center bg-[#ECF86E]">
                     <span className="text-white text-sm font-bold">⭐</span>
                   </div>
                   <div>
