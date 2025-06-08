@@ -13,7 +13,7 @@ const HeroSection = () => {
             {/* Main Title */}
             <div>
               <h1 className="text-5xl md:text-7xl font-black leading-tight">
-                <span className="bg-gradient-to-r from-slate-100 via-white to-slate-200 bg-clip-text text-transparent text-7xl">
+                <span className="bg-gradient-to-r from-slate-100 via-white to-slate-200 bg-clip-text text-7xl text-[#ffffff]">
                   Web3 с нуля
                 </span>
               </h1>
