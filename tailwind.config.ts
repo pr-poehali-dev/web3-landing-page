@@ -6,7 +6,7 @@ export default {
     "./pages/**/*.{ts,tsx}",
     "./components/**/*.{ts,tsx}",
     "./app/**/*.{ts,tsx}",
-    "./src/**/*.{ts,tsx}"
+    "./src/**/*.{ts,tsx}",
   ],
   prefix: "",
   theme: {
@@ -44,7 +44,8 @@ export default {
           foreground: "hsl(var(--muted-foreground))",
         },
         accent: {
-          DEFAULT: "hsl(var(--accent))",
+          DEFAULT: "#111827",
+          dark: "#111827",
           foreground: "hsl(var(--accent-foreground))",
         },
         popover: {
@@ -55,9 +56,11 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        "neon-purple": "hsl(var(--neon-purple))",
+        "neon-purple": "#7B68EE",
         "neon-pink": "hsl(var(--neon-pink))",
         "cyber-blue": "hsl(var(--cyber-blue))",
+        accent: "#ECF86E",
+        "accent-dark": "#D4E157",
       },
       borderRadius: {
         lg: "var(--radius)",
