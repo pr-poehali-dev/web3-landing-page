@@ -123,13 +123,7 @@ const BenefitsSection = () => {
 
           {/* Правая часть - текст */}
           <div className="space-y-8">
-            <div className="glass-card p-8 rounded-xl">
-              <div
-                className="text-4xl mb-4 transition-all duration-700 ease-in-out transform"
-                key={`icon-${activeIndex}`}
-              >
-                {activeBenefit.icon}
-              </div>
+            <div className="p-8">
               <h3
                 className="text-3xl font-bold mb-6 text-white transition-all duration-700 ease-in-out transform"
                 key={`title-${activeIndex}`}
