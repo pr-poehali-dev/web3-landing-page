@@ -59,7 +59,7 @@ const ProgramSection = () => {
               <div className="text-6xl font-black text-gray-900 group-hover:scale-110 transition-transform duration-300">
                 {module.number}
               </div>
-              <div className="pt-2">
+              <div className="pt-2 px-[185px]">
                 <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-gray-900 transition-colors">
                   {module.title}
                 </h3>
