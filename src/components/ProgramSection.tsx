@@ -93,7 +93,9 @@ const ProgramSection = () => {
                   {module.description}
                 </p>
               </div>
-              <div className="space-y-2 py-0 my-0 mx-[5px] px-0">
+              <div
+                className={`space-y-2 py-0 my-0 mx-[5px] px-0 ${module.isSpecial ? "hidden" : ""}`}
+              >
                 <div className="text-gray-500 font-medium text-lg bg-gray-100 rounded-xl text-center pr-0">
                   {module.duration}
                 </div>
