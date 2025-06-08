@@ -74,7 +74,7 @@ const ProgramSection = () => {
                 module.isSpecial
                   ? {
                       backgroundImage:
-                        "url(https://cdn.poehali.dev/files/64697558-0912-45c5-a2bb-104c85edffc1.png)",
+                        "url(https://cdn.poehali.dev/files/cc2fe8c1-7721-4026-a0dc-34c00ef9f456.png)",
                       backgroundSize: "cover",
                       backgroundPosition: "center",
                       backgroundRepeat: "no-repeat",
