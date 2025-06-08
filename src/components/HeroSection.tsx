@@ -53,15 +53,15 @@ const HeroSection = () => {
             {/* Stats */}
             <div className="">
               <div className="flex items-center gap-2">
-                <span className="text-neon-purple">⭐</span>
+                <span></span>
                 <span></span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="text-neon-purple">👥</span>
+                <span></span>
                 <span></span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="text-neon-purple">💼</span>
+                <span></span>
                 <span></span>
               </div>
             </div>
