@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 const HeroSection = () => {
   return (
     <section
-      className="relative h-[60vh] flex items-center"
+      className="relative min-h-screen flex items-center"
       style={{ backgroundColor: "#111827" }}
     >
       {/* Background Effects */}
@@ -12,7 +12,7 @@ const HeroSection = () => {
       <div className="absolute bottom-1/3 right-1/3 w-64 h-64 bg-pink-500/10 rounded-full blur-3xl animate-float delay-1000"></div>
 
       <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-7xl relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center h-full">
+        <div className="grid lg:grid-cols-2 gap-12 items-center min-h-screen">
           {/* Left Content */}
           <div className="space-y-8 px-3">
             {/* Category Badge */}
