@@ -137,12 +137,7 @@ const BenefitsSection = () => {
                 {activeBenefit.description}
               </p>
 
-              <div className="text-sm text-gray-600">
-                Кроме тренажёра, вас ждут проекты, которые максимально
-                приближены к реальным задачам фулстек-разработчиков. Эксперты из
-                крупных IT-компаний проверят ваш код и дадут подробную обратную
-                связь.
-              </div>
+              <div className="text-sm text-gray-600"></div>
             </div>
           </div>
         </div>
