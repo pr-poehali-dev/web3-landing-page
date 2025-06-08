@@ -2,11 +2,14 @@ import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center cyber-gradient overflow-hidden">
+    <section
+      className="relative min-h-screen flex items-center overflow-hidden"
+      style={{ backgroundColor: "#111827" }}
+    >
       {/* Background Effects */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-neon-purple/5 to-transparent"></div>
-      <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-neon-purple/10 rounded-full blur-3xl animate-float"></div>
-      <div className="absolute bottom-1/3 right-1/3 w-64 h-64 bg-neon-pink/10 rounded-full blur-3xl animate-float delay-1000"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-purple-500/5 to-transparent"></div>
+      <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-float"></div>
+      <div className="absolute bottom-1/3 right-1/3 w-64 h-64 bg-pink-500/10 rounded-full blur-3xl animate-float delay-1000"></div>
 
       <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-7xl relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center min-h-screen">
@@ -36,9 +39,10 @@ const HeroSection = () => {
             {/* CTA Button */}
             <Button
               size="lg"
-              className="bg-white hover:bg-gray-100 text-black transition-all duration-300 text-lg px-8 py-4 font-semibold rounded-lg"
+              className="text-black transition-all duration-300 text-lg px-8 py-4 font-semibold rounded-lg hover:opacity-90"
+              style={{ backgroundColor: "#ECF86E" }}
             >
-              🚀 Записаться на курс
+              Записаться на курс
             </Button>
 
             {/* Additional Info */}
