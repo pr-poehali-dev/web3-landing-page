@@ -16,9 +16,9 @@ const HeroSection = () => {
           {/* Left Content */}
           <div className="space-y-8 px-3">
             {/* Main Title */}
-            <div>
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-600 text-sm text-gray-300 bg-[#00000000]">
               <h1 className="text-5xl md:text-7xl font-black leading-tight">
-                <span className="bg-gradient-to-r from-slate-100 via-white to-slate-200 bg-clip-text text-transparent text-7xl">
+                <span className="bg-gradient-to-r from-slate-100 via-white to-slate-200 bg-clip-text text-7xl text-[#ECF86E]">
                   Web3 с нуля
                 </span>
               </h1>
