@@ -54,7 +54,7 @@ const ProgramSection = () => {
           {modules.map((module, index) => (
             <div
               key={index}
-              className="grid grid-cols-[80px_1fr_120px] items-start gap-8 p-8 hover:bg-white/50 rounded-2xl transition-all duration-300 group cursor-pointer"
+              className="grid grid-cols-[80px_1fr_120px] items-start gap-8 p-8 hover:bg-white/50 rounded-2xl transition-all duration-300 group cursor-pointer px-0"
             >
               <div className="text-6xl font-black text-gray-900 group-hover:scale-110 transition-transform duration-300">
                 {module.number}
