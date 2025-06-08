@@ -60,12 +60,12 @@ const ProgramSection = () => {
           {modules.map((module, index) => (
             <div
               key={index}
-              className="grid grid-cols-[80px_1fr_200px] items-start gap-8 p-8 hover:bg-white/50 rounded-2xl transition-all duration-300 group cursor-pointer"
+              className="grid grid-cols-[80px_1fr_200px] items-center gap-8 p-8 hover:bg-white/50 rounded-2xl transition-all duration-300 group cursor-pointer"
             >
               <div className="text-6xl font-black text-gray-500 group-hover:scale-110 transition-transform duration-300">
                 {module.number}
               </div>
-              <div className="pt-2 px-[185px]">
+              <div className="py-4">
                 <h3 className="font-bold text-gray-900 mb-3 group-hover:text-gray-900 transition-colors text-2xl">
                   {module.title}
                 </h3>
@@ -73,7 +73,7 @@ const ProgramSection = () => {
                   {module.description}
                 </p>
               </div>
-              <div className="space-y-2">
+              <div className="space-y-2 py-4">
                 <div className="text-gray-500 font-bold text-lg bg-gray-100 px-4 py-2 rounded-xl text-center">
                   {module.duration}
                 </div>
