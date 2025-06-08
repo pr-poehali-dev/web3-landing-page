@@ -69,7 +69,7 @@ const ProgramSection = () => {
           {modules.map((module, index) => (
             <div
               key={index}
-              className={`grid grid-cols-[80px_1fr_200px] items-center gap-8 pl-0 pr-8 py-8 hover:bg-white/50 rounded-2xl transition-all duration-300 group cursor-pointer ${
+              className={`grid grid-cols-[80px_1fr_200px] items-center gap-8 pl-0 py-8 hover:bg-white/50 rounded-2xl transition-all duration-300 group cursor-pointer ${
                 module.isSpecial ? "bg-[#ECF86E]/50" : ""
               }`}
             >
