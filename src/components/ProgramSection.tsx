@@ -94,10 +94,10 @@ const ProgramSection = () => {
                 </p>
               </div>
               <div className="space-y-2 py-0 my-0 mx-[5px] px-0">
-                <div className="text-gray-500 font-medium text-lg bg-gray-100 rounded-xl text-center pr-0">
+                <div className="text-gray-500 font-medium text-lg rounded-xl text-center pr-0 bg-[#F3F9B4]">
                   {module.duration}
                 </div>
-                <div className="text-gray-500 font-medium text-lg bg-gray-100 rounded-xl text-center pr-0">
+                <div className="text-gray-500 font-medium text-lg rounded-xl text-center pr-0 bg-[#F3F9B4]">
                   {module.projects}
                 </div>
               </div>
