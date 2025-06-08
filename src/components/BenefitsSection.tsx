@@ -131,7 +131,7 @@ const BenefitsSection = () => {
                 {activeBenefit.title}
               </h3>
               <p
-                className="text-gray-700 text-lg leading-relaxed mb-8 transition-all duration-700 ease-in-out transform"
+                className="text-gray-700 leading-relaxed mb-8 transition-all duration-700 ease-in-out transform text-xl"
                 key={`desc-${activeIndex}`}
               >
                 {activeBenefit.description}
