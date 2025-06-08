@@ -1,3 +1,5 @@
+import Icon from "@/components/ui/icon";
+
 const ProgramSection = () => {
   const modules = [
     {
@@ -42,6 +44,13 @@ const ProgramSection = () => {
       duration: "15 часов",
       projects: "1 проект",
     },
+    {
+      isSpecial: true,
+      title: "Сертификат о завершении курса",
+      description: "Подтверждение ваших знаний и навыков",
+      duration: "Навсегда",
+      projects: "1 сертификат",
+    },
   ];
 
   return (
@@ -60,10 +69,16 @@ const ProgramSection = () => {
           {modules.map((module, index) => (
             <div
               key={index}
-              className="grid grid-cols-[80px_1fr_200px] items-center gap-8 p-8 hover:bg-white/50 rounded-2xl transition-all duration-300 group cursor-pointer py-0"
+              className={`grid grid-cols-[80px_1fr_200px] items-center gap-8 p-8 hover:bg-white/50 rounded-2xl transition-all duration-300 group cursor-pointer py-0 ${
+                module.isSpecial ? "bg-[#ECF86E]/50" : ""
+              }`}
             >
               <div className="text-6xl font-black text-gray-500 group-hover:scale-110 transition-transform duration-300">
-                {module.number}
+                {module.isSpecial ? (
+                  <Icon name="Trophy" size={60} className="text-yellow-600" />
+                ) : (
+                  module.number
+                )}
               </div>
               <div className="py-0 px-[196px]">
                 <h3 className="font-bold text-gray-900 mb-3 group-hover:text-gray-900 transition-colors text-2xl">
@@ -83,13 +98,6 @@ const ProgramSection = () => {
               </div>
             </div>
           ))}
-        </div>
-
-        <div className="text-center mt-12">
-          <div className="inline-flex items-center gap-2 bg-gray-100 px-4 py-2 rounded-xl text-gray-900 font-semibold">
-            <span>🏆</span>
-            <span>Сертификат о завершении курса</span>
-          </div>
         </div>
       </div>
     </section>
