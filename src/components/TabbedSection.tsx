@@ -14,14 +14,6 @@ const TabbedSection = () => {
 
   const mentors = [
     {
-      name: "Наталья Дружинина",
-      role: "Фронтенд-разработчик в Aviasales",
-      experience: "Опыт — 5 лет",
-      avatar:
-        "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100&h=100&fit=crop&crop=face",
-      icon: "Headphones",
-    },
-    {
       name: "Елена Шостак",
       role: "Ведущий инженер программного обеспечения в Shell Recharge Solutions",
       experience: "Опыт — 7 лет",
