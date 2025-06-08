@@ -40,8 +40,8 @@ const ProgramSection = () => {
 
   return (
     <section className="py-20 bg-gradient-to-b from-white to-gray-50">
-      <div className="container mx-auto px-4 md:px-6 lg:px-8">
-        <div className="mb-16 text-left max-w-7xl">
+      <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-7xl">
+        <div className="mb-16 text-left">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
             Программа курса
           </h2>
@@ -54,12 +54,12 @@ const ProgramSection = () => {
           {modules.map((module, index) => (
             <div
               key={index}
-              className="grid grid-cols-[80px_1fr_120px] items-start gap-8 p-8 hover:bg-white/50 rounded-2xl transition-all duration-300 group cursor-pointer px-0"
+              className="grid grid-cols-[80px_1fr_120px] items-start gap-8 p-8 hover:bg-white/50 rounded-2xl transition-all duration-300 group cursor-pointer"
             >
               <div className="text-6xl font-black text-gray-900 group-hover:scale-110 transition-transform duration-300">
                 {module.number}
               </div>
-              <div className="pt-2 px-[212px]">
+              <div className="pt-2">
                 <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-gray-900 transition-colors">
                   {module.title}
                 </h3>
