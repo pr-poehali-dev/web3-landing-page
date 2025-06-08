@@ -43,27 +43,27 @@ const TabbedSection = () => {
   ];
 
   return (
-    <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+    <section className="py-20 bg-gradient-to-b from-background to-card relative">
+      <div className="container mx-auto px-6">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">
             Будете заниматься сами, но не в одиночестве —
           </h2>
-          <p className="text-4xl font-bold text-gray-900">
+          <p className="text-xl text-gray-400 max-w-2xl mx-auto">
             вас поддержит заботливая команда Практикума
           </p>
         </div>
 
         {/* Tabs */}
-        <div className="flex flex-wrap justify-center gap-2 mb-12">
+        <div className="flex flex-wrap justify-center gap-3 mb-16">
           {tabs.map((tab) => (
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
-              className={`px-6 py-3 rounded-lg font-medium transition-all duration-200 ${
+              className={`px-6 py-3 rounded-lg font-medium transition-all duration-300 ${
                 activeTab === tab
-                  ? "bg-blue-600 text-white shadow-lg"
-                  : "bg-gray-200 text-gray-700 hover:bg-gray-300"
+                  ? "bg-neon-purple text-white shadow-lg neon-glow"
+                  : "glass-card text-gray-300 hover:text-white hover:bg-neon-purple/20"
               }`}
             >
               {tab}
@@ -72,37 +72,37 @@ const TabbedSection = () => {
         </div>
 
         {/* Content */}
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left content */}
+        <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
           <div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">
+            <h3 className="text-3xl font-bold text-white mb-6">
               Опытные наставники ведут воркшопы и отвечают на вопросы в чате
             </h3>
-            <p className="text-lg text-gray-600 leading-relaxed">
+            <p className="text-lg text-gray-300 leading-relaxed">
               Это практикующие фулстек-разработчики, которым можно задавать
               вопросы во время учёбы. Их задача — помогать вам со сложностями и
               делиться опытом.
             </p>
           </div>
 
-          {/* Right content - Mentors list */}
           <div className="space-y-6">
             {mentors.map((mentor, index) => (
               <div
                 key={index}
-                className="flex items-center gap-4 p-4 bg-white rounded-lg shadow-sm border border-gray-100"
+                className="glass-card p-6 rounded-xl hover:neon-glow transition-all duration-300 group cursor-pointer"
               >
-                <img
-                  src={mentor.avatar}
-                  alt={mentor.name}
-                  className="w-16 h-16 rounded-full object-cover"
-                />
-                <div>
-                  <h4 className="font-semibold text-gray-900 text-lg">
-                    {mentor.name}
-                  </h4>
-                  <p className="text-gray-600 text-sm mb-1">{mentor.role}</p>
-                  <p className="text-gray-500 text-sm">{mentor.experience}</p>
+                <div className="flex items-center gap-4">
+                  <img
+                    src={mentor.avatar}
+                    alt={mentor.name}
+                    className="w-16 h-16 rounded-full object-cover border-2 border-neon-purple/30"
+                  />
+                  <div>
+                    <h4 className="font-semibold text-white text-lg group-hover:text-neon-purple transition-colors">
+                      {mentor.name}
+                    </h4>
+                    <p className="text-gray-300 text-sm mb-1">{mentor.role}</p>
+                    <p className="text-gray-400 text-sm">{mentor.experience}</p>
+                  </div>
                 </div>
               </div>
             ))}
