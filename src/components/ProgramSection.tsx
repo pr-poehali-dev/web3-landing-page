@@ -40,8 +40,8 @@ const ProgramSection = () => {
 
   return (
     <section className="py-20 bg-gradient-to-b from-white to-gray-50">
-      <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-7xl">
-        <div className="mb-16 text-left">
+      <div className="container mx-auto px-4 md:px-6 lg:px-8">
+        <div className="mb-16 text-left max-w-7xl">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
             Программа курса
           </h2>
