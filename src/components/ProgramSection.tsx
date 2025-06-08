@@ -73,7 +73,7 @@ const ProgramSection = () => {
                 module.isSpecial ? "bg-[#ECF86E]/50" : ""
               }`}
             >
-              <div className="text-6xl font-black text-gray-500 group-hover:scale-110 transition-transform duration-300">
+              <div className="text-6xl font-bold text-gray-500 group-hover:scale-110 transition-transform duration-300">
                 {module.isSpecial ? (
                   <Icon name="Trophy" size={60} className="text-yellow-600" />
                 ) : (
@@ -89,10 +89,10 @@ const ProgramSection = () => {
                 </p>
               </div>
               <div className="space-y-2 py-4">
-                <div className="text-gray-500 font-bold text-lg bg-gray-100 px-4 py-2 rounded-xl text-center">
+                <div className="text-gray-500 font-medium text-lg bg-gray-100 px-4 py-2 rounded-xl text-center">
                   {module.duration}
                 </div>
-                <div className="text-gray-500 font-bold text-lg bg-gray-100 px-4 py-2 rounded-xl text-center">
+                <div className="text-gray-500 font-medium text-lg bg-gray-100 px-4 py-2 rounded-xl text-center">
                   {module.projects}
                 </div>
               </div>
