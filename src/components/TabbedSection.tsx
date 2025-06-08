@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Icon from "@/components/ui/icon";
 
 const TabbedSection = () => {
   const [activeTab, setActiveTab] = useState("Наставники");
