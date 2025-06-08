@@ -283,7 +283,7 @@ const TabbedSection = () => {
                 style={{ minHeight: "calc(100% - 0px)" }}
               >
                 <Icon
-                  name="HeartHandshake"
+                  name="MessageCircleMore"
                   size={80}
                   className="text-gray-700"
                 />
@@ -296,7 +296,7 @@ const TabbedSection = () => {
                 style={{ minHeight: "calc(100% - 0px)" }}
               >
                 <Icon
-                  name="HeartHandshake"
+                  name="MessageCircleMore"
                   size={80}
                   className="text-gray-700"
                 />
