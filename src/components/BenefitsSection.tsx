@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const BenefitsSection = () => {
   const benefits = [
@@ -35,7 +35,19 @@ const BenefitsSection = () => {
   ];
 
   const [activeIndex, setActiveIndex] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
   const activeBenefit = benefits[activeIndex];
+
+  // Автоматическое перелистывание
+  useEffect(() => {
+    if (isPaused) return;
+
+    const interval = setInterval(() => {
+      setActiveIndex((current) => (current + 1) % benefits.length);
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, [isPaused, benefits.length]);
 
   return (
     <section className="py-20 bg-background relative">
@@ -46,7 +58,11 @@ const BenefitsSection = () => {
           </h2>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
+        <div
+          className="grid lg:grid-cols-2 gap-12 items-start"
+          onMouseEnter={() => setIsPaused(true)}
+          onMouseLeave={() => setIsPaused(false)}
+        >
           {/* Левая часть - изображения */}
           <div className="space-y-6">
             {/* Основное изображение */}
@@ -54,7 +70,8 @@ const BenefitsSection = () => {
               <img
                 src={activeBenefit.image}
                 alt={activeBenefit.title}
-                className="w-full h-96 object-cover"
+                className="w-full h-96 object-cover transition-all duration-1000 ease-in-out transform"
+                key={activeIndex}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
             </div>
@@ -65,7 +82,7 @@ const BenefitsSection = () => {
                 <button
                   key={index}
                   onClick={() => setActiveIndex(index)}
-                  className={`relative rounded-lg overflow-hidden transition-all duration-300 ${
+                  className={`relative rounded-lg overflow-hidden transition-all duration-500 ease-in-out ${
                     activeIndex === index
                       ? "ring-2 ring-neon-purple scale-105"
                       : "opacity-70 hover:opacity-100"
@@ -77,7 +94,7 @@ const BenefitsSection = () => {
                     className="w-24 h-16 object-cover"
                   />
                   {activeIndex === index && (
-                    <div className="absolute inset-0 bg-neon-purple/20"></div>
+                    <div className="absolute inset-0 bg-neon-purple/20 animate-fade-in"></div>
                   )}
                 </button>
               ))}
@@ -87,11 +104,22 @@ const BenefitsSection = () => {
           {/* Правая часть - текст */}
           <div className="space-y-8">
             <div className="glass-card p-8 rounded-xl">
-              <div className="text-4xl mb-4">{activeBenefit.icon}</div>
-              <h3 className="text-3xl font-bold mb-6 text-white">
+              <div
+                className="text-4xl mb-4 transition-all duration-700 ease-in-out transform"
+                key={`icon-${activeIndex}`}
+              >
+                {activeBenefit.icon}
+              </div>
+              <h3
+                className="text-3xl font-bold mb-6 text-white transition-all duration-700 ease-in-out transform"
+                key={`title-${activeIndex}`}
+              >
                 {activeBenefit.title}
               </h3>
-              <p className="text-gray-300 text-lg leading-relaxed mb-8">
+              <p
+                className="text-gray-300 text-lg leading-relaxed mb-8 transition-all duration-700 ease-in-out transform"
+                key={`desc-${activeIndex}`}
+              >
                 {activeBenefit.description}
               </p>
 
