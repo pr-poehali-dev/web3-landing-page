@@ -11,7 +11,7 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-7xl relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center min-h-screen">
           {/* Left Content */}
-          <div className="space-y-8">
+          <div className="space-y-8 px-3">
             {/* Category Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-600 bg-gray-800/50 text-sm text-gray-300">
               <span>Блокчейн</span>
