@@ -11,11 +11,11 @@ const HeroSection = () => {
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-6xl md:text-8xl font-black mb-6 leading-tight">
-            <span className="neon-text bg-gradient-to-r from-neon-purple to-neon-pink bg-clip-text text-transparent">
-              Web3
+            <span className="neon-text bg-gradient-to-r from-neon-purple to-neon-pink bg-clip-text text-transparent text-9xl">
+              Web3 с нуля
             </span>
             <br />
-            <span className="text-white">с нуля</span>
+            <span className="text-white"></span>
           </h1>
 
           <p className="text-xl md:text-2xl text-gray-300 mb-8 font-light leading-relaxed">
