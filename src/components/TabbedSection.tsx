@@ -269,7 +269,11 @@ const TabbedSection = () => {
                 className="bg-[#ECF86E] rounded-xl flex items-center justify-center h-full min-h-[200px]"
                 style={{ minHeight: "calc(100% - 0px)" }}
               >
-                <Icon name="Headset" size={80} className="text-gray-700" />
+                <Icon
+                  name="HeartHandshake"
+                  size={80}
+                  className="text-gray-700"
+                />
               </div>
             )}
 
@@ -278,7 +282,11 @@ const TabbedSection = () => {
                 className="bg-[#ECF86E] rounded-xl flex items-center justify-center h-full min-h-[200px] px-9 py-[55px]"
                 style={{ minHeight: "calc(100% - 0px)" }}
               >
-                <Icon name="Headset" size={80} className="text-gray-700" />
+                <Icon
+                  name="HeartHandshake"
+                  size={80}
+                  className="text-gray-700"
+                />
               </div>
             )}
           </div>
