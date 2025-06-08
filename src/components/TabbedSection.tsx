@@ -44,7 +44,7 @@ const TabbedSection = () => {
 
   return (
     <section className="py-20 bg-gradient-to-b from-background to-card relative">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-7xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">
             Будете заниматься сами, но не в одиночестве —
