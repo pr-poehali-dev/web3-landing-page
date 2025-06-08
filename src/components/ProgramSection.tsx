@@ -5,36 +5,42 @@ const ProgramSection = () => {
       title: "Основы блокчейна",
       description: "История, принципы работы, консенсус-алгоритмы",
       duration: "5 часов",
+      projects: "2 проекта",
     },
     {
       number: "02",
       title: "Ethereum и смарт-контракты",
       description: "Solidity, развертывание контрактов, газ",
       duration: "8 часов",
+      projects: "3 проекта",
     },
     {
       number: "03",
       title: "DeFi протоколы",
       description: "Uniswap, Compound, yield farming",
       duration: "6 часов",
+      projects: "2 проекта",
     },
     {
       number: "04",
       title: "NFT и метаверс",
       description: "Создание коллекций, OpenSea, игровые активы",
       duration: "7 часов",
+      projects: "4 проекта",
     },
     {
       number: "05",
       title: "Web3 разработка",
       description: "Web3.js, React, кошельки, dApps",
       duration: "10 часов",
+      projects: "5 проектов",
     },
     {
       number: "06",
       title: "Итоговый проект",
       description: "Собственное DeFi-приложение с нуля",
       duration: "15 часов",
+      projects: "1 проект",
     },
   ];
 
@@ -54,9 +60,9 @@ const ProgramSection = () => {
           {modules.map((module, index) => (
             <div
               key={index}
-              className="grid grid-cols-[80px_1fr_120px] items-start gap-8 p-8 hover:bg-white/50 rounded-2xl transition-all duration-300 group cursor-pointer"
+              className="grid grid-cols-[80px_1fr_200px] items-start gap-8 p-8 hover:bg-white/50 rounded-2xl transition-all duration-300 group cursor-pointer"
             >
-              <div className="text-6xl font-black text-gray-900 group-hover:scale-110 transition-transform duration-300">
+              <div className="text-6xl font-black text-gray-500 group-hover:scale-110 transition-transform duration-300">
                 {module.number}
               </div>
               <div className="pt-2 px-[185px]">
@@ -67,8 +73,13 @@ const ProgramSection = () => {
                   {module.description}
                 </p>
               </div>
-              <div className="text-gray-900 font-bold text-lg bg-gray-100 px-4 py-2 rounded-xl text-center mt-2">
-                {module.duration}
+              <div className="space-y-2">
+                <div className="text-gray-500 font-bold text-lg bg-gray-100 px-4 py-2 rounded-xl text-center">
+                  {module.duration}
+                </div>
+                <div className="text-gray-500 font-bold text-lg bg-gray-100 px-4 py-2 rounded-xl text-center">
+                  {module.projects}
+                </div>
               </div>
             </div>
           ))}
