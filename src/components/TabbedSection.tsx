@@ -276,117 +276,31 @@ const TabbedSection = () => {
                 </div>
               ))}
 
-            {activeTab === "Техподдержка" &&
-              [
-                {
-                  name: "Олег Иванов",
-                  role: "DevOps Engineer в Mail.ru Group",
-                  experience: "Опыт — 6 лет",
-                  avatar:
-                    "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100&h=100&fit=crop&crop=face",
-                },
-                {
-                  name: "Татьяна Козлова",
-                  role: "System Administrator в Касперский",
-                  experience: "Опыт — 4 года",
-                  avatar:
-                    "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face",
-                },
-                {
-                  name: "Максим Орлов",
-                  role: "Support Engineer в JetBrains",
-                  experience: "Опыт — 5 лет",
-                  avatar:
-                    "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=100&h=100&fit=crop&crop=face",
-                },
-                {
-                  name: "Юлия Романова",
-                  role: "Technical Support в Яндекс.Облако",
-                  experience: "Опыт — 3 года",
-                  avatar:
-                    "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=100&h=100&fit=crop&crop=face",
-                },
-              ].map((support, index) => (
-                <div
-                  key={index}
-                  className="bg-white border border-gray-200 p-6 rounded-xl hover:border-gray-300 transition-all duration-300 group cursor-pointer"
-                >
-                  <div className="flex items-center gap-4">
-                    <img
-                      src={support.avatar}
-                      alt={support.name}
-                      className="w-16 h-16 rounded-full object-cover border-2 border-gray-300"
-                    />
-                    <div>
-                      <h4 className="font-semibold text-gray-900 text-lg group-hover:text-gray-900 transition-colors">
-                        {support.name}
-                      </h4>
-                      <p className="text-gray-600 text-sm mb-1">
-                        {support.role}
-                      </p>
-                      <p className="text-gray-500 text-sm">
-                        {support.experience}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              ))}
+            {activeTab === "Техподдержка" && (
+              <div
+                className="bg-[#ECF86E] rounded-xl flex items-center justify-center h-full min-h-[200px]"
+                style={{ minHeight: "calc(100% - 0px)" }}
+              >
+                <Icon
+                  name="HeartHandshake"
+                  size={80}
+                  className="text-gray-700"
+                />
+              </div>
+            )}
 
-            {activeTab === "Сообщество" &&
-              [
-                {
-                  name: "Андрей Волков",
-                  role: "Выпускник 2023, работает в Яндекс",
-                  experience: "На курсе — 8 месяцев",
-                  avatar:
-                    "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face",
-                },
-                {
-                  name: "Ольга Сергеева",
-                  role: "Студентка 3 курса, активный участник",
-                  experience: "На курсе — 4 месяца",
-                  avatar:
-                    "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100&h=100&fit=crop&crop=face",
-                },
-                {
-                  name: "Владимир Попов",
-                  role: "Выпускник 2022, Junior Developer в Тинькофф",
-                  experience: "На курсе — 10 месяцев",
-                  avatar:
-                    "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face",
-                },
-                {
-                  name: "Алина Федорова",
-                  role: "Студентка 2 курса, ментор для новичков",
-                  experience: "На курсе — 6 месяцев",
-                  avatar:
-                    "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100&h=100&fit=crop&crop=face",
-                },
-              ].map((community, index) => (
-                <div
-                  key={index}
-                  className="bg-white border border-gray-200 p-6 rounded-xl hover:border-gray-300 transition-all duration-300 group cursor-pointer"
-                >
-                  <div className="flex items-center gap-4">
-                    <img
-                      src={community.avatar}
-                      alt={community.name}
-                      className="w-16 h-16 rounded-full object-cover border-2 border-gray-300"
-                    />
-                    <div>
-                      <h4 className="font-semibold text-gray-900 text-lg group-hover:text-gray-900 transition-colors">
-                        {community.name}
-                      </h4>
-                      <p className="text-gray-600 text-sm mb-1">
-                        {community.role}
-                      </p>
-                      <p className="text-gray-500 text-sm">
-                        {community.experience}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              ))}
+            {activeTab === "Сообщество" && (
+              <div
+                className="bg-[#ECF86E] rounded-xl flex items-center justify-center h-full min-h-[200px]"
+                style={{ minHeight: "calc(100% - 0px)" }}
+              >
+                <Icon
+                  name="HeartHandshake"
+                  size={80}
+                  className="text-gray-700"
+                />
+              </div>
+            )}
           </div>
         </div>
       </div>
