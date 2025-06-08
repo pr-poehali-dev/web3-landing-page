@@ -50,27 +50,25 @@ const ProgramSection = () => {
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-5xl mx-auto space-y-8">
           {modules.map((module, index) => (
             <div
               key={index}
-              className="bg-white border border-gray-200 p-6 rounded-xl mb-4 hover:border-gray-300 transition-all duration-300 group cursor-pointer"
+              className="flex items-start gap-8 p-8 hover:bg-white/50 rounded-2xl transition-all duration-300 group cursor-pointer"
             >
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-6">
-                  <div className="text-4xl font-black text-accent group-hover:text-accent-dark transition-colors">
-                    {module.number}
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-accent-dark transition-colors">
-                      {module.title}
-                    </h3>
-                    <p className="text-gray-600">{module.description}</p>
-                  </div>
-                </div>
-                <div className="text-sm text-accent-dark font-semibold bg-accent/20 px-3 py-1 rounded-full">
-                  {module.duration}
-                </div>
+              <div className="text-6xl font-black text-accent group-hover:scale-110 transition-transform duration-300 flex-shrink-0">
+                {module.number}
+              </div>
+              <div className="flex-1 pt-2">
+                <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-accent-dark transition-colors">
+                  {module.title}
+                </h3>
+                <p className="text-lg text-gray-600 mb-4">
+                  {module.description}
+                </p>
+              </div>
+              <div className="text-accent-dark font-bold text-lg bg-accent/20 px-4 py-2 rounded-xl flex-shrink-0 mt-2">
+                {module.duration}
               </div>
             </div>
           ))}
