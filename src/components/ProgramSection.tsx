@@ -88,11 +88,11 @@ const ProgramSection = () => {
                   {module.description}
                 </p>
               </div>
-              <div className="space-y-2 py-4">
-                <div className="text-gray-500 font-medium text-lg bg-gray-100 px-4 py-2 rounded-xl text-center">
+              <div className="space-y-2 py-0 my-0 mx-[5px] px-0">
+                <div className="text-gray-500 font-medium text-lg bg-gray-100 rounded-xl text-center px-0 py-1">
                   {module.duration}
                 </div>
-                <div className="text-gray-500 font-medium text-lg bg-gray-100 px-4 py-2 rounded-xl text-center">
+                <div className="text-gray-500 font-medium text-lg bg-gray-100 rounded-xl text-center px-0 py-0.5 my-0">
                   {module.projects}
                 </div>
               </div>
