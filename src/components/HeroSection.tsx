@@ -15,13 +15,6 @@ const HeroSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center h-full px-[46px]">
           {/* Left Content */}
           <div className="space-y-8 px-3">
-            {/* Category Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-600 bg-gray-800/50 text-sm text-gray-300">
-              <span></span>
-              <span className="w-1 h-1 bg-gray-500 rounded-full"></span>
-              <span></span>
-            </div>
-
             {/* Main Title */}
             <div>
               <h1 className="text-5xl md:text-7xl font-black leading-tight">
