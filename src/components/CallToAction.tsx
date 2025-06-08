@@ -19,7 +19,7 @@ const CallToAction = () => {
             <Button
               size="lg"
               className="text-black text-xl px-10 py-6 font-bold hover:opacity-90 transition-all duration-300"
-              style={{ backgroundColor: "#111827" }}
+              style={{ backgroundColor: "#ECF86E" }}
             >
               Записаться сейчас
             </Button>

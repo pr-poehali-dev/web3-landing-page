@@ -40,7 +40,7 @@ const HeroSection = () => {
             <Button
               size="lg"
               className="text-black transition-all duration-300 text-lg px-8 py-4 font-semibold rounded-lg hover:opacity-90"
-              style={{ backgroundColor: "#111827" }}
+              style={{ backgroundColor: "#ECF86E" }}
             >
               Записаться на курс
             </Button>
