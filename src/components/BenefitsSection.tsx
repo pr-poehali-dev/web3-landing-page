@@ -32,16 +32,6 @@ const BenefitsSection = () => {
       thumbnail:
         "https://cdn.poehali.dev/files/a1e160fc-cef9-4bfe-ad39-842399f1bc6c.png",
     },
-    {
-      icon: "💼",
-      title: "Реальные проекты",
-      description:
-        "Создавайте Web3-приложения для портфолио: от NFT-маркетплейсов до DeFi-платформ. Поддержка в трудоустройстве и карьерном росте.",
-      image:
-        "https://cdn.poehali.dev/files/a1e160fc-cef9-4bfe-ad39-842399f1bc6c.png",
-      thumbnail:
-        "https://cdn.poehali.dev/files/a1e160fc-cef9-4bfe-ad39-842399f1bc6c.png",
-    },
   ];
 
   const [activeIndex, setActiveIndex] = useState(0);
