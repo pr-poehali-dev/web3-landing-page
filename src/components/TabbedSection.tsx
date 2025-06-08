@@ -259,7 +259,7 @@ const TabbedSection = () => {
 
             {activeTab === "Техподдержка" && (
               <div
-                className="bg-[#ECF86E] rounded-xl flex items-center justify-center h-full min-h-[200px]"
+                className="bg-[#ECF86E] rounded-xl flex items-center justify-center h-full min-h-[200px] px-[30px] py-[55px]"
                 style={{ minHeight: "calc(100% - 0px)" }}
               >
                 <Icon
