@@ -86,10 +86,10 @@ const ProgramSection = () => {
                 {module.isSpecial ? "" : module.number}
               </div>
               <div className="py-0">
-                <h3 className="font-bold text-gray-900 mb-3 group-hover:text-gray-900 transition-colors text-2xl">
+                <h3 className="font-bold text-gray-900 group-hover:text-gray-900 transition-colors text-2xl my-0">
                   {module.title}
                 </h3>
-                <p className="text-gray-600 mb-4 text-base">
+                <p className="text-gray-600 text-base my-0">
                   {module.description}
                 </p>
               </div>
