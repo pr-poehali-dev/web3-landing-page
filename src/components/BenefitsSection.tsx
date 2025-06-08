@@ -4,13 +4,13 @@ const BenefitsSection = () => {
   const benefits = [
     {
       icon: "🎯",
-      title: "Практические проекты",
+      title: "Обучение от практиков",
       description:
-        "Создашь собственный NFT-проект и DeFi-приложение. Полное портфолио для работодателя.",
+        "Наши преподаватели — действующие блокчейн-разработчики с опытом в Web3, DeFi и NFT. Вы будете учиться на реальных кейсах, не на теории.",
       image:
-        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop&crop=center",
+        "https://cdn.poehali.dev/files/4a778d5c-ed4e-454b-a4de-8653a2d122d6.png",
       thumbnail:
-        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=150&h=100&fit=crop&crop=center",
+        "https://cdn.poehali.dev/files/4a778d5c-ed4e-454b-a4de-8653a2d122d6.png",
     },
     {
       icon: "🚀",
