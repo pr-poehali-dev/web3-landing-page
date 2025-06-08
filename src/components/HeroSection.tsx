@@ -2,52 +2,106 @@ import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center cyber-gradient overflow-hidden">
+    <section className="relative min-h-screen flex items-center cyber-gradient overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-neon-purple/5 to-transparent"></div>
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-neon-purple/10 rounded-full blur-3xl animate-float"></div>
-      <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-neon-pink/10 rounded-full blur-3xl animate-float delay-1000"></div>
+      <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-neon-purple/10 rounded-full blur-3xl animate-float"></div>
+      <div className="absolute bottom-1/3 right-1/3 w-64 h-64 bg-neon-pink/10 rounded-full blur-3xl animate-float delay-1000"></div>
 
-      <div className="container mx-auto px-6 text-center relative z-10">
-        <div className="max-w-4xl mx-auto">
-          <h1 className="text-6xl md:text-8xl font-black mb-6 leading-tight">
-            <span className="bg-gradient-to-r from-slate-100 via-white to-slate-200 bg-clip-text text-transparent text-9xl">
-              Web3 с нуля
-            </span>
-            <br />
-            <span className="text-white"></span>
-          </h1>
+      <div className="container mx-auto px-6 relative z-10">
+        <div className="grid lg:grid-cols-2 gap-12 items-center min-h-screen">
+          {/* Left Content */}
+          <div className="space-y-8">
+            {/* Category Badge */}
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-600 bg-gray-800/50 text-sm text-gray-300">
+              <span>Блокчейн</span>
+              <span className="w-1 h-1 bg-gray-500 rounded-full"></span>
+              <span>С нуля</span>
+            </div>
 
-          <p className="text-xl md:text-2xl text-gray-300 mb-8 font-light leading-relaxed">
-            Освой блокчейн, криптовалюты и NFT за 6 недель.
-          </p>
+            {/* Main Title */}
+            <div>
+              <h1 className="text-5xl md:text-7xl font-black leading-tight">
+                <span className="bg-gradient-to-r from-slate-100 via-white to-slate-200 bg-clip-text text-transparent">
+                  Web3 с нуля
+                </span>
+              </h1>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <p className="text-xl md:text-2xl text-gray-300 mt-6 leading-relaxed max-w-lg">
+                Освойте полный цикл блокчейн-разработки и криптовалют — с нуля
+                за 6 недель. Получите реальный опыт.
+              </p>
+            </div>
+
+            {/* CTA Button */}
             <Button
               size="lg"
-              className="bg-[#7B68EE] hover:bg-[#6A5ACD] text-white transition-all duration-300 text-lg px-8 py-4 font-semibold"
+              className="bg-white hover:bg-gray-100 text-black transition-all duration-300 text-lg px-8 py-4 font-semibold rounded-lg"
             >
               🚀 Записаться на курс
             </Button>
 
-            <div className="flex items-center gap-2 text-gray-400">
-              <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
-              <span className="text-sm">Осталось 12 мест</span>
+            {/* Additional Info */}
+            <div className="text-sm text-gray-400">
+              <p>Ближайший старт — 26 июня, 10 июля и 24 июля</p>
+            </div>
+
+            {/* Stats */}
+            <div className="flex flex-wrap gap-6 text-sm text-gray-400 pt-4">
+              <div className="flex items-center gap-2">
+                <span className="text-neon-purple">⭐</span>
+                <span>4.9/5 рейтинг</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-neon-purple">👥</span>
+                <span>500+ выпускников</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-neon-purple">💼</span>
+                <span>85% трудоустройство</span>
+              </div>
             </div>
           </div>
 
-          <div className="mt-12 flex justify-center items-center gap-8 text-sm text-gray-500">
-            <div className="flex items-center gap-2">
-              <span className="text-neon-purple">⭐</span>
-              <span>4.9/5 рейтинг</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <span className="text-neon-purple">👥</span>
-              <span>500+ выпускников</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <span className="text-neon-purple">💼</span>
-              <span>85% трудоустройство</span>
+          {/* Right Visual */}
+          <div className="relative lg:block hidden">
+            <div className="relative">
+              {/* Main Image Placeholder */}
+              <div className="w-full h-96 bg-gradient-to-br from-gray-700 to-gray-800 rounded-2xl relative overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&h=400&fit=crop&crop=faces"
+                  alt="Разработчик за работой"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+
+              {/* Floating Elements */}
+              <div className="absolute -top-6 -right-6 bg-gray-800 border border-gray-600 rounded-xl p-4 shadow-xl">
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 bg-gradient-to-r from-neon-purple to-neon-pink rounded-lg flex items-center justify-center">
+                    <span className="text-white text-sm font-bold">⭐</span>
+                  </div>
+                  <div>
+                    <div className="text-white font-semibold">4,5</div>
+                    <div className="text-xs text-gray-400">на Отзовике</div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="absolute -bottom-6 -right-6 bg-blue-600 rounded-xl p-4 shadow-xl">
+                <div className="text-white">
+                  <div className="text-2xl font-bold">10 000</div>
+                  <div className="text-sm opacity-90">
+                    выпускников нашли работу
+                  </div>
+                </div>
+              </div>
+
+              {/* Available Spots Indicator */}
+              <div className="absolute top-4 left-4 flex items-center gap-2 bg-black/70 backdrop-blur-sm rounded-full px-3 py-2">
+                <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+                <span className="text-white text-sm">Осталось 12 мест</span>
+              </div>
             </div>
           </div>
         </div>
