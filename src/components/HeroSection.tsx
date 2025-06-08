@@ -6,11 +6,6 @@ const HeroSection = () => {
       className="relative h-[60vh] flex items-center"
       style={{ backgroundColor: "#111827" }}
     >
-      {/* Background Effects */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-transparent"></div>
-      <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-float"></div>
-      <div className="absolute bottom-1/3 right-1/3 w-64 h-64 bg-pink-500/10 rounded-full blur-3xl animate-float delay-1000"></div>
-
       <div className="container mx-auto px-4 md:px-6 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center h-full px-[46px]">
           {/* Left Content */}
