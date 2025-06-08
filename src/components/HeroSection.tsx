@@ -17,20 +17,20 @@ const HeroSection = () => {
           <div className="space-y-8 px-3">
             {/* Category Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-600 bg-gray-800/50 text-sm text-gray-300">
-              <span>Блокчейн</span>
+              <span></span>
               <span className="w-1 h-1 bg-gray-500 rounded-full"></span>
-              <span>С нуля</span>
+              <span></span>
             </div>
 
             {/* Main Title */}
             <div>
               <h1 className="text-5xl md:text-7xl font-black leading-tight">
-                <span className="bg-gradient-to-r from-slate-100 via-white to-slate-200 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-slate-100 via-white to-slate-200 bg-clip-text text-transparent text-7xl">
                   Web3 с нуля
                 </span>
               </h1>
 
-              <p className="text-xl md:text-2xl text-gray-300 mt-6 leading-relaxed max-w-lg">
+              <p className="md:text-2xl text-gray-300 mt-6 leading-relaxed max-w-lg text-xl">
                 Освойте полный цикл блокчейн-разработки и криптовалют — с нуля
                 за 6 недель. Получите реальный опыт.
               </p>
@@ -51,18 +51,18 @@ const HeroSection = () => {
             </div>
 
             {/* Stats */}
-            <div className="flex flex-wrap gap-6 text-sm text-gray-400 pt-4">
+            <div className="">
               <div className="flex items-center gap-2">
                 <span className="text-neon-purple">⭐</span>
-                <span>4.9/5 рейтинг</span>
+                <span></span>
               </div>
               <div className="flex items-center gap-2">
                 <span className="text-neon-purple">👥</span>
-                <span>500+ выпускников</span>
+                <span></span>
               </div>
               <div className="flex items-center gap-2">
                 <span className="text-neon-purple">💼</span>
-                <span>85% трудоустройство</span>
+                <span></span>
               </div>
             </div>
           </div>
