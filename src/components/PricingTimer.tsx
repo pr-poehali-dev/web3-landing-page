@@ -50,7 +50,7 @@ const PricingTimer = () => {
           </h2>
 
           <p className="text-xl text-gray-300 mb-8">
-            Вместо 499€ • Акция заканчивается через:
+            Вместо 499₽ • Акция заканчивается через:
           </p>
 
           <div className="grid grid-cols-4 gap-4 max-w-md mx-auto mb-12">
