@@ -3,27 +3,34 @@ import { Button } from "@/components/ui/button";
 const HeroSection = () => {
   return (
     <section
-      className="relative h-[60vh] flex items-center"
+      className="relative min-h-screen flex items-center"
       style={{ backgroundColor: "#111827" }}
     >
       {/* Background Effects */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-transparent"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-purple-500/5 to-transparent"></div>
       <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-float"></div>
       <div className="absolute bottom-1/3 right-1/3 w-64 h-64 bg-pink-500/10 rounded-full blur-3xl animate-float delay-1000"></div>
 
-      <div className="container mx-auto px-4 md:px-6 lg:px-8 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center h-full px-[46px]">
+      <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-7xl relative z-10">
+        <div className="grid lg:grid-cols-2 gap-12 items-center min-h-screen">
           {/* Left Content */}
           <div className="space-y-8 px-3">
+            {/* Category Badge */}
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-600 bg-gray-800/50 text-sm text-gray-300">
+              <span>Блокчейн</span>
+              <span className="w-1 h-1 bg-gray-500 rounded-full"></span>
+              <span>С нуля</span>
+            </div>
+
             {/* Main Title */}
             <div>
               <h1 className="text-5xl md:text-7xl font-black leading-tight">
-                <span className="bg-gradient-to-r from-slate-100 via-white to-slate-200 bg-clip-text text-transparent text-7xl">
+                <span className="bg-gradient-to-r from-slate-100 via-white to-slate-200 bg-clip-text text-transparent">
                   Web3 с нуля
                 </span>
               </h1>
 
-              <p className="md:text-xl text-gray-300 mt-6 leading-relaxed max-w-lg text-base">
+              <p className="text-xl md:text-2xl text-gray-300 mt-6 leading-relaxed max-w-lg">
                 Освойте полный цикл блокчейн-разработки и криптовалют — с нуля
                 за 6 недель. Получите реальный опыт.
               </p>
@@ -44,18 +51,18 @@ const HeroSection = () => {
             </div>
 
             {/* Stats */}
-            <div className="">
+            <div className="flex flex-wrap gap-6 text-sm text-gray-400 pt-4">
               <div className="flex items-center gap-2">
-                <span></span>
-                <span></span>
+                <span className="text-neon-purple">⭐</span>
+                <span>4.9/5 рейтинг</span>
               </div>
               <div className="flex items-center gap-2">
-                <span></span>
-                <span></span>
+                <span className="text-neon-purple">👥</span>
+                <span>500+ выпускников</span>
               </div>
               <div className="flex items-center gap-2">
-                <span></span>
-                <span></span>
+                <span className="text-neon-purple">💼</span>
+                <span>85% трудоустройство</span>
               </div>
             </div>
           </div>
