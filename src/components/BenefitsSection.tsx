@@ -18,9 +18,9 @@ const BenefitsSection = () => {
       description:
         "Solidity, Web3.js, MetaMask интеграция. Изучаешь то, что используют топовые компании.",
       image:
-        "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=800&h=600&fit=crop&crop=center",
+        "https://cdn.poehali.dev/files/2f36bd41-b6b9-45fe-8ef0-d7a45f68bedf.png",
       thumbnail:
-        "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=150&h=100&fit=crop&crop=center",
+        "https://cdn.poehali.dev/files/2f36bd41-b6b9-45fe-8ef0-d7a45f68bedf.png",
     },
     {
       icon: "💰",
