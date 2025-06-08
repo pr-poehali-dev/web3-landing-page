@@ -38,13 +38,13 @@ const PricingTimer = () => {
     <section className="py-20 bg-gray-50 relative overflow-hidden">
       <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-7xl relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="inline-flex items-center gap-2 bg-accent text-gray-900 px-4 py-2 rounded-full text-sm font-semibold mb-8">
+          <div className="inline-flex items-center gap-2 bg-gray-100 text-gray-900 px-4 py-2 rounded-full text-sm font-semibold mb-8">
             <span>🔥</span>
             <span>РАННЯЯ ЦЕНА</span>
           </div>
 
           <h2 className="text-4xl md:text-6xl font-black mb-6 text-gray-900">
-            Только <span className="text-accent-dark font-black">199₽</span>
+            Только <span className="text-gray-900 font-black">199₽</span>
           </h2>
 
           <p className="text-xl text-gray-600 mb-8">
@@ -57,7 +57,7 @@ const PricingTimer = () => {
                 key={unit}
                 className="bg-white border border-gray-200 p-4 rounded-xl text-center"
               >
-                <div className="text-3xl font-black text-accent-dark mb-1">
+                <div className="text-3xl font-black text-gray-900 mb-1">
                   {value.toString().padStart(2, "0")}
                 </div>
                 <div className="text-xs text-gray-600 uppercase">
@@ -75,7 +75,7 @@ const PricingTimer = () => {
 
           <Button
             size="lg"
-            className="bg-accent hover:bg-accent-dark text-gray-900 text-xl px-12 py-6 font-bold transition-all duration-300"
+            className="bg-gray-100 hover:bg-gray-200 text-gray-900 text-xl px-12 py-6 font-bold transition-all duration-300"
           >
             💳 Оплатить 199₽
           </Button>

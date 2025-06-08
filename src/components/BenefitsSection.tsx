@@ -94,7 +94,7 @@ const BenefitsSection = () => {
                   onClick={() => setActiveIndex(index)}
                   className={`relative transition-all duration-500 ease-in-out ${
                     activeIndex === index
-                      ? "ring-2 ring-accent scale-105"
+                      ? "ring-2 ring-gray-900 scale-105"
                       : "opacity-70 hover:opacity-100"
                   }`}
                 >
@@ -114,7 +114,7 @@ const BenefitsSection = () => {
                     />
                   </div>
                   {activeIndex === index && (
-                    <div className="absolute inset-0 bg-accent/20 animate-fade-in rounded-md"></div>
+                    <div className="absolute inset-0 bg-gray-900/20 animate-fade-in rounded-md"></div>
                   )}
                 </button>
               ))}

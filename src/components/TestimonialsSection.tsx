@@ -89,7 +89,7 @@ const TestimonialsSection = () => {
 
       <div className="flex mb-4">
         {[...Array(testimonial.rating)].map((_, i) => (
-          <span key={i} className="text-accent text-lg">
+          <span key={i} className="text-gray-900 text-lg">
             ⭐
           </span>
         ))}

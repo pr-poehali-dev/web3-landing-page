@@ -62,8 +62,8 @@ const TabbedSection = () => {
               onClick={() => setActiveTab(tab)}
               className={`px-6 py-3 rounded-lg font-medium transition-all duration-300 ${
                 activeTab === tab
-                  ? "bg-accent text-gray-900 shadow-lg"
-                  : "bg-gray-100 border border-gray-200 text-gray-600 hover:text-gray-900 hover:bg-accent/20"
+                  ? "bg-gray-100 text-gray-900 shadow-lg"
+                  : "bg-gray-100 border border-gray-200 text-gray-600 hover:text-gray-900 hover:bg-gray-50"
               }`}
             >
               {tab}
@@ -94,10 +94,10 @@ const TabbedSection = () => {
                   <img
                     src={mentor.avatar}
                     alt={mentor.name}
-                    className="w-16 h-16 rounded-full object-cover border-2 border-accent/30"
+                    className="w-16 h-16 rounded-full object-cover border-2 border-gray-300"
                   />
                   <div>
-                    <h4 className="font-semibold text-gray-900 text-lg group-hover:text-accent-dark transition-colors">
+                    <h4 className="font-semibold text-gray-900 text-lg group-hover:text-gray-900 transition-colors">
                       {mentor.name}
                     </h4>
                     <p className="text-gray-600 text-sm mb-1">{mentor.role}</p>

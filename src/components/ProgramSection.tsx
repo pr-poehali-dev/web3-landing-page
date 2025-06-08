@@ -56,18 +56,18 @@ const ProgramSection = () => {
               key={index}
               className="flex items-start gap-8 p-8 hover:bg-white/50 rounded-2xl transition-all duration-300 group cursor-pointer"
             >
-              <div className="text-6xl font-black text-accent group-hover:scale-110 transition-transform duration-300 flex-shrink-0">
+              <div className="text-6xl font-black text-gray-900 group-hover:scale-110 transition-transform duration-300 flex-shrink-0">
                 {module.number}
               </div>
               <div className="flex-1 pt-2">
-                <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-accent-dark transition-colors">
+                <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-gray-900 transition-colors">
                   {module.title}
                 </h3>
                 <p className="text-lg text-gray-600 mb-4">
                   {module.description}
                 </p>
               </div>
-              <div className="text-accent-dark font-bold text-lg bg-accent/20 px-4 py-2 rounded-xl flex-shrink-0 mt-2">
+              <div className="text-gray-900 font-bold text-lg bg-gray-100 px-4 py-2 rounded-xl flex-shrink-0 mt-2">
                 {module.duration}
               </div>
             </div>
@@ -75,7 +75,7 @@ const ProgramSection = () => {
         </div>
 
         <div className="text-center mt-12">
-          <div className="inline-flex items-center gap-2 bg-accent px-4 py-2 rounded-xl text-gray-900 font-semibold">
+          <div className="inline-flex items-center gap-2 bg-gray-100 px-4 py-2 rounded-xl text-gray-900 font-semibold">
             <span>🏆</span>
             <span>Сертификат о завершении курса</span>
           </div>
