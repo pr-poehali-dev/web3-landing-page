@@ -14,13 +14,13 @@ const BenefitsSection = () => {
     },
     {
       icon: "🚀",
-      title: "Актуальные технологии",
+      title: "Полный стек Web3",
       description:
-        "Solidity, Web3.js, MetaMask интеграция. Изучаешь то, что используют топовые компании.",
+        "От смарт-контрактов до фронтенда. Изучи создание dApp с интеграцией MetaMask и деплой в блокчейн.",
       image:
-        "https://cdn.poehali.dev/files/2f36bd41-b6b9-45fe-8ef0-d7a45f68bedf.png",
+        "https://cdn.poehali.dev/files/f02ce56d-d438-4b3c-bd18-dff024657621.png",
       thumbnail:
-        "https://cdn.poehali.dev/files/2f36bd41-b6b9-45fe-8ef0-d7a45f68bedf.png",
+        "https://cdn.poehali.dev/files/f02ce56d-d438-4b3c-bd18-dff024657621.png",
     },
     {
       icon: "💰",
