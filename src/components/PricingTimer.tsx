@@ -46,7 +46,7 @@ const PricingTimer = () => {
           </div>
 
           <h2 className="text-4xl md:text-6xl font-black mb-6 text-white">
-            Только <span className="text-neon-purple neon-text">199€</span>
+            Только <span className="text-neon-purple neon-text">199₽</span>
           </h2>
 
           <p className="text-xl text-gray-300 mb-8">
