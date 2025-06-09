@@ -134,8 +134,14 @@ const ContactForm = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full py-4 rounded-lg text-black font-semibold transition-all duration-200 disabled:opacity-50"
+                className="w-full py-4 rounded-lg text-black font-semibold transition-all duration-200 disabled:opacity-50 hover:text-white"
                 style={{ backgroundColor: "#ECF86E" }}
+                onMouseEnter={(e) =>
+                  (e.currentTarget.style.backgroundColor = "#F87250")
+                }
+                onMouseLeave={(e) =>
+                  (e.currentTarget.style.backgroundColor = "#ECF86E")
+                }
               >
                 Оставить заявку
               </button>

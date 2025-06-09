@@ -18,8 +18,14 @@ const CallToAction = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
             <Button
               size="lg"
-              className="text-black text-xl px-10 py-6 font-bold hover:opacity-90 transition-all duration-300"
+              className="text-black text-xl px-10 py-6 font-bold transition-all duration-300 hover:text-white"
               style={{ backgroundColor: "#ECF86E" }}
+              onMouseEnter={(e) =>
+                (e.currentTarget.style.backgroundColor = "#F87250")
+              }
+              onMouseLeave={(e) =>
+                (e.currentTarget.style.backgroundColor = "#ECF86E")
+              }
             >
               Записаться сейчас
             </Button>

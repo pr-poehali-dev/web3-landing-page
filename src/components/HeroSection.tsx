@@ -27,8 +27,14 @@ const HeroSection = () => {
             {/* CTA Button */}
             <Button
               size="lg"
-              className="text-black transition-all duration-300 text-lg px-8 py-4 font-semibold rounded-lg hover:opacity-90"
+              className="text-black transition-all duration-300 text-lg px-8 py-4 font-semibold rounded-lg hover:text-white"
               style={{ backgroundColor: "#ECF86E" }}
+              onMouseEnter={(e) =>
+                (e.currentTarget.style.backgroundColor = "#F87250")
+              }
+              onMouseLeave={(e) =>
+                (e.currentTarget.style.backgroundColor = "#ECF86E")
+              }
             >
               Оставить заявку
             </Button>
