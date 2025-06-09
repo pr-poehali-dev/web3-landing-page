@@ -1,50 +1,50 @@
 const TestimonialsSection = () => {
   const testimonials = [
     {
-      name: "Акбар Аблаев",
-      text: "Вместо поступления в университет решил пройти курсы по UX/UI дизайну в Uprock и сейчас получаю от 1000 руб/час.",
+      name: "Владимир Блокчейнов",
+      text: "После курса получил оффер в Binance на позицию Smart Contract Developer. Зарплата выросла в 5 раз!",
       avatar:
         "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face",
     },
     {
-      name: "Артем Якушев",
-      text: "Продал PS4 и купил курс в UPROCK. Теперь работаю в AVA Digital.",
+      name: "Анна Криптова",
+      text: "Создала свой NFT-маркетплейс на Ethereum. За первый месяц заработала больше, чем за год на прошлой работе.",
+      avatar:
+        "https://images.unsplash.com/photo-1494790108755-2616b332c1cd?w=100&h=100&fit=crop&crop=face",
+    },
+    {
+      name: "Дмитрий Солана",
+      text: "Запустил собственный DeFi-протокол на Solana. Курс дал все необходимые знания для работы с блокчейном.",
       avatar:
         "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face",
     },
     {
-      name: "Светлана Лян",
-      text: "Я не откликалась на вакансии самостоятельно: все предложения получила исключительно от школы. Сейчас работаю в ONLY.",
-      avatar:
-        "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop&crop=face",
-    },
-    {
-      name: "Ирина Никитина",
-      text: "Год назад была администратором в школе английского языка. Сейчас работаю в digital-агентстве Mish.",
-      avatar:
-        "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop&crop=face",
-    },
-    {
-      name: "Алексей Петров",
-      text: "Курс дал мне все необходимые знания для работы в Web3. Через месяц после окончания получил оффер в Binance!",
-      avatar:
-        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face",
-    },
-    {
-      name: "Мария Козлова",
-      text: "Отличная структура материала и практические задания. Создала свой NFT-проект, который приносит доход.",
+      name: "Екатерина Эфириум",
+      text: "Была бухгалтером, теперь разрабатываю смарт-контракты в Uniswap Labs. Web3 изменил мою жизнь!",
       avatar:
         "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face",
     },
     {
-      name: "Денис Волков",
-      text: "Лучший курс по Web3 на русском языке. Менторы всегда помогали, материал актуальный и понятный.",
+      name: "Максим Деценко",
+      text: "Создал токен, который попал в топ-100 CoinGecko. Курс научил меня токеномике и маркетингу в Web3.",
       avatar:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face",
+        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=face",
     },
     {
-      name: "Елена Сидорова",
-      text: "После курса запустила собственный DeFi-протокол. Знания применяю каждый день в работе.",
+      name: "Алиса Полигон",
+      text: "Получила работу в Chainlink сразу после выпуска. Менторы помогли подготовиться к техническому собеседованию.",
+      avatar:
+        "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop&crop=face",
+    },
+    {
+      name: "Роман Авакс",
+      text: "Построил GameFi-платформу на Avalanche с оборотом $2M. Лучшие инвестиции в образование!",
+      avatar:
+        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face",
+    },
+    {
+      name: "София Космос",
+      text: "Запустила кроссчейн-мост между Ethereum и Cosmos. Теперь консультирую крупные DeFi-протоколы.",
       avatar:
         "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop&crop=face",
     },
