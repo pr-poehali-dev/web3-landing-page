@@ -68,10 +68,7 @@ const ContactForm = () => {
                   required
                 />
                 <div className="absolute left-4 top-1/2 transform -translate-y-1/2 flex items-center">
-                  <div className="w-4 h-3 bg-white flex items-center justify-center rounded-sm mr-2">
-                    <div className="w-full h-1 bg-blue-600"></div>
-                    <div className="w-full h-1 bg-red-600"></div>
-                  </div>
+                  <span className="text-lg mr-2">🇷🇺</span>
                 </div>
               </div>
 
