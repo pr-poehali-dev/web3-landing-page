@@ -83,7 +83,7 @@ const TestimonialsSection = () => {
               Отзывы наших студентов
             </h2>
             <p className="text-gray-600 text-lg leading-relaxed">
-              Реальные истории успеха выпускников
+              Реальные истории успеха выпускников.
             </p>
           </div>
 

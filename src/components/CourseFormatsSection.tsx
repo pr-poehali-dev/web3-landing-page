@@ -6,7 +6,7 @@ const CourseFormatsSection = () => {
           className="text-4xl font-bold text-gray-900 mb-12"
           style={{ fontSize: "36px" }}
         >
-          Выберите любой формат курса
+          Бесплатный старт в любом формате. Какой выбрать — решите позже
         </h2>
 
         <div className="grid lg:grid-cols-2 gap-8">
