@@ -67,8 +67,8 @@ const TabbedSection = () => {
         </div>
 
         {/* Content */}
-        <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
-          <div>
+        <div className="grid lg:grid-cols-2 gap-12 items-start">
+          <div className="w-full">
             {activeTab === "Наставники" && (
               <>
                 <h3 className="text-3xl font-bold text-gray-900 mb-6">
@@ -131,7 +131,7 @@ const TabbedSection = () => {
             )}
           </div>
 
-          <div className="space-y-6">
+          <div className="space-y-6 w-full">
             {activeTab === "Наставники" &&
               mentors.map((mentor, index) => (
                 <div
