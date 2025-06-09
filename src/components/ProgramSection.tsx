@@ -60,7 +60,7 @@ const ProgramSection = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
             Программа курса
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl">
+          <p className="text-gray-600 max-w-2xl text-lg">
             6 модулей от теории до практики. 51 час контента + менторство
           </p>
         </div>
