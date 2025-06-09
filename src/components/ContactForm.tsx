@@ -49,7 +49,7 @@ const ContactForm = () => {
                 <input
                   type="text"
                   name="name"
-                  placeholder="ВВЕДИТЕ ИМЯ"
+                  placeholder="Введите имя"
                   value={formData.name}
                   onChange={handleInputChange}
                   className="w-full px-4 py-4 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-orange-500 transition-colors"
@@ -79,7 +79,7 @@ const ContactForm = () => {
                 <input
                   type="email"
                   name="email"
-                  placeholder="ВВЕДИТЕ EMAIL"
+                  placeholder="Введите email"
                   value={formData.email}
                   onChange={handleInputChange}
                   className="w-full px-4 py-4 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-orange-500 transition-colors"
@@ -91,7 +91,7 @@ const ContactForm = () => {
                 <input
                   type="text"
                   name="telegram"
-                  placeholder="@ЮЗЕРНЕЙМ TELEGRAM"
+                  placeholder="@юзернейм telegram"
                   value={formData.telegram}
                   onChange={handleInputChange}
                   className="w-full px-4 py-4 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-orange-500 transition-colors"
