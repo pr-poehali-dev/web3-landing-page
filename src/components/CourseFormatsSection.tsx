@@ -15,12 +15,10 @@ const CourseFormatsSection = () => {
               className="inline-block text-white px-3 py-1 rounded-md text-sm font-medium mb-4 w-fit"
               style={{ backgroundColor: "#F87250" }}
             >
-              Популярный выбор
+              -20% до 3 июля
             </div>
 
-            <div className="text-gray-600 text-sm mb-2">
-              Frontend-разработчик
-            </div>
+            <div className="text-gray-600 text-sm mb-2">Web3-разработчик</div>
             <h3 className="text-xl font-semibold text-gray-900 mb-6 h-[3rem] flex items-start">
               Создавайте современные веб-приложения с React и TypeScript
             </h3>
@@ -77,12 +75,11 @@ const CourseFormatsSection = () => {
               className="inline-block text-white px-3 py-1 rounded-md text-sm font-medium mb-4 w-fit"
               style={{ backgroundColor: "#F87250" }}
             >
-              Популярный выбор
+              -11% до 3 июля
             </div>
 
             <div className="text-gray-600 text-sm mb-2 flex items-center">
-              Fullstack-разработчик
-              <span className="ml-1 text-blue-500">★</span>
+              Web3-разработчик расширенный
             </div>
             <h3 className="text-xl font-semibold text-gray-900 mb-6 h-[3rem] flex items-start">
               Полный стек разработки: от интерфейса до сервера и базы данных
