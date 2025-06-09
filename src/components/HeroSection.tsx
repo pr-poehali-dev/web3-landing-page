@@ -20,7 +20,7 @@ const HeroSection = () => {
 
               <p className="md:text-xl text-gray-300 mt-6 leading-relaxed max-w-lg text-base">
                 Освойте полный цикл блокчейн-разработки и криптовалют — с нуля
-                за 6 недель. Получите реальный опыт.
+                за 6 недель.
               </p>
             </div>
 
@@ -30,7 +30,7 @@ const HeroSection = () => {
               className="text-black transition-all duration-300 text-lg px-8 py-4 font-semibold rounded-lg hover:opacity-90"
               style={{ backgroundColor: "#ECF86E" }}
             >
-              Записаться на курс
+              Оставить заявку
             </Button>
 
             {/* Additional Info */}
