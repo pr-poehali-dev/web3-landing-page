@@ -49,12 +49,12 @@ const TabbedSection = () => {
         </div>
 
         {/* Tabs */}
-        <div className="flex flex-wrap justify-center gap-3 mb-16">
+        <div className="flex justify-between gap-2 mb-16 w-full">
           {tabs.map((tab) => (
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
-              className={`px-6 py-3 rounded-lg font-medium transition-all duration-300 cursor-pointer ${
+              className={`flex-1 px-4 py-3 rounded-lg font-medium transition-all duration-300 cursor-pointer text-center ${
                 activeTab === tab
                   ? "bg-[#ECF86E] text-gray-900 shadow-lg"
                   : "bg-gray-100 border border-gray-200 text-gray-600 hover:text-gray-900 hover:bg-[#ECF86E]"
