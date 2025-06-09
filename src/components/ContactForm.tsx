@@ -32,7 +32,7 @@ const ContactForm = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           {/* Левая колонка с заголовком */}
           <div className="lg:pt-0">
-            <h2 className="md:text-5xl font-bold text-white mb-4 leading-tight text-6xl">
+            <h2 className="md:text-8xl font-bold text-white mb-4 leading-tight text-9xl">
               Получить консультацию по обучению
             </h2>
             <p className="text-gray-400 text-lg">
