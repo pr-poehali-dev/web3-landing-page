@@ -55,54 +55,59 @@ const ProgramSection = () => {
 
   return (
     <section className="py-20 bg-gradient-to-b from-white to-gray-50">
-      <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-7xl">
-        <div className="mb-8 text-left">
+      <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-4xl">
+        <div className="mb-12 text-left">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
             Программа курса
           </h2>
-          <p className="text-gray-600 max-w-2xl text-base">
+          <p className="text-gray-600 max-w-2xl text-lg">
             6 модулей от теории до практики. 51 час контента + менторство
           </p>
         </div>
 
-        <div className="space-y-6">
+        <div className="space-y-4">
           {modules.map((module, index) => (
             <div
               key={index}
-              className={`grid grid-cols-[80px_1fr_200px] items-center gap-8 pl-0 py-8 hover:bg-white/50 rounded-2xl transition-all duration-300 group cursor-pointer`}
-              style={
+              className={`flex items-center justify-between p-6 bg-white rounded-xl hover:shadow-lg transition-all duration-300 group cursor-pointer border border-gray-100 ${
                 module.isSpecial
-                  ? {
-                      backgroundImage:
-                        "url(https://cdn.poehali.dev/files/cc2fe8c1-7721-4026-a0dc-34c00ef9f456.png)",
-                      backgroundSize: "cover",
-                      backgroundPosition: "center",
-                      backgroundRepeat: "no-repeat",
-                    }
-                  : {}
-              }
+                  ? "bg-gradient-to-r from-blue-50 to-indigo-50 border-blue-200"
+                  : ""
+              }`}
             >
-              <div className="text-6xl font-bold text-gray-500 opacity-50 group-hover:scale-110 transition-transform duration-300">
-                {module.isSpecial ? "" : module.number}
-              </div>
-              <div className="py-0">
-                <h3 className="font-bold text-gray-900 group-hover:text-gray-900 transition-colors text-2xl my-0 mx-[133px]">
-                  {module.title}
-                </h3>
-                <p className="text-gray-600 text-base my-0 mx-[133px]">
-                  {module.description}
-                </p>
-              </div>
-              <div
-                className={`space-y-2 py-0 my-0 mx-[5px] px-0 ${module.isSpecial ? "hidden" : ""}`}
-              >
-                <div className="text-gray-500 font-medium text-lg bg-gray-100 rounded-xl text-center pr-0">
-                  {module.duration}
+              <div className="flex items-center flex-1">
+                <div className="w-16 mr-8">
+                  <span className="text-4xl font-bold text-gray-300 group-hover:text-gray-400 transition-colors">
+                    {module.isSpecial ? "🎓" : module.number}
+                  </span>
                 </div>
-                <div className="text-gray-500 font-medium text-lg bg-gray-100 rounded-xl text-center pr-0">
-                  {module.projects}
+                <div className="flex-1">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
+                    {module.title}
+                  </h3>
+                  <p className="text-gray-600 text-base leading-relaxed">
+                    {module.description}
+                  </p>
                 </div>
               </div>
+
+              {!module.isSpecial && (
+                <div className="text-right ml-8 space-y-1">
+                  <div className="text-sm font-medium text-gray-900">
+                    {module.duration}
+                  </div>
+                  <div className="text-sm text-gray-500">{module.projects}</div>
+                </div>
+              )}
+
+              {module.isSpecial && (
+                <div className="text-right ml-8">
+                  <div className="text-sm font-medium text-blue-600">
+                    {module.duration}
+                  </div>
+                  <div className="text-sm text-blue-500">{module.projects}</div>
+                </div>
+              )}
             </div>
           ))}
         </div>
