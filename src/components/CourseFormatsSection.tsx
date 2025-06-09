@@ -3,22 +3,22 @@ const CourseFormatsSection = () => {
     <section className="bg-gray-50 py-16">
       <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-7xl">
         <h2
-          className="text-4xl font-bold text-gray-900 mb-12 text-center"
+          className="text-4xl font-bold text-gray-900 mb-12"
           style={{ fontSize: "36px" }}
         >
           Выберите свой путь в веб-разработке
         </h2>
 
         <div className="grid lg:grid-cols-2 gap-8">
-          <div className="bg-white rounded-2xl p-8 shadow-sm">
-            <div className="inline-block bg-blue-500 text-white px-3 py-1 rounded-md text-sm font-medium mb-4">
+          <div className="bg-white rounded-2xl p-8 shadow-sm h-full flex flex-col">
+            <div className="inline-block bg-blue-500 text-white px-3 py-1 rounded-md text-sm font-medium mb-4 w-fit">
               Популярный выбор
             </div>
 
             <div className="text-gray-600 text-sm mb-2">
               Frontend-разработчик
             </div>
-            <h3 className="text-xl font-semibold text-gray-900 mb-6 min-h-[3rem]">
+            <h3 className="text-xl font-semibold text-gray-900 mb-6 h-[3rem] flex items-start">
               Создавайте современные веб-приложения с React и TypeScript
             </h3>
 
@@ -29,7 +29,7 @@ const CourseFormatsSection = () => {
                   29 900 ₽/мес
                 </span>
               </div>
-              <div className="text-gray-600 text-sm min-h-[2.5rem]">
+              <div className="text-gray-600 text-sm h-[2.5rem] flex items-start">
                 при оплате частями в течение 10 месяцев
                 <br />
                 или единоразово — 240 000 ₽ со скидкой
@@ -40,7 +40,7 @@ const CourseFormatsSection = () => {
               Начать бесплатно
             </button>
 
-            <div className="space-y-4 text-sm text-gray-700 min-h-[6rem]">
+            <div className="space-y-4 text-sm text-gray-700 h-[6rem] flex flex-col justify-start">
               <div>
                 React, TypeScript, HTML5, CSS3, JavaScript ES6+, Tailwind CSS,
                 адаптивная верстка, работа с API
@@ -50,7 +50,7 @@ const CourseFormatsSection = () => {
               </div>
             </div>
 
-            <div className="flex items-start gap-3 mt-6 p-4 bg-gray-50 rounded-xl">
+            <div className="flex items-start gap-3 mt-6 p-4 bg-gray-50 rounded-xl mt-auto">
               <div className="w-6 h-6 bg-green-400 rounded-full flex-shrink-0 flex items-center justify-center">
                 <span className="text-xs font-bold">✓</span>
               </div>
@@ -66,7 +66,7 @@ const CourseFormatsSection = () => {
             </div>
           </div>
 
-          <div className="bg-white rounded-2xl p-8 shadow-sm border-2 border-blue-200 relative">
+          <div className="bg-white rounded-2xl p-8 shadow-sm border-2 border-blue-200 relative h-full flex flex-col">
             <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
               <div className="bg-blue-500 text-white px-4 py-1 rounded-full text-sm font-medium">
                 Рекомендуем
@@ -77,7 +77,7 @@ const CourseFormatsSection = () => {
               Fullstack-разработчик
               <span className="ml-1 text-blue-500">★</span>
             </div>
-            <h3 className="text-xl font-semibold text-gray-900 mb-6 min-h-[3rem]">
+            <h3 className="text-xl font-semibold text-gray-900 mb-6 h-[3rem] flex items-start">
               Полный стек разработки: от интерфейса до сервера и базы данных
             </h3>
 
@@ -88,7 +88,7 @@ const CourseFormatsSection = () => {
                   39 900 ₽/мес
                 </span>
               </div>
-              <div className="text-gray-600 text-sm min-h-[2.5rem]">
+              <div className="text-gray-600 text-sm h-[2.5rem] flex items-start">
                 при оплате частями в течение 12 месяцев
                 <br />
                 или единоразово — 380 000 ₽ со скидкой
@@ -99,7 +99,7 @@ const CourseFormatsSection = () => {
               Начать бесплатно
             </button>
 
-            <div className="space-y-4 text-sm text-gray-700 min-h-[6rem]">
+            <div className="space-y-4 text-sm text-gray-700 h-[6rem] flex flex-col justify-start">
               <div>
                 Всё из базового курса +
                 <span className="font-medium"> Backend разработка:</span>
@@ -111,7 +111,7 @@ const CourseFormatsSection = () => {
               </div>
             </div>
 
-            <div className="flex items-start gap-3 mt-6 p-4 bg-blue-50 rounded-xl">
+            <div className="flex items-start gap-3 mt-6 p-4 bg-blue-50 rounded-xl mt-auto">
               <div className="w-6 h-6 bg-blue-500 rounded-full flex-shrink-0 flex items-center justify-center">
                 <span className="text-xs text-white">★</span>
               </div>
