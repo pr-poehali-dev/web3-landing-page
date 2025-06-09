@@ -108,10 +108,8 @@ const CourseFormatsSection = () => {
 
             <div className="space-y-4 text-sm text-gray-700 h-[6rem] flex flex-col justify-start">
               <div>
-                Всё из базового курса +
-                <span className="font-medium"> Backend разработка:</span>
-                Node.js, Express, MongoDB, PostgreSQL, API разработка, DevOps
-                основы
+                Всё из базового курса + 2 дополнительных модуля: React +
+                TypeScript, Tailwind CSS, Web3 Integration
               </div>
               <div className="font-medium">
                 10 проектов в портфолио + стажировка в реальном проекте
