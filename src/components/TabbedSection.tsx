@@ -136,7 +136,7 @@ const TabbedSection = () => {
               mentors.map((mentor, index) => (
                 <div
                   key={index}
-                  className="bg-white border border-gray-200 p-6 rounded-xl hover:border-gray-300 transition-all duration-300 group cursor-pointer py-0"
+                  className="bg-white p-6 rounded-xl hover:shadow-md transition-all duration-300 group cursor-pointer py-0"
                 >
                   <div className="flex items-center gap-4">
                     <img
@@ -185,7 +185,7 @@ const TabbedSection = () => {
               ].map((reviewer, index) => (
                 <div
                   key={index}
-                  className="bg-white border border-gray-200 p-6 rounded-xl hover:border-gray-300 transition-all duration-300 group cursor-pointer"
+                  className="bg-white p-6 rounded-xl hover:shadow-md transition-all duration-300 group cursor-pointer"
                 >
                   <div className="flex items-center gap-4">
                     <img
@@ -234,7 +234,7 @@ const TabbedSection = () => {
               ].map((curator, index) => (
                 <div
                   key={index}
-                  className="bg-white border border-gray-200 p-6 rounded-xl hover:border-gray-300 transition-all duration-300 group cursor-pointer"
+                  className="bg-white p-6 rounded-xl hover:shadow-md transition-all duration-300 group cursor-pointer"
                 >
                   <div className="flex items-center gap-4">
                     <img
