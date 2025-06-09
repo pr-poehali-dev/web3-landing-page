@@ -6,6 +6,7 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 import CourseFormatsSection from "@/components/CourseFormatsSection";
 import FAQSection from "@/components/FAQSection";
 import ContactForm from "@/components/ContactForm";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
@@ -18,6 +19,7 @@ const Index = () => {
       <TestimonialsSection />
       <CourseFormatsSection />
       <FAQSection />
+      <Footer />
     </div>
   );
 };
