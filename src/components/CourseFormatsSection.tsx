@@ -11,7 +11,10 @@ const CourseFormatsSection = () => {
 
         <div className="grid lg:grid-cols-2 gap-8">
           <div className="bg-white rounded-2xl p-8 shadow-sm h-full flex flex-col">
-            <div className="inline-block bg-blue-500 text-white px-3 py-1 rounded-md text-sm font-medium mb-4 w-fit">
+            <div
+              className="inline-block text-white px-3 py-1 rounded-md text-sm font-medium mb-4 w-fit"
+              style={{ backgroundColor: "#F87250" }}
+            >
               Популярный выбор
             </div>
 
@@ -36,7 +39,10 @@ const CourseFormatsSection = () => {
               </div>
             </div>
 
-            <button className="w-full bg-gray-900 text-white py-4 px-6 rounded-xl font-medium hover:bg-gray-800 transition-colors mb-6">
+            <button
+              className="w-full text-white py-4 px-6 rounded-xl font-medium hover:opacity-90 transition-opacity mb-6"
+              style={{ backgroundColor: "#111827" }}
+            >
               Начать бесплатно
             </button>
 
@@ -66,14 +72,15 @@ const CourseFormatsSection = () => {
             </div>
           </div>
 
-          <div className="bg-white rounded-2xl p-8 shadow-sm border-2 border-blue-200 relative h-full flex flex-col">
-            <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-              <div className="bg-blue-500 text-white px-4 py-1 rounded-full text-sm font-medium">
-                Рекомендуем
-              </div>
+          <div className="bg-white rounded-2xl p-8 shadow-sm h-full flex flex-col">
+            <div
+              className="inline-block text-white px-3 py-1 rounded-md text-sm font-medium mb-4 w-fit"
+              style={{ backgroundColor: "#F87250" }}
+            >
+              Популярный выбор
             </div>
 
-            <div className="text-gray-600 text-sm mb-2 flex items-center pt-2">
+            <div className="text-gray-600 text-sm mb-2 flex items-center">
               Fullstack-разработчик
               <span className="ml-1 text-blue-500">★</span>
             </div>
@@ -95,7 +102,10 @@ const CourseFormatsSection = () => {
               </div>
             </div>
 
-            <button className="w-full bg-blue-600 text-white py-4 px-6 rounded-xl font-medium hover:bg-blue-700 transition-colors mb-6">
+            <button
+              className="w-full text-white py-4 px-6 rounded-xl font-medium hover:opacity-90 transition-opacity mb-6"
+              style={{ backgroundColor: "#111827" }}
+            >
               Начать бесплатно
             </button>
 
