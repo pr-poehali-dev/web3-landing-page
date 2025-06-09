@@ -70,10 +70,9 @@ const ProgramSection = () => {
             <div
               key={index}
               className={`flex items-center justify-between p-6 bg-white rounded-xl hover:shadow-lg transition-all duration-300 group cursor-pointer border border-gray-100 ${
-                module.isSpecial
-                  ? "bg-gradient-to-r from-blue-50 to-indigo-50 border-blue-200"
-                  : ""
+                module.isSpecial ? "border-lime-200" : ""
               }`}
+              style={module.isSpecial ? { backgroundColor: "#F3F9B4" } : {}}
             >
               <div className="flex items-center flex-1">
                 <div className="w-16 mr-8">
