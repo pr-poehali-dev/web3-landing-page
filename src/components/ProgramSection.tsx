@@ -81,7 +81,7 @@ const ProgramSection = () => {
                   </span>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors mx-[276px]">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2 group-hover:text-[#111827] transition-colors mx-[276px]">
                     {module.title}
                   </h3>
                   <p className="text-gray-600 text-base leading-relaxed mx-[276px]">
@@ -101,10 +101,12 @@ const ProgramSection = () => {
 
               {module.isSpecial && (
                 <div className="text-right ml-8">
-                  <div className="text-sm font-medium text-blue-600">
+                  <div className="text-sm font-medium text-[#111827]">
                     {module.duration}
                   </div>
-                  <div className="text-sm text-blue-500">{module.projects}</div>
+                  <div className="text-sm text-[#111827]">
+                    {module.projects}
+                  </div>
                 </div>
               )}
             </div>
