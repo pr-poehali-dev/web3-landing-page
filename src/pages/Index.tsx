@@ -5,8 +5,6 @@ import TabbedSection from "@/components/TabbedSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import CourseFormatsSection from "@/components/CourseFormatsSection";
 import ContactForm from "@/components/ContactForm";
-import PricingTimer from "@/components/PricingTimer";
-import CallToAction from "@/components/CallToAction";
 
 const Index = () => {
   return (
@@ -18,8 +16,6 @@ const Index = () => {
       <ContactForm />
       <TestimonialsSection />
       <CourseFormatsSection />
-      <PricingTimer />
-      <CallToAction />
     </div>
   );
 };
