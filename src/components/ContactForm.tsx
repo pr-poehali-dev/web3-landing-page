@@ -97,11 +97,11 @@ const ContactForm = () => {
                 />
               </div>
 
-              <div className="flex items-start space-x-3">
+              <div className="flex items-center space-x-3">
                 <button
                   type="button"
                   onClick={() => setIsAgreed(!isAgreed)}
-                  className={`mt-1 flex-shrink-0 w-5 h-5 border-2 rounded flex items-center justify-center transition-colors ${
+                  className={`flex-shrink-0 w-5 h-5 border-2 rounded flex items-center justify-center transition-colors ${
                     isAgreed
                       ? "bg-orange-500 border-orange-500"
                       : "border-gray-600 bg-transparent"
@@ -123,7 +123,7 @@ const ContactForm = () => {
                     </svg>
                   )}
                 </button>
-                <p className="text-sm text-gray-400">
+                <p className="text-sm text-gray-400 leading-5">
                   Я соглашаюсь на обработку{" "}
                   <span className="text-white underline cursor-pointer">
                     персональных данных
