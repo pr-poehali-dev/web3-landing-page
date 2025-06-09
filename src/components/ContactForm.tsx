@@ -27,26 +27,26 @@ const ContactForm = () => {
   };
 
   return (
-    <section className="py-20 bg-gray-900">
+    <section className="py-12 md:py-16 lg:py-20 bg-gray-900">
       <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-7xl">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-10 lg:gap-12 items-start">
           {/* Левая колонка с заголовком */}
           <div className="lg:pt-0">
-            <h2 className="md:text-6xl font-bold text-white mb-4 leading-tight text-7xl">
+            <h2 className="text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-3 md:mb-4 leading-tight">
               Получить консультацию
-              <br />
-              по обучению
+              <br className="hidden md:block" />
+              <span className="md:hidden"> </span>по обучению
             </h2>
-            <p className="text-gray-400 text-lg">
+            <p className="text-gray-400 text-base md:text-lg">
               Наш менеджер свяжется с вами в течение 30 минут.
             </p>
           </div>
 
           {/* Правая колонка с формой */}
           <div>
-            <h3 className="text-xl font-semibold text-white mb-0"></h3>
+            <h3 className="text-lg md:text-xl font-semibold text-white mb-0"></h3>
 
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6">
               <div>
                 <input
                   type="text"
@@ -54,7 +54,7 @@ const ContactForm = () => {
                   placeholder="Введите имя"
                   value={formData.name}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-4 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-orange-500 transition-colors"
+                  className="w-full px-3 md:px-4 py-3 md:py-4 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-orange-500 transition-colors text-sm md:text-base"
                   required
                 />
               </div>
@@ -66,11 +66,11 @@ const ContactForm = () => {
                   placeholder="+7 989 297-15-01"
                   value={formData.phone}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-4 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-orange-500 transition-colors pl-12"
+                  className="w-full px-3 md:px-4 py-3 md:py-4 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-orange-500 transition-colors pl-10 md:pl-12 text-sm md:text-base"
                   required
                 />
-                <div className="absolute left-4 top-1/2 transform -translate-y-1/2 flex items-center">
-                  <span className="text-lg mr-2">🇷🇺</span>
+                <div className="absolute left-3 md:left-4 top-1/2 transform -translate-y-1/2 flex items-center">
+                  <span className="text-base md:text-lg mr-1 md:mr-2">🇷🇺</span>
                 </div>
               </div>
 
@@ -81,7 +81,7 @@ const ContactForm = () => {
                   placeholder="Введите email"
                   value={formData.email}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-4 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-orange-500 transition-colors"
+                  className="w-full px-3 md:px-4 py-3 md:py-4 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-orange-500 transition-colors text-sm md:text-base"
                   required
                 />
               </div>
@@ -93,15 +93,15 @@ const ContactForm = () => {
                   placeholder="@юзернейм telegram"
                   value={formData.telegram}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-4 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-orange-500 transition-colors"
+                  className="w-full px-3 md:px-4 py-3 md:py-4 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-orange-500 transition-colors text-sm md:text-base"
                 />
               </div>
 
-              <div className="flex items-center space-x-3">
+              <div className="flex items-start space-x-3">
                 <button
                   type="button"
                   onClick={() => setIsAgreed(!isAgreed)}
-                  className={`flex-shrink-0 w-5 h-5 border-2 rounded flex items-center justify-center transition-colors ${
+                  className={`flex-shrink-0 w-4 h-4 md:w-5 md:h-5 border-2 rounded flex items-center justify-center transition-colors mt-0.5 ${
                     isAgreed
                       ? "bg-orange-500 border-orange-500"
                       : "border-gray-600 bg-transparent"
@@ -109,7 +109,7 @@ const ContactForm = () => {
                 >
                   {isAgreed && (
                     <svg
-                      className="w-3 h-3 text-white"
+                      className="w-2 h-2 md:w-3 md:h-3 text-white"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -123,7 +123,7 @@ const ContactForm = () => {
                     </svg>
                   )}
                 </button>
-                <p className="text-sm text-gray-400 leading-5">
+                <p className="text-xs md:text-sm text-gray-400 leading-5">
                   Я соглашаюсь на обработку{" "}
                   <span className="text-white underline cursor-pointer">
                     персональных данных
@@ -134,7 +134,7 @@ const ContactForm = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full py-4 rounded-lg text-black font-semibold transition-all duration-200 disabled:opacity-50 hover:text-white"
+                className="w-full py-3 md:py-4 rounded-lg text-black font-semibold transition-all duration-200 disabled:opacity-50 hover:text-white text-sm md:text-base"
                 style={{ backgroundColor: "#ECF86E" }}
                 onMouseEnter={(e) =>
                   (e.currentTarget.style.backgroundColor = "#F87250")

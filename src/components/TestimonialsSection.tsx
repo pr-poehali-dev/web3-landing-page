@@ -74,22 +74,22 @@ const TestimonialsSection = () => {
   );
 
   return (
-    <section className="bg-white py-[102px]">
+    <section className="bg-white py-16 md:py-20 lg:py-[102px]">
       <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-7xl">
-        <div className="grid lg:grid-cols-2 gap-16 items-start">
+        <div className="grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-start">
           {/* Левая колонка - заголовок */}
           <div className="lg:sticky lg:top-20">
-            <h2 className="text-[36px] font-bold text-gray-900 mb-4">
+            <h2 className="text-2xl md:text-3xl lg:text-[36px] font-bold text-gray-900 mb-3 md:mb-4">
               Отзывы наших студентов
             </h2>
-            <p className="text-gray-600 text-lg leading-relaxed">
+            <p className="text-gray-600 text-base md:text-lg leading-relaxed">
               Реальные истории успеха выпускников.
             </p>
           </div>
 
           {/* Правая колонка - отзывы с автопрокруткой */}
           <div className="relative">
-            <div className="h-96 overflow-hidden relative">
+            <div className="h-80 md:h-96 overflow-hidden relative">
               <div className="animate-scroll-up">
                 {duplicatedTestimonials.map((testimonial, index) => (
                   <TestimonialCard key={index} testimonial={testimonial} />

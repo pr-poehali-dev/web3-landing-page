@@ -45,30 +45,34 @@ const faqData = [
 
 const FAQSection = () => {
   return (
-    <section className="bg-white py-[102px]">
+    <section className="bg-white py-16 md:py-20 lg:py-[102px]">
       <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-7xl">
-        <div className="grid lg:grid-cols-2 gap-16 items-start">
+        <div className="grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-start">
           {/* Левая колонка - заголовок */}
           <div className="lg:sticky lg:top-20">
-            <h2 className="text-[36px] font-bold text-gray-900 mb-4">
+            <h2 className="text-2xl md:text-3xl lg:text-[36px] font-bold text-gray-900 mb-3 md:mb-4">
               Частые вопросы
             </h2>
-            <p className="text-gray-600 text-lg leading-relaxed"></p>
+            <p className="text-gray-600 text-base md:text-lg leading-relaxed"></p>
           </div>
 
           {/* Правая колонка - FAQ */}
           <div>
-            <Accordion type="single" collapsible className="w-full space-y-4">
+            <Accordion
+              type="single"
+              collapsible
+              className="w-full space-y-3 md:space-y-4"
+            >
               {faqData.map((faq, index) => (
                 <AccordionItem
                   key={index}
                   value={`item-${index}`}
-                  className="rounded-lg px-6 border-0 py-0"
+                  className="rounded-lg px-4 md:px-6 border-0 py-0"
                 >
-                  <AccordionTrigger className="text-left text-lg font-medium text-gray-900 hover:no-underline hover:text-gray-700 py-6">
+                  <AccordionTrigger className="text-left text-base md:text-lg font-medium text-gray-900 hover:no-underline hover:text-gray-700 py-4 md:py-6">
                     {faq.question}
                   </AccordionTrigger>
-                  <AccordionContent className="text-gray-600 text-base leading-relaxed pb-6">
+                  <AccordionContent className="text-gray-600 text-sm md:text-base leading-relaxed pb-4 md:pb-6">
                     {faq.answer}
                   </AccordionContent>
                 </AccordionItem>
