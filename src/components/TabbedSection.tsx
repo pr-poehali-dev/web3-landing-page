@@ -57,7 +57,7 @@ const TabbedSection = () => {
               className={`flex-1 px-4 py-3 rounded-lg font-medium transition-all duration-300 cursor-pointer text-center ${
                 activeTab === tab
                   ? "bg-[#ECF86E] text-gray-900 shadow-lg"
-                  : "bg-gray-100 border border-gray-200 text-gray-600 hover:text-gray-900 hover:bg-[#ECF86E]"
+                  : "bg-gray-100 border border-gray-200 text-gray-600 hover:text-white hover:bg-[#F87250]"
               }`}
               type="button"
             >
