@@ -77,7 +77,7 @@ const ProgramSection = () => {
             >
               <div className="flex items-center flex-1">
                 <div className="w-16 mr-8">
-                  <span className="text-4xl font-bold text-gray-300 group-hover:text-gray-400 transition-colors">
+                  <span className="font-bold text-gray-300 group-hover:text-gray-400 transition-colors text-7xl">
                     {module.isSpecial ? "🎓" : module.number}
                   </span>
                 </div>
