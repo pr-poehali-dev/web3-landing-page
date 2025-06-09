@@ -53,9 +53,7 @@ const FAQSection = () => {
             <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
               Частые вопросы
             </h2>
-            <p className="text-gray-600 text-lg leading-relaxed">
-              Бесплатный старт в любом формате. Какой выбрать — решите позже.
-            </p>
+            <p className="text-gray-600 text-lg leading-relaxed"></p>
           </div>
 
           {/* Правая колонка - FAQ */}
