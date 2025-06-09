@@ -82,10 +82,10 @@ const ProgramSection = () => {
                   </span>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors mx-[287px]">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors mx-[276px]">
                     {module.title}
                   </h3>
-                  <p className="text-gray-600 text-base leading-relaxed">
+                  <p className="text-gray-600 text-base leading-relaxed mx-[276px]">
                     {module.description}
                   </p>
                 </div>
