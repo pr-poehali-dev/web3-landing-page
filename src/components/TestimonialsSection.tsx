@@ -16,7 +16,7 @@ const TestimonialsSection = () => {
       name: "Светлана Лян",
       text: "Я не откликалась на вакансии самостоятельно: все предложения получила исключительно от школы. Сейчас работаю в ONLY.",
       avatar:
-        "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100&h=100&fit=crop&crop=face",
+        "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop&crop=face",
     },
     {
       name: "Ирина Никитина",
@@ -46,7 +46,7 @@ const TestimonialsSection = () => {
       name: "Елена Сидорова",
       text: "После курса запустила собственный DeFi-протокол. Знания применяю каждый день в работе.",
       avatar:
-        "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100&h=100&fit=crop&crop=face",
+        "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop&crop=face",
     },
   ];
 
