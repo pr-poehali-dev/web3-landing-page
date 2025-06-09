@@ -133,12 +133,9 @@ const ContactForm = () => {
 
               <button
                 type="submit"
-                disabled={!isAgreed}
-                className={`w-full py-4 rounded-full font-semibold text-lg transition-all duration-300 ${
-                  isAgreed
-                    ? "bg-orange-500 hover:bg-orange-600 text-white"
-                    : "bg-gray-700 text-gray-500 cursor-not-allowed"
-                }`}
+                disabled={isSubmitting}
+                className="w-full py-4 rounded-lg text-black font-semibold transition-all duration-200 disabled:opacity-50"
+                style={{ backgroundColor: "#ECF86E" }}
               >
                 Оставить заявку
               </button>
