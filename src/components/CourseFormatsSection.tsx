@@ -2,7 +2,10 @@ const CourseFormatsSection = () => {
   return (
     <section className="bg-gray-50 py-16">
       <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-7xl">
-        <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-12">
+        <h2
+          className="text-4xl font-bold text-gray-900 mb-12"
+          style={{ fontSize: "36px" }}
+        >
           Выберите любой формат курса
         </h2>
 
