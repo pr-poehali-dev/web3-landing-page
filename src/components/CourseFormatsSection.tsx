@@ -20,7 +20,7 @@ const CourseFormatsSection = () => {
 
             <div className="text-gray-600 text-sm mb-2">Web3-разработчик</div>
             <h3 className="text-xl font-semibold text-gray-900 mb-6 h-[3rem] flex items-start">
-              Создавайте современные веб-приложения с React и TypeScript
+              Разработка dApps и интеграция со смарт-контрактами
             </h3>
 
             <div className="mb-6">
@@ -82,7 +82,7 @@ const CourseFormatsSection = () => {
               Web3-разработчик расширенный
             </div>
             <h3 className="text-xl font-semibold text-gray-900 mb-6 h-[3rem] flex items-start">
-              Полный стек разработки: от интерфейса до сервера и базы данных
+              Fullstack Web3: от DeFi протоколов до NFT маркетплейсов
             </h3>
 
             <div className="mb-6">
