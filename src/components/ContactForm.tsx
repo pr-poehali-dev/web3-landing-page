@@ -41,9 +41,7 @@ const ContactForm = () => {
 
           {/* Правая колонка с формой */}
           <div>
-            <h3 className="text-xl font-semibold text-white mb-8">
-              Заполните контактные данные
-            </h3>
+            <h3 className="text-xl font-semibold text-white mb-8"></h3>
 
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
