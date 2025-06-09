@@ -110,7 +110,11 @@ const BenefitsSection = () => {
                     <img
                       src={benefit.thumbnail}
                       alt={benefit.title}
-                      className="w-24 h-16 object-cover"
+                      className={`w-20 h-14 object-cover rounded-md cursor-pointer transition-all duration-300 ${
+                        index === activeIndex
+                          ? "ring-2 ring-[#ECF86E] ring-offset-2"
+                          : "opacity-70 hover:opacity-100"
+                      }`}
                     />
                   </div>
                   {activeIndex === index && (
