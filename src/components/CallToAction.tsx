@@ -18,7 +18,7 @@ const CallToAction = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
             <Button
               size="lg"
-              className="text-black text-xl px-10 py-6 font-bold transition-all duration-300 hover:text-white"
+              className="text-black px-10 py-6 font-bold transition-all duration-300 hover:text-white"
               style={{ backgroundColor: "#ECF86E" }}
               onMouseEnter={(e) =>
                 (e.currentTarget.style.backgroundColor = "#F87250")
@@ -33,7 +33,7 @@ const CallToAction = () => {
             <Button
               variant="outline"
               size="lg"
-              className="border-[#7B68EE] text-[#7B68EE] hover:bg-[#7B68EE] hover:text-white transition-all duration-300 text-lg px-8 py-6"
+              className="border-[#7B68EE] text-[#7B68EE] hover:bg-[#7B68EE] hover:text-white transition-all duration-300 px-8 py-6"
             >
               📞 Получить консультацию
             </Button>
