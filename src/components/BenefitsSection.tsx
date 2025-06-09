@@ -94,7 +94,7 @@ const BenefitsSection = () => {
                   onClick={() => setActiveIndex(index)}
                   className={`relative transition-all duration-500 ease-in-out ${
                     activeIndex === index
-                      ? "ring-2 ring-gray-900 scale-105"
+                      ? "scale-105"
                       : "opacity-70 hover:opacity-100"
                   }`}
                 >
