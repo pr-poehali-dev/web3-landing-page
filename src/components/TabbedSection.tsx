@@ -136,7 +136,7 @@ const TabbedSection = () => {
               mentors.map((mentor, index) => (
                 <div
                   key={index}
-                  className="bg-white border border-gray-200 p-6 rounded-xl hover:border-gray-300 transition-all duration-300 group cursor-pointer"
+                  className="bg-white border border-gray-200 p-6 rounded-xl hover:border-gray-300 transition-all duration-300 group cursor-pointer py-0"
                 >
                   <div className="flex items-center gap-4">
                     <img
