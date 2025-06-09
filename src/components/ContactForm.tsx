@@ -29,10 +29,10 @@ const ContactForm = () => {
   return (
     <section className="py-20 bg-gray-900">
       <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-7xl">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           {/* Левая колонка с заголовком */}
-          <div>
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+          <div className="lg:pt-0">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">
               Получить консультацию по обучению
             </h2>
             <p className="text-gray-400 text-lg">
@@ -42,7 +42,7 @@ const ContactForm = () => {
 
           {/* Правая колонка с формой */}
           <div>
-            <h3 className="text-xl font-semibold text-white mb-8"></h3>
+            <h3 className="text-xl font-semibold text-white mb-0"></h3>
 
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
