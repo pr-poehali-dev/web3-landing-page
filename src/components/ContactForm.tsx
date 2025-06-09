@@ -60,18 +60,18 @@ const ContactForm = () => {
               </div>
 
               <div className="relative">
-                <div className="absolute left-4 top-1/2 transform -translate-y-1/2 flex items-center z-10">
-                  <span className="text-lg">🇷🇺</span>
-                </div>
                 <input
                   type="tel"
                   name="phone"
                   placeholder="+7 989 297-15-01"
                   value={formData.phone}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-4 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-orange-500 transition-colors pl-14"
+                  className="w-full px-4 py-4 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-orange-500 transition-colors pl-12"
                   required
                 />
+                <div className="absolute left-4 top-1/2 transform -translate-y-1/2 flex items-center">
+                  <span className="text-lg mr-2">🇷🇺</span>
+                </div>
               </div>
 
               <div>
