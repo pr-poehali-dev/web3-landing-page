@@ -103,7 +103,7 @@ const CourseFormatsSection = () => {
               className="w-full text-white py-4 px-6 rounded-xl font-medium hover:opacity-90 transition-opacity mb-6"
               style={{ backgroundColor: "#111827" }}
             >
-              Начать бесплатно
+              Оставить заявку
             </button>
 
             <div className="space-y-4 text-sm text-gray-700 h-[6rem] flex flex-col justify-start">
