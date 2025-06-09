@@ -44,7 +44,7 @@ const TabbedSection = () => {
             Фундамент вашего Web3-мастерства
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl">
-            наша команда экспертов
+            Наша команда экспертов
           </p>
         </div>
 
