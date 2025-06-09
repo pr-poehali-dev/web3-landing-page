@@ -10,7 +10,7 @@ const TestimonialsSection = () => {
       name: "Анна Криптова",
       text: "Создала свой NFT-маркетплейс на Ethereum. За первый месяц заработала больше, чем за год на прошлой работе.",
       avatar:
-        "https://images.unsplash.com/photo-1494790108755-2616b332c1cd?w=100&h=100&fit=crop&crop=face",
+        "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&h=100&fit=crop&crop=face",
     },
     {
       name: "Дмитрий Солана",
