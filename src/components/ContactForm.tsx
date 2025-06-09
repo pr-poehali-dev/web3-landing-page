@@ -33,7 +33,9 @@ const ContactForm = () => {
           {/* Левая колонка с заголовком */}
           <div className="lg:pt-0">
             <h2 className="md:text-6xl font-bold text-white mb-4 leading-tight text-7xl">
-              Получить консультацию по обучению
+              Получить консультацию
+              <br />
+              по обучению
             </h2>
             <p className="text-gray-400 text-lg">
               Наш менеджер свяжется с вами в течение 30 минут.
