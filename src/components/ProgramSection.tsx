@@ -69,50 +69,55 @@ const ProgramSection = () => {
 
           {/* Правая колонка - модули курса */}
           <div className="space-y-4">
-          {modules.map((module, index) => (
-            <div
-              key={index}
-              className={`flex items-center justify-between p-6 bg-white rounded-xl hover:shadow-lg transition-all duration-300 group cursor-pointer border border-gray-100 ${
-                module.isSpecial
-                  ? "bg-gradient-to-r from-blue-50 to-indigo-50 border-blue-200"
-                  : ""
-              }`}
-            >
-              <div className="flex items-center flex-1">
-                <div className="w-16 mr-8">
-                  <span className="text-4xl font-bold text-gray-300 group-hover:text-gray-400 transition-colors">
-                    {module.isSpecial ? "🎓" : module.number}
-                  </span>
+            {modules.map((module, index) => (
+              <div
+                key={index}
+                className={`flex items-center justify-between p-6 bg-white rounded-xl hover:shadow-lg transition-all duration-300 group cursor-pointer border border-gray-100 ${
+                  module.isSpecial
+                    ? "bg-gradient-to-r from-blue-50 to-indigo-50 border-blue-200"
+                    : ""
+                }`}
+              >
+                <div className="flex items-center flex-1">
+                  <div className="w-16 mr-8">
+                    <span className="text-4xl font-bold text-gray-300 group-hover:text-gray-400 transition-colors">
+                      {module.isSpecial ? "🎓" : module.number}
+                    </span>
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
+                      {module.title}
+                    </h3>
+                    <p className="text-gray-600 text-base leading-relaxed">
+                      {module.description}
+                    </p>
+                  </div>
                 </div>
-                <div className="flex-1">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
-                    {module.title}
-                  </h3>
-                  <p className="text-gray-600 text-base leading-relaxed">
-                    {module.description}
-                  </p>
-                </div>
+
+                {!module.isSpecial && (
+                  <div className="text-right ml-8 space-y-1">
+                    <div className="text-sm font-medium text-gray-900">
+                      {module.duration}
+                    </div>
+                    <div className="text-sm text-gray-500">
+                      {module.projects}
+                    </div>
+                  </div>
+                )}
+
+                {module.isSpecial && (
+                  <div className="text-right ml-8">
+                    <div className="text-sm font-medium text-blue-600">
+                      {module.duration}
+                    </div>
+                    <div className="text-sm text-blue-500">
+                      {module.projects}
+                    </div>
+                  </div>
+                )}
               </div>
-
-              {!module.isSpecial && (
-                <div className="text-right ml-8 space-y-1">
-                  <div className="text-sm font-medium text-gray-900">
-                    {module.duration}
-                  </div>
-                  <div className="text-sm text-gray-500">{module.projects}</div>
-                </div>
-              )}
-
-              {module.isSpecial && (
-                <div className="text-right ml-8">
-                  <div className="text-sm font-medium text-blue-600">
-                    {module.duration}
-                  </div>
-                  <div className="text-sm text-blue-500">{module.projects}</div>
-                </div>
-              )}
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>
