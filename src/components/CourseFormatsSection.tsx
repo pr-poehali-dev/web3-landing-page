@@ -3,14 +3,12 @@ const CourseFormatsSection = () => {
     <section className="bg-gray-50 py-16">
       <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-7xl">
         <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-12">
-          Попробуйте любой формат курса бесплатно — выбрать
-          <br />
-          один-единственный можно позже
+          Выберите любой формат курса
         </h2>
 
         <div className="grid lg:grid-cols-2 gap-8">
           {/* Первая карточка - Базовый Web3 */}
-          <div className="bg-white rounded-2xl p-8 shadow-sm">
+          <div className="bg-white rounded-2xl p-8 shadow-sm px-[23px]">
             <div className="inline-block bg-orange-500 text-white px-3 py-1 rounded-md text-sm font-medium mb-4">
               -15% до 9 июня
             </div>
@@ -64,7 +62,7 @@ const CourseFormatsSection = () => {
           </div>
 
           {/* Вторая карточка - Расширенный Web3 */}
-          <div className="bg-white rounded-2xl p-8 shadow-sm">
+          <div className="bg-white rounded-2xl p-8 shadow-sm px-[23px]">
             <div className="inline-block bg-orange-500 text-white px-3 py-1 rounded-md text-sm font-medium mb-4">
               -7% до 9 июня
             </div>
