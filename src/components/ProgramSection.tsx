@@ -59,7 +59,7 @@ const ProgramSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
           {/* Левая колонка - заголовок */}
           <div className="lg:sticky lg:top-20">
-            <h2 className="text-5xl md:text-7xl font-bold text-gray-900 mb-4 text-left">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 text-left">
               Программа курса
             </h2>
             <p className="text-gray-600 text-lg leading-relaxed text-left">
