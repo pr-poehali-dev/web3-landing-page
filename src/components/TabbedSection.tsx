@@ -43,8 +43,8 @@ const TabbedSection = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
             Фундамент вашего Web3-мастерства
           </h2>
-          <p className="text-gray-600 max-w-2xl text-xl">
-            Наша команда экспертов
+          <p className="text-gray-600 max-w-2xl text-lg">
+            Наша команда экспертов.
           </p>
         </div>
 
