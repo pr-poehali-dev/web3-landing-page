@@ -46,16 +46,16 @@ const CourseFormatsSection = () => {
 
             <div className="space-y-4 text-sm text-gray-700 h-[6rem] flex flex-col justify-start">
               <div>
-                React, TypeScript, HTML5, CSS3, JavaScript ES6+, Tailwind CSS,
-                адаптивная верстка, работа с API
+                Node.js/Express, MongoDB/PostgreSQL + Разработка API для dApp,
+                Интеграция с блокчейном (Web3.js/Ethers.js), обработка событий
               </div>
               <div className="font-medium">
                 6 практических проектов в портфолио
               </div>
             </div>
 
-            <div className="flex items-start gap-3 mt-6 p-4 bg-gray-50 rounded-xl mt-auto">
-              <div className="w-6 h-6 bg-green-400 rounded-full flex-shrink-0 flex items-center justify-center">
+            <div className="flex items-start gap-3 mt-6 p-4 bg-gray-50 rounded-xl mt-auto px-0 py-0.5">
+              <div className="w-6 h-6 rounded-full flex-shrink-0 flex items-center justify-center bg-[#F87250]">
                 <span className="text-xs font-bold">✓</span>
               </div>
               <div className="text-sm text-gray-700">
@@ -118,8 +118,8 @@ const CourseFormatsSection = () => {
               </div>
             </div>
 
-            <div className="flex items-start gap-3 mt-6 p-4 bg-blue-50 rounded-xl mt-auto">
-              <div className="w-6 h-6 bg-blue-500 rounded-full flex-shrink-0 flex items-center justify-center">
+            <div className="flex items-start gap-3 mt-6 p-4 bg-blue-50 rounded-xl mt-auto py-0 px-0">
+              <div className="w-6 h-6 rounded-full flex-shrink-0 flex items-center justify-center bg-[#F87250]">
                 <span className="text-xs text-white">★</span>
               </div>
               <div className="text-sm text-gray-700">
