@@ -55,17 +55,20 @@ const ProgramSection = () => {
 
   return (
     <section className="py-20 bg-gradient-to-b from-white to-gray-50">
-      <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-4xl">
-        <div className="mb-12 text-left">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
-            Программа курса
-          </h2>
-          <p className="text-gray-600 max-w-2xl text-lg">
-            6 модулей от теории до практики. 51 час контента + менторство
-          </p>
-        </div>
+      <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-6xl">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+          {/* Левая колонка - заголовок */}
+          <div className="lg:sticky lg:top-20">
+            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+              Программа курса
+            </h2>
+            <p className="text-gray-600 text-lg leading-relaxed">
+              6 модулей от теории до практики. 51 час контента + менторство
+            </p>
+          </div>
 
-        <div className="space-y-4">
+          {/* Правая колонка - модули курса */}
+          <div className="space-y-4">
           {modules.map((module, index) => (
             <div
               key={index}
