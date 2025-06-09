@@ -50,7 +50,7 @@ const FAQSection = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-start">
           {/* Левая колонка - заголовок */}
           <div className="lg:sticky lg:top-20">
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+            <h2 className="text-[36px] font-bold text-gray-900 mb-4">
               Частые вопросы
             </h2>
             <p className="text-gray-600 text-lg leading-relaxed"></p>
