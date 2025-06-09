@@ -3,22 +3,22 @@ import { Button } from "@/components/ui/button";
 const HeroSection = () => {
   return (
     <section
-      className="relative h-[60vh] flex items-center"
+      className="relative min-h-[60vh] sm:h-[60vh] flex items-center pt-16 sm:pt-20"
       style={{ backgroundColor: "#111827" }}
     >
       <div className="container mx-auto px-4 md:px-6 lg:px-8 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center h-full px-[46px]">
+        <div className="grid lg:grid-cols-2 gap-12 items-center h-full px-4 sm:px-8 lg:px-[46px]">
           {/* Left Content */}
-          <div className="space-y-8 px-3">
+          <div className="space-y-6 sm:space-y-8 px-0 sm:px-3">
             {/* Main Title */}
             <div>
-              <h1 className="text-5xl md:text-7xl font-black leading-tight">
-                <span className="bg-gradient-to-r from-slate-100 via-white to-slate-200 bg-clip-text text-7xl text-[#ffffff]">
+              <h1 className="text-4xl sm:text-5xl md:text-7xl font-black leading-tight">
+                <span className="bg-gradient-to-r from-slate-100 via-white to-slate-200 bg-clip-text text-4xl sm:text-5xl md:text-7xl text-[#ffffff]">
                   Web3 с нуля
                 </span>
               </h1>
 
-              <p className="md:text-xl text-gray-300 mt-6 leading-relaxed max-w-lg text-base">
+              <p className="text-base sm:text-lg md:text-xl text-gray-300 mt-4 sm:mt-6 leading-relaxed max-w-lg">
                 Освойте полный цикл блокчейн-разработки и криптовалют — с нуля
                 за 6 недель.
               </p>
