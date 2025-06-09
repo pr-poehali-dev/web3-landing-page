@@ -4,6 +4,7 @@ import ProgramSection from "@/components/ProgramSection";
 import TabbedSection from "@/components/TabbedSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import CourseFormatsSection from "@/components/CourseFormatsSection";
+import FAQSection from "@/components/FAQSection";
 import ContactForm from "@/components/ContactForm";
 
 const Index = () => {
@@ -16,6 +17,7 @@ const Index = () => {
       <ContactForm />
       <TestimonialsSection />
       <CourseFormatsSection />
+      <FAQSection />
     </div>
   );
 };
