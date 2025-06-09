@@ -185,7 +185,7 @@ const TabbedSection = () => {
               ].map((reviewer, index) => (
                 <div
                   key={index}
-                  className="bg-white p-6 rounded-xl hover:shadow-md transition-all duration-300 group cursor-pointer"
+                  className="bg-white p-6 rounded-xl hover:shadow-md transition-all duration-300 group cursor-pointer py-0"
                 >
                   <div className="flex items-center gap-4">
                     <img
