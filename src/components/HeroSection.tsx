@@ -7,19 +7,19 @@ const HeroSection = () => {
 
   return (
     <section
-      className="relative h-[70vh] flex flex-col"
+      className="relative min-h-screen flex flex-col"
       style={{ backgroundColor: "#111827" }}
     >
       {/* Integrated Header */}
       <header className="relative z-50 px-4 md:px-6 lg:px-8 py-4">
-        <div className="container mx-auto px-[62px]">
+        <div className="container mx-auto">
           <div className="flex items-center justify-between">
             {/* Logo */}
             <div className="flex items-center space-x-2">
               <div className="w-8 h-8 bg-[#ECF86E] rounded-lg flex items-center justify-center">
                 <span className="text-black font-bold text-lg">W</span>
               </div>
-              <span className="text-white font-bold text-xl">Academy</span>
+              <span className="text-white font-bold text-xl">Web3 Academy</span>
             </div>
 
             {/* Desktop Navigation */}
@@ -119,9 +119,9 @@ const HeroSection = () => {
       {/* Hero Content */}
       <div className="flex-1 flex items-center pt-8 pb-16">
         <div className="container mx-auto px-4 md:px-6 lg:px-8 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 items-center h-full px-4 md:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center h-full sm:px-8 lg:px-[46px] py-[7px] px-[54px] my-0 mx-0">
             {/* Left Content */}
-            <div className="space-y-6 sm:space-y-8">
+            <div className="space-y-6 sm:space-y-8 px-0 sm:px-3">
               {/* Main Title */}
               <div>
                 <h1 className="text-4xl sm:text-5xl md:text-7xl font-black leading-tight">
