@@ -54,7 +54,7 @@ const ContactForm = () => {
                   placeholder="Введите имя"
                   value={formData.name}
                   onChange={handleInputChange}
-                  className="w-full px-3 md:px-4 py-3 md:py-4 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-orange-500 transition-colors text-sm md:text-base"
+                  className="w-full px-3 md:px-4 py-3 md:py-4 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-orange-500 transition-colors text-sm md:text-base bg-[#121212]"
                   required
                 />
               </div>
@@ -66,7 +66,7 @@ const ContactForm = () => {
                   placeholder="+7 989 297-15-01"
                   value={formData.phone}
                   onChange={handleInputChange}
-                  className="w-full px-3 md:px-4 py-3 md:py-4 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-orange-500 transition-colors pl-10 md:pl-12 text-sm md:text-base"
+                  className="w-full px-3 md:px-4 py-3 md:py-4 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-orange-500 transition-colors pl-10 md:pl-12 text-sm md:text-base bg-[#121212]"
                   required
                 />
                 <div className="absolute left-3 md:left-4 top-1/2 transform -translate-y-1/2 flex items-center">
@@ -81,7 +81,7 @@ const ContactForm = () => {
                   placeholder="Введите email"
                   value={formData.email}
                   onChange={handleInputChange}
-                  className="w-full px-3 md:px-4 py-3 md:py-4 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-orange-500 transition-colors text-sm md:text-base"
+                  className="w-full px-3 md:px-4 py-3 md:py-4 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-orange-500 transition-colors text-sm md:text-base bg-[#121212]"
                   required
                 />
               </div>
@@ -93,7 +93,7 @@ const ContactForm = () => {
                   placeholder="@юзернейм telegram"
                   value={formData.telegram}
                   onChange={handleInputChange}
-                  className="w-full px-3 md:px-4 py-3 md:py-4 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-orange-500 transition-colors text-sm md:text-base"
+                  className="w-full px-3 md:px-4 py-3 md:py-4 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-orange-500 transition-colors text-sm md:text-base bg-[#121212]"
                 />
               </div>
 
