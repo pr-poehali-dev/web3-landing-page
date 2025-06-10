@@ -7,7 +7,7 @@ const HeroSection = () => {
 
   return (
     <section
-      className="relative min-h-screen flex flex-col"
+      className="relative h-[70vh] flex flex-col"
       style={{ backgroundColor: "#111827" }}
     >
       {/* Integrated Header */}
