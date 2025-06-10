@@ -8,9 +8,9 @@ const BenefitsSection = () => {
       description:
         'Действующие блокчейн-разработчики (Web3, DeFi, NFT). Обучайтесь на реальных кейсах и актуальных проектах. Никакой "сухой" теории – только применимые на практике знания.',
       image:
-        "https://cdn.poehali.dev/files/cea1e332-0d28-46d8-8e3a-8443b975fad4.jpg",
+        "https://cdn.poehali.dev/files/d304604d-8306-4577-b8e0-f1be3276b84f.jpg",
       thumbnail:
-        "https://cdn.poehali.dev/files/cea1e332-0d28-46d8-8e3a-8443b975fad4.jpg",
+        "https://cdn.poehali.dev/files/d304604d-8306-4577-b8e0-f1be3276b84f.jpg",
     },
     {
       icon: "🚀",
