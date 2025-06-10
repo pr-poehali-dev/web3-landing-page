@@ -31,6 +31,12 @@ const HeroSection = () => {
                 Программа
               </a>
               <a
+                href="#team"
+                className="text-gray-300 hover:text-white transition-colors scroll-smooth"
+              >
+                Команда
+              </a>
+              <a
                 href="#testimonials"
                 className="text-gray-300 hover:text-white transition-colors scroll-smooth"
               >
@@ -69,6 +75,13 @@ const HeroSection = () => {
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Программа
+                </a>
+                <a
+                  href="#team"
+                  className="text-gray-300 hover:text-white transition-colors scroll-smooth"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Команда
                 </a>
                 <a
                   href="#testimonials"
