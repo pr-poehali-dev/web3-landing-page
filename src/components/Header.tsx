@@ -18,9 +18,12 @@ const Header = () => {
       <div className="container mx-auto px-4 md:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20 px-4 sm:px-8 lg:px-[46px]">
           {/* Logo */}
-          <div className="flex items-center">
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center shadow-lg">
+              <span className="text-white font-bold text-xl">W</span>
+            </div>
             <h1 className="lg:text-3xl font-bold text-white text-lg">
-              W Academy
+              Academy
             </h1>
           </div>
 
