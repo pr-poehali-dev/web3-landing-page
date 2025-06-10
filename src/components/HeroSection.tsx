@@ -119,9 +119,9 @@ const HeroSection = () => {
       {/* Hero Content */}
       <div className="flex-1 flex items-center pt-8 pb-16">
         <div className="container mx-auto px-4 md:px-6 lg:px-8 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 items-center h-full sm:px-8 lg:px-[46px] py-[7px] px-[54px] my-0 mx-0">
+          <div className="grid lg:grid-cols-2 gap-12 items-center h-full px-4 md:px-6 lg:px-8">
             {/* Left Content */}
-            <div className="space-y-6 sm:space-y-8 px-0 sm:px-3">
+            <div className="space-y-6 sm:space-y-8">
               {/* Main Title */}
               <div>
                 <h1 className="text-4xl sm:text-5xl md:text-7xl font-black leading-tight">
