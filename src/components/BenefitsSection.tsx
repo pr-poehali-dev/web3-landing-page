@@ -29,7 +29,7 @@ const BenefitsSection = () => {
     <section className="bg-white relative py-[102px]">
       <div className="container mx-auto px-6 md:px-6 lg:px-8 max-w-7xl">
         <div className="mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#121212] text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#121212] text-left">
             Почему выбирают нас
           </h2>
         </div>
