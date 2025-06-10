@@ -67,7 +67,7 @@ const HeroSection = () => {
               {/* Main Image Placeholder */}
               <div className="w-full h-96 bg-gradient-to-br from-gray-700 to-gray-800 rounded-2xl relative overflow-hidden">
                 <img
-                  src="https://cdn.poehali.dev/files/e1aa34ca-ede7-4b3b-9162-8267e7413b73.jpg"
+                  src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&h=400&fit=crop&crop=faces"
                   alt="Разработчик за работой"
                   className="w-full h-full object-cover"
                 />
