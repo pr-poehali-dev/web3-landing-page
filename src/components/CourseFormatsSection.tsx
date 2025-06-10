@@ -1,6 +1,6 @@
 const CourseFormatsSection = () => {
   return (
-    <section className="bg-gray-50 py-12 md:py-16">
+    <section id="formats" className="bg-gray-50 py-12 md:py-16">
       <div className="container mx-auto px-2 sm:px-4 md:px-6 lg:px-8 max-w-7xl">
         <h2
           className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-8 md:mb-12 px-2 sm:px-0"
@@ -12,7 +12,7 @@ const CourseFormatsSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
           <div className="bg-white rounded-2xl p-4 md:p-8 shadow-sm h-full flex flex-col">
             <div
-              className="inline-block text-white px-3 py-1 rounded-md text-sm font-medium mb-4 w-fit"
+              className="inline-block text-white px-3 py-1 rounded-md text-sm font-medium mb-4 w-fit bg-[#ECF86E]"
               style={{ backgroundColor: "#F87250" }}
             >
               -20% до 3 июля
@@ -72,7 +72,7 @@ const CourseFormatsSection = () => {
 
           <div className="bg-white rounded-2xl p-4 md:p-8 shadow-sm h-full flex flex-col">
             <div
-              className="inline-block text-white px-3 py-1 rounded-md text-sm font-medium mb-4 w-fit"
+              className="inline-block text-white px-3 py-1 rounded-md text-sm font-medium mb-4 w-fit bg-[#ECF86E]"
               style={{ backgroundColor: "#F87250" }}
             >
               -11% до 3 июля
