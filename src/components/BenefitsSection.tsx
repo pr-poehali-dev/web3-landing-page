@@ -59,12 +59,32 @@ const BenefitsSection = () => {
         </div>
 
         <div
-          className="grid lg:grid-cols-2 gap-12 items-start flex flex-col-reverse lg:flex-row lg:grid"
+          className="flex flex-col lg:grid lg:grid-cols-2 gap-12 items-start"
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
         >
-          {/* Левая часть - изображения */}
-          <div className="space-y-6">
+          {/* Правая часть - текст (первая на мобиле) */}
+          <div className="space-y-8 lg:order-2">
+            <div className="p-8">
+              <h3
+                className="text-3xl font-bold mb-6 text-gray-900 transition-all duration-700 ease-in-out transform"
+                key={`title-${activeIndex}`}
+              >
+                {activeBenefit.title}
+              </h3>
+              <p
+                className="text-gray-700 leading-relaxed mb-8 transition-all duration-700 ease-in-out transform text-lg"
+                key={`desc-${activeIndex}`}
+              >
+                {activeBenefit.description}
+              </p>
+
+              <div className="text-sm text-gray-600"></div>
+            </div>
+          </div>
+
+          {/* Левая часть - изображения (вторая на мобиле) */}
+          <div className="space-y-6 lg:order-1">
             {/* Основное изображение */}
             <div className="relative">
               {/* Terminal frame */}
@@ -122,26 +142,6 @@ const BenefitsSection = () => {
                   )}
                 </button>
               ))}
-            </div>
-          </div>
-
-          {/* Правая часть - текст */}
-          <div className="space-y-8">
-            <div className="p-8">
-              <h3
-                className="text-3xl font-bold mb-6 text-gray-900 transition-all duration-700 ease-in-out transform"
-                key={`title-${activeIndex}`}
-              >
-                {activeBenefit.title}
-              </h3>
-              <p
-                className="text-gray-700 leading-relaxed mb-8 transition-all duration-700 ease-in-out transform text-lg"
-                key={`desc-${activeIndex}`}
-              >
-                {activeBenefit.description}
-              </p>
-
-              <div className="text-sm text-gray-600"></div>
             </div>
           </div>
         </div>
