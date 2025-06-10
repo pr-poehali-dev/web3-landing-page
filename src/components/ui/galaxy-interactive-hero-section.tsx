@@ -41,29 +41,7 @@ function HeroSplineBackground() {
   );
 }
 
-// Удаляем ScreenshotSection - больше не нужна
-function ScreenshotSection({
-  screenshotRef,
-}: {
-  screenshotRef: React.RefObject<HTMLDivElement | null>;
-}) {
-  return (
-    <section className="relative z-10 container mx-auto px-4 md:px-6 lg:px-8 mt-11 md:mt-12">
-      <div
-        ref={screenshotRef}
-        className="bg-gray-900 rounded-xl overflow-hidden shadow-2xl border border-gray-700/50 w-full md:w-[80%] lg:w-[70%] mx-auto"
-      >
-        <div>
-          <img
-            src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&h=600&fit=crop&crop=faces"
-            alt="Разработчик за работой"
-            className="w-full h-auto block rounded-lg mx-auto"
-          />
-        </div>
-      </div>
-    </section>
-  );
-}
+// Removed ScreenshotSection component entirely
 
 function HeroContent() {
   return (
@@ -76,29 +54,6 @@ function HeroContent() {
         Освойте полный цикл блокчейн-разработки и криптовалют — с нуля за 6
         недель. Станьте востребованным специалистом в сфере Web3.
       </p>
-      <div className="flex pointer-events-auto flex-col sm:flex-row items-start space-y-3 sm:space-y-0 sm:space-x-3">
-        <button
-          className="bg-[#8200DB29] hover:bg-black/50 text-white font-semibold py-2 sm:py-3 px-6 sm:px-8 rounded-full transition duration-300 w-full sm:w-auto border border-[#322D36]"
-          style={{ backdropFilter: "blur(8px)" }}
-        >
-          Оставить заявку
-        </button>
-        <button className="pointer-events-auto bg-[#0009] border border-gray-600 hover:border-gray-400 text-gray-200 hover:text-white font-medium py-2 sm:py-3 px-6 sm:px-8 rounded-full transition duration-300 flex items-center justify-center w-full sm:w-auto">
-          <svg
-            className="w-4 h-4 sm:w-5 sm:h-5 mr-2"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fillRule="evenodd"
-              d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
-              clipRule="evenodd"
-            />
-          </svg>
-          Смотреть видео
-        </button>
-      </div>
     </div>
   );
 }
@@ -310,65 +265,62 @@ function Navbar() {
   );
 }
 
-export const GalaxyInteractiveHeroSection = () => {
-  const screenshotRef = useRef<HTMLDivElement>(null);
-  const heroContentRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (screenshotRef.current && heroContentRef.current) {
-        requestAnimationFrame(() => {
-          const scrollPosition = window.pageYOffset;
-          if (screenshotRef.current) {
-            screenshotRef.current.style.transform = `translateY(-${scrollPosition * 0.5}px)`;
-          }
-
-          const maxScroll = 400;
-          const opacity = 1 - Math.min(scrollPosition / maxScroll, 1);
-          if (heroContentRef.current) {
-            heroContentRef.current.style.opacity = opacity.toString();
-          }
-        });
-      }
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
+function CTAButtons() {
   return (
-    <div className="relative">
-      <Navbar />
-
-      <div className="relative min-h-screen">
-        <div className="absolute inset-0 z-0 pointer-events-auto">
-          <Suspense fallback={<div className="w-full h-screen bg-[#111827]" />}>
-            <HeroSplineBackground />
-          </Suspense>
-        </div>
-
-        <div
-          ref={heroContentRef}
-          style={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100vh",
-            display: "flex",
-            justifyContent: "flex-start",
-            alignItems: "center",
-            zIndex: 10,
-            pointerEvents: "none",
-          }}
+    <div className="flex pointer-events-auto flex-col sm:flex-row items-start space-y-3 sm:space-y-0 sm:space-x-3">
+      <button
+        className="bg-[#8200DB29] hover:bg-black/50 text-white font-semibold py-2 sm:py-3 px-6 sm:px-8 rounded-full transition duration-300 w-full sm:w-auto border border-[#322D36]"
+        style={{ backdropFilter: "blur(8px)" }}
+      >
+        Оставить заявку
+      </button>
+      <button className="pointer-events-auto bg-[#0009] border border-gray-600 hover:border-gray-400 text-gray-200 hover:text-white font-medium py-2 sm:py-3 px-6 sm:px-8 rounded-full transition duration-300 flex items-center justify-center w-full sm:w-auto">
+        <svg
+          className="w-4 h-4 sm:w-5 sm:h-5 mr-2"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <div className="container mx-auto">
-            <HeroContent />
-          </div>
-        </div>
-      </div>
+          <path
+            fillRule="evenodd"
+            d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
+            clipRule="evenodd"
+          />
+        </svg>
+        Смотреть видео
+      </button>
+    </div>
+  );
+}
 
-      <div className="bg-black relative z-10" style={{ marginTop: "-10vh" }}>
-        <ScreenshotSection screenshotRef={screenshotRef} />
+export const GalaxyInteractiveHeroSection = () => {
+  return (
+    <div className="relative min-h-screen">
+      <Navbar />
+      <div className="absolute inset-0 z-0 pointer-events-auto">
+        <Suspense fallback={<div className="w-full h-screen bg-[#111827]" />}>
+          <HeroSplineBackground />
+        </Suspense>
+      </div>
+      <div
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100vh",
+          display: "flex",
+          justifyContent: "flex-start",
+          alignItems: "center",
+          zIndex: 10,
+          pointerEvents: "none",
+        }}
+      >
+        <div className="container mx-auto">
+          <HeroContent />
+          <CTAButtons />
+          {/* Removed ScreenshotSection from render */}
+        </div>
       </div>
     </div>
   );
