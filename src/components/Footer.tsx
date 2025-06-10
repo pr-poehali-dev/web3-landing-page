@@ -2,11 +2,11 @@ import Icon from "@/components/ui/icon";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-12 md:py-16">
-      <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-7xl">
-        <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-6 md:gap-8">
+    <footer className="bg-gray-900 text-white py-8 md:py-12 lg:py-16">
+      <div className="container mx-auto px-3 md:px-6 lg:px-8 max-w-7xl">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
           {/* Основная информация */}
-          <div className="lg:col-span-2">
+          <div className="sm:col-span-2 lg:col-span-2">
             <h3 className="text-lg md:text-xl font-bold mb-3 md:mb-4">
               Образовательная платформа
             </h3>
@@ -101,7 +101,7 @@ const Footer = () => {
 
         {/* Разделитель */}
         <div className="border-t border-gray-700 mt-8 md:mt-12 pt-6 md:pt-8">
-          <div className="grid lg:grid-cols-3 gap-6 md:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
             {/* Юридическая информация */}
             <div>
               <h5 className="text-sm font-semibold mb-2 md:mb-3 text-gray-200">
@@ -159,9 +159,11 @@ const Footer = () => {
         </div>
 
         {/* Нижняя строка */}
-        <div className="border-t border-gray-700 mt-6 md:mt-8 pt-4 md:pt-6 flex flex-col md:flex-row justify-between items-center text-xs md:text-sm text-gray-400 space-y-3 md:space-y-0">
-          <p>&copy; 2024 Образовательная платформа. Все права защищены.</p>
-          <div className="flex items-center space-x-3 md:space-x-4 text-xs md:text-sm">
+        <div className="border-t border-gray-700 mt-4 md:mt-6 lg:mt-8 pt-4 md:pt-6 flex flex-col sm:flex-row justify-between items-start sm:items-center text-xs md:text-sm text-gray-400 space-y-2 sm:space-y-0">
+          <p className="text-center sm:text-left">
+            &copy; 2024 Образовательная платформа. Все права защищены.
+          </p>
+          <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-3 md:space-x-4 text-xs md:text-sm w-full sm:w-auto">
             <span className="flex items-center">
               <Icon name="Shield" size={14} className="mr-1 md:w-4 md:h-4" />
               Защищенные платежи
