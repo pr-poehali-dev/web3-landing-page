@@ -59,7 +59,7 @@ const BenefitsSection = () => {
         </div>
 
         <div
-          className="grid lg:grid-cols-2 gap-12 items-start"
+          className="grid lg:grid-cols-2 gap-12 items-start flex flex-col-reverse lg:flex-row lg:grid"
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
         >
