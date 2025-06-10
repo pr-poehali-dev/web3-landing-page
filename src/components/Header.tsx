@@ -99,6 +99,17 @@ const Header = () => {
               >
                 Тарифы
               </a>
+              <div className="flex flex-col space-y-3 pt-4">
+                <Button
+                  variant="ghost"
+                  className="text-white hover:text-gray-300 font-medium justify-start"
+                >
+                  Войти
+                </Button>
+                <Button className="bg-[#ECF86E] text-black hover:bg-[#E5F563] font-medium">
+                  Все курсы
+                </Button>
+              </div>
             </nav>
           </div>
         )}
