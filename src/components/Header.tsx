@@ -19,7 +19,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-16 lg:h-20 px-4 sm:px-8 lg:px-[46px]">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center shadow-lg">
+            <div className="w-10 h-10 from-blue-500 to-purple-600 rounded-lg flex items-center justify-center shadow-lg bg-[#ECF86E]">
               <span className="text-white font-bold text-xl">W</span>
             </div>
             <h1 className="lg:text-3xl font-bold text-white text-lg">
