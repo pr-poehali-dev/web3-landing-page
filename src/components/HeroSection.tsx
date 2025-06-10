@@ -107,7 +107,9 @@ const HeroSection = () => {
                 <Button
                   size="sm"
                   className="bg-[#ECF86E] text-black hover:bg-[#F87250] hover:text-white transition-all w-fit"
-                ></Button>
+                >
+                  Записаться
+                </Button>
               </nav>
             </div>
           )}
