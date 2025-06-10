@@ -6,8 +6,10 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
+    { label: "Преимущества", href: "#benefits" },
     { label: "Программа", href: "#program" },
     { label: "Команда", href: "#team" },
+    { label: "Контакты", href: "#contacts" },
     { label: "Отзывы", href: "#testimonials" },
     { label: "Форматы", href: "#formats" },
     { label: "FAQ", href: "#faq" },
@@ -33,7 +35,7 @@ const Header = () => {
               <a
                 key={item.label}
                 href={item.href}
-                className="text-gray-300 hover:text-white transition-colors duration-200 font-medium"
+                className="text-gray-300 hover:text-white transition-colors duration-200 font-medium scroll-smooth"
               >
                 {item.label}
               </a>
@@ -59,7 +61,7 @@ const Header = () => {
                 <a
                   key={item.label}
                   href={item.href}
-                  className="text-gray-300 hover:text-white transition-colors duration-200 font-medium py-2"
+                  className="text-gray-300 hover:text-white transition-colors duration-200 font-medium py-2 scroll-smooth"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.label}
