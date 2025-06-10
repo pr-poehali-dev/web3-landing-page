@@ -48,18 +48,12 @@ const HeroSection = () => {
               >
                 FAQ
               </a>
-              <Button
-                size="sm"
-                className="bg-[#ECF86E] text-black hover:bg-[#F87250] hover:text-white transition-all"
-              >
-                Записаться
-              </Button>
             </nav>
 
-            {/* Mobile Menu Button */}
+            {/* Mobile Menu Toggle */}
             <button
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="md:hidden text-white"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               <Icon name={isMenuOpen ? "X" : "Menu"} size={24} />
             </button>
