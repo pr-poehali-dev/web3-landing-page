@@ -93,8 +93,16 @@
   background: rgba(156, 163, 175, 0.5);
 }
 
-/* Hide scrollbar on desktop */
+/* Hide scrollbar on desktop, add margin on mobile */
+.custom-scrollbar {
+  margin-bottom: 10px;
+}
+
 @media (min-width: 768px) {
+  .custom-scrollbar {
+    margin-bottom: 0;
+  }
+
   .custom-scrollbar::-webkit-scrollbar {
     display: none;
   }
