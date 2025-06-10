@@ -61,9 +61,9 @@ const BenefitsSection = () => {
         <div className="space-y-12 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-12 lg:items-start">
           {/* Правая часть - текст (первая на мобильных) */}
           <div className="space-y-8 order-1 lg:order-2">
-            <div className="p-8">
+            <div className="p-8 px-0">
               <h3
-                className="text-3xl font-bold mb-6 text-gray-900 transition-all duration-700 ease-in-out transform"
+                className="font-bold mb-6 text-gray-900 transition-all duration-700 ease-in-out transform text-sm"
                 key={`title-${activeIndex}`}
               >
                 {activeBenefit.title}
