@@ -65,50 +65,73 @@ const Header = () => {
           </div>
         </div>
 
-        {/* Mobile Menu - Dropdown */}
+        {/* Mobile Menu - Overlay */}
         {isMobileMenuOpen && (
-          <div className="md:hidden fixed top-[73px] left-0 right-0 bg-gray-900 border-b border-gray-700 shadow-lg z-50 animate-fade-in">
-            <nav className="flex flex-col space-y-4 p-4">
-              <a
-                href="#"
-                className="hover:text-gray-300 transition-colors font-medium text-white"
-              >
-                О профессии
-              </a>
-              <a
-                href="#"
-                className="hover:text-gray-300 transition-colors font-medium text-white"
-              >
-                Программа
-              </a>
-              <a
-                href="#"
-                className="hover:text-gray-300 transition-colors font-medium text-white"
-              >
-                Трудоустройство
-              </a>
-              <a
-                href="#"
-                className="hover:text-gray-300 transition-colors font-medium text-white"
-              >
-                Как мы учим
-              </a>
-              <a
-                href="#"
-                className="hover:text-gray-300 transition-colors font-medium text-white"
-              >
-                Тарифы
-              </a>
-              <div className="pt-4 border-t border-gray-700">
-                <Button
-                  variant="ghost"
-                  className="text-white hover:text-gray-300 font-medium justify-start w-full"
+          <>
+            {/* Backdrop */}
+            <div
+              className="md:hidden fixed inset-0 bg-black/50 z-40 animate-fade-in"
+              onClick={() => setIsMobileMenuOpen(false)}
+            />
+
+            {/* Mobile Menu Content */}
+            <div className="md:hidden absolute top-full left-0 right-0 bg-gray-900 border-b border-gray-700 shadow-xl z-50 animate-slide-down">
+              <nav className="flex flex-col py-6">
+                <a
+                  href="#"
+                  className="px-6 py-3 hover:bg-gray-800 hover:text-gray-300 transition-all font-medium text-white"
+                  onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  Войти
-                </Button>
-              </div>
-            </nav>
-          </div>
+                  О профессии
+                </a>
+                <a
+                  href="#"
+                  className="px-6 py-3 hover:bg-gray-800 hover:text-gray-300 transition-all font-medium text-white"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Программа
+                </a>
+                <a
+                  href="#"
+                  className="px-6 py-3 hover:bg-gray-800 hover:text-gray-300 transition-all font-medium text-white"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Трудоустройство
+                </a>
+                <a
+                  href="#"
+                  className="px-6 py-3 hover:bg-gray-800 hover:text-gray-300 transition-all font-medium text-white"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Как мы учим
+                </a>
+                <a
+                  href="#"
+                  className="px-6 py-3 hover:bg-gray-800 hover:text-gray-300 transition-all font-medium text-white"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Тарифы
+                </a>
+
+                {/* Mobile Buttons */}
+                <div className="px-6 pt-4 border-t border-gray-700 mt-4 space-y-3">
+                  <Button
+                    variant="ghost"
+                    className="text-white hover:bg-gray-800 font-medium w-full justify-start"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Войти
+                  </Button>
+                  <Button
+                    className="bg-[#ECF86E] text-black hover:bg-[#E5F563] font-medium w-full"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Все курсы
+                  </Button>
+                </div>
+              </nav>
+            </div>
+          </>
         )}
       </div>
     </header>
