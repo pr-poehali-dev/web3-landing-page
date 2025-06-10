@@ -37,13 +37,7 @@ const Header = () => {
                 {item.label}
               </a>
             ))}
-            <Button
-              variant="outline"
-              size="sm"
-              className="border-[#ECF86E] text-[#ECF86E] bg-transparent hover:bg-transparent hover:text-white transition-colors duration-200"
-            >
-              Контакты
-            </Button>
+            {/* Removed Contacts button */}
           </nav>
 
           {/* Mobile Menu Button */}
