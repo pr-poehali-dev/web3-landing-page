@@ -41,6 +41,7 @@ function HeroSplineBackground() {
   );
 }
 
+// Удаляем ScreenshotSection - больше не нужна
 function ScreenshotSection({
   screenshotRef,
 }: {
