@@ -98,29 +98,43 @@ export function FeatureSteps({
             ))}
           </div>
 
-          <div className="order-1 md:order-2 relative h-[200px] md:h-[300px] lg:h-[400px] overflow-hidden rounded-lg">
-            <AnimatePresence mode="wait">
-              {features.map(
-                (feature, index) =>
-                  index === currentFeature && (
-                    <motion.div
-                      key={index}
-                      className="absolute inset-0 rounded-lg overflow-hidden"
-                      initial={{ y: 100, opacity: 0, rotateX: -20 }}
-                      animate={{ y: 0, opacity: 1, rotateX: 0 }}
-                      exit={{ y: -100, opacity: 0, rotateX: 20 }}
-                      transition={{ duration: 0.5, ease: "easeInOut" }}
-                    >
-                      <img
-                        src={feature.image}
-                        alt={feature.step}
-                        className="w-full h-full object-cover transition-transform transform"
-                      />
-                      <div className="absolute bottom-0 left-0 right-0 h-2/3 bg-gradient-to-t from-black/50 via-black/20 to-transparent" />
-                    </motion.div>
-                  ),
-              )}
-            </AnimatePresence>
+          <div className="order-1 md:order-2 relative h-[200px] md:h-[300px] lg:h-[400px] overflow-hidden">
+            <div className="bg-gray-900 rounded-lg h-full shadow-2xl">
+              {/* Terminal Header */}
+              <div className="bg-gray-800 rounded-t-lg px-4 py-3 flex items-center gap-2">
+                <div className="flex gap-2">
+                  <div className="w-3 h-3 rounded-full bg-red-500"></div>
+                  <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+                  <div className="w-3 h-3 rounded-full bg-green-500"></div>
+                </div>
+              </div>
+
+              {/* Terminal Content */}
+              <div className="relative h-[calc(100%-48px)] overflow-hidden">
+                <AnimatePresence mode="wait">
+                  {features.map(
+                    (feature, index) =>
+                      index === currentFeature && (
+                        <motion.div
+                          key={index}
+                          className="absolute inset-0 overflow-hidden"
+                          initial={{ y: 100, opacity: 0, rotateX: -20 }}
+                          animate={{ y: 0, opacity: 1, rotateX: 0 }}
+                          exit={{ y: -100, opacity: 0, rotateX: 20 }}
+                          transition={{ duration: 0.5, ease: "easeInOut" }}
+                        >
+                          <img
+                            src={feature.image}
+                            alt={feature.step}
+                            className="w-full h-full object-cover transition-transform transform"
+                          />
+                          <div className="absolute bottom-0 left-0 right-0 h-2/3 bg-gradient-to-t from-black/50 via-black/20 to-transparent" />
+                        </motion.div>
+                      ),
+                  )}
+                </AnimatePresence>
+              </div>
+            </div>
           </div>
         </div>
       </div>
