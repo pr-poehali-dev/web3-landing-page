@@ -46,10 +46,10 @@ function HeroSplineBackground() {
 function HeroContent() {
   return (
     <div className="text-left text-white pt-16 sm:pt-24 md:pt-32 px-4 max-w-3xl">
-      <h1 className="text-6xl sm:text-8xl md:text-9xl font-bold mb-4 leading-tight tracking-wide">
+      <h1 className="text-5xl sm:text-7xl md:text-8xl font-bold mb-4 leading-tight tracking-wide">
         Web3 с нуля
       </h1>
-      <p className="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 opacity-80 max-w-xl">
+      <p className="text-sm sm:text-base md:text-lg mb-6 sm:mb-8 opacity-80 max-w-xl">
         Освойте полный цикл блокчейн-разработки и криптовалют — с нуля за 6
         недель. Станьте востребованным специалистом в сфере Web3.
       </p>
