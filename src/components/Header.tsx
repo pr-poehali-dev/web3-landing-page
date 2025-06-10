@@ -1,55 +1,70 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import Icon from "@/components/ui/icon";
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const navItems = [
+    { label: "Программа", href: "#program" },
+    { label: "Команда", href: "#team" },
+    { label: "Отзывы", href: "#testimonials" },
+    { label: "Форматы", href: "#formats" },
+    { label: "FAQ", href: "#faq" },
+  ];
+
   return (
-    <header className="relative top-0 left-0 right-0 z-50 bg-white border-b border-gray-200">
-      <div className="container mx-auto md:px-6 lg:px-8 bg-gray-900 px-[98px]">
-        <div className="flex items-center justify-between h-16 bg-gray-900">
-          {/* Navigation Links */}
-          <nav className="flex items-center space-x-8 bg-[#ffffff00]">
-            <a
-              href="#"
-              className="hover:text-gray-600 transition-colors font-medium text-[#ffffff]"
-            >
-              О профессии
-            </a>
-            <a
-              href="#"
-              className="hover:text-gray-600 transition-colors font-medium text-[#ffffff]"
-            >
-              Программа
-            </a>
-            <a
-              href="#"
-              className="hover:text-gray-600 transition-colors font-medium text-[#ffffff]"
-            >
-              Трудоустройство
-            </a>
-            <a
-              href="#"
-              className="hover:text-gray-600 transition-colors font-medium text-[#ffffff]"
-            >
-              Как мы учим
-            </a>
-            <a
-              href="#"
-              className="hover:text-gray-600 transition-colors font-medium text-[#ffffff]"
-            >
-              Тарифы
-            </a>
+    <header className="fixed top-0 left-0 right-0 z-50 bg-[#111827]/95 backdrop-blur-sm border-b border-gray-800">
+      <div className="container mx-auto px-4 md:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16 lg:h-20">
+          {/* Logo */}
+          <div className="flex items-center">
+            <h1 className="text-2xl lg:text-3xl font-bold text-white">
+              W Academy
+            </h1>
+          </div>
+
+          {/* Desktop Navigation */}
+          <nav className="hidden lg:flex items-center space-x-8">
+            {navItems.map((item) => (
+              <a
+                key={item.label}
+                href={item.href}
+                className="text-gray-300 hover:text-white transition-colors duration-200 font-medium"
+              >
+                {item.label}
+              </a>
+            ))}
           </nav>
 
-          {/* Right Side Buttons */}
-          <div className="flex items-center space-x-4">
-            <Button
-              variant="ghost"
-              className="text-gray-900 hover:text-gray-600 font-medium"
-            ></Button>
-            <Button className="bg-black text-white hover:bg-gray-800 font-medium px-6">
-              Все курсы
-            </Button>
-          </div>
+          {/* Mobile Menu Button */}
+          <Button
+            variant="ghost"
+            size="sm"
+            className="lg:hidden text-white hover:bg-gray-800"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            <Icon name={isMenuOpen ? "X" : "Menu"} size={24} />
+          </Button>
         </div>
+
+        {/* Mobile Navigation */}
+        {isMenuOpen && (
+          <div className="lg:hidden py-4 border-t border-gray-800">
+            <nav className="flex flex-col space-y-4">
+              {navItems.map((item) => (
+                <a
+                  key={item.label}
+                  href={item.href}
+                  className="text-gray-300 hover:text-white transition-colors duration-200 font-medium py-2"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {item.label}
+                </a>
+              ))}
+            </nav>
+          </div>
+        )}
       </div>
     </header>
   );
