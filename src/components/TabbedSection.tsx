@@ -37,10 +37,7 @@ const TabbedSection = () => {
   ];
 
   return (
-    <section
-      id="team"
-      className="bg-gradient-to-b from-gray-50 to-white relative my-0 py-16 md:py-20 lg:py-[102px]"
-    >
+    <section className="bg-gradient-to-b from-gray-50 to-white relative my-0 py-16 md:py-20 lg:py-[102px]">
       <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-7xl">
         <div className="mb-8 md:mb-12 lg:mb-16">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-4 text-gray-900">
