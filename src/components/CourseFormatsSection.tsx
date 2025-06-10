@@ -54,7 +54,7 @@ const CourseFormatsSection = () => {
               </div>
             </div>
 
-            <div className="flex items-start gap-3 mt-4 md:mt-6 p-3 md:p-4 bg-gray-50 rounded-xl mt-auto px-0 py-0.5">
+            <div className="flex items-start gap-3 mt-4 md:mt-6 bg-gray-50 rounded-xl mt-auto p-0 md:p-3 md:py-4">
               <div className="w-5 h-5 md:w-6 md:h-6 rounded-full flex-shrink-0 flex items-center justify-center bg-[#F87250]">
                 <span className="text-xs font-bold">✓</span>
               </div>
@@ -116,7 +116,7 @@ const CourseFormatsSection = () => {
               </div>
             </div>
 
-            <div className="flex items-start gap-3 mt-4 md:mt-6 p-3 md:p-4 bg-blue-50 rounded-xl mt-auto py-0 px-0">
+            <div className="flex items-start gap-3 mt-4 md:mt-6 bg-blue-50 rounded-xl mt-auto p-0 md:p-3 md:py-4">
               <div className="w-5 h-5 md:w-6 md:h-6 rounded-full flex-shrink-0 flex items-center justify-center bg-[#F87250]">
                 <span className="text-xs text-white">★</span>
               </div>
