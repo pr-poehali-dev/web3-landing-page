@@ -173,10 +173,10 @@ function Navbar() {
           </div>
         </div>
 
-        <div className="flex items-center space-x-4 md:space-x-6">
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 items-start sm:items-center">
           <a
-            href="#contacts"
-            className="hidden md:block text-gray-300 hover:text-white text-sm"
+            href="#"
+            className="text-gray-300 hover:text-white transition-colors text-sm md:text-base"
           >
             Контакты
           </a>
