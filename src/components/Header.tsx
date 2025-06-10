@@ -40,34 +40,10 @@ const Header = () => {
             {/* Removed Contacts button */}
           </nav>
 
-          {/* Mobile Menu Button */}
-          <Button
-            variant="ghost"
-            size="sm"
-            className="lg:hidden text-white hover:bg-gray-800"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            <Icon name={isMenuOpen ? "X" : "Menu"} size={24} />
-          </Button>
+          {/* Mobile Menu Button - removed */}
         </div>
 
-        {/* Mobile Navigation */}
-        {isMenuOpen && (
-          <div className="lg:hidden py-4 border-t border-gray-800">
-            <nav className="flex flex-col space-y-4">
-              {navItems.map((item) => (
-                <a
-                  key={item.label}
-                  href={item.href}
-                  className="text-gray-300 hover:text-white transition-colors duration-200 font-medium py-2 scroll-smooth"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {item.label}
-                </a>
-              ))}
-            </nav>
-          </div>
-        )}
+        {/* Mobile Navigation - removed */}
       </div>
     </header>
   );
