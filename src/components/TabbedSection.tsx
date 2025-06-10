@@ -50,7 +50,7 @@ const TabbedSection = () => {
 
         {/* Tabs */}
         <div className="mb-8 md:mb-12 lg:mb-16 w-full">
-          <div className="overflow-x-auto scrollbar-hide md:overflow-visible">
+          <div className="overflow-x-auto custom-scrollbar md:overflow-visible">
             <div className="flex md:justify-between gap-2 w-max md:w-full">
               {tabs.map((tab) => (
                 <button
