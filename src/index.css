@@ -93,7 +93,18 @@
   background: rgba(156, 163, 175, 0.5);
 }
 
-/* Hide scrollbar on desktop */
+/* Hide scrollbar on all devices */
+body,
+html {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+body::-webkit-scrollbar,
+html::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
 @media (min-width: 768px) {
   .custom-scrollbar::-webkit-scrollbar {
     display: none;
