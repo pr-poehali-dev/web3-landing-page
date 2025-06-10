@@ -27,7 +27,7 @@ const HeroSection = () => {
             {/* CTA Button */}
             <Button
               size="lg"
-              className="text-black transition-all duration-300 px-8 py-4 font-semibold rounded-lg hover:text-white"
+              className="w-full lg:w-auto text-black transition-all duration-300 px-8 py-4 font-semibold rounded-lg hover:text-white"
               style={{ backgroundColor: "#ECF86E" }}
               onMouseEnter={(e) =>
                 (e.currentTarget.style.backgroundColor = "#F87250")
