@@ -39,7 +39,7 @@ const CourseFormatsSection = () => {
 
             <button
               className="w-full text-white py-3 md:py-4 px-4 md:px-6 rounded-xl font-medium hover:opacity-90 transition-opacity mb-4 md:mb-6 text-sm md:text-base"
-              style={{ backgroundColor: "#111827" }}
+              style={{ backgroundColor: "#121212" }}
             >
               Оставить заявку
             </button>
@@ -101,7 +101,7 @@ const CourseFormatsSection = () => {
 
             <button
               className="w-full text-white py-3 md:py-4 px-4 md:px-6 rounded-xl font-medium hover:opacity-90 transition-opacity mb-4 md:mb-6 text-sm md:text-base"
-              style={{ backgroundColor: "#111827" }}
+              style={{ backgroundColor: "#121212" }}
             >
               Оставить заявку
             </button>

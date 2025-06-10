@@ -13,13 +13,13 @@ const Header = () => {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 lg:static lg:z-auto bg-[#111827]/95 backdrop-blur-sm border-b border-gray-800">
+    <header className="fixed top-0 left-0 right-0 z-50 lg:static lg:z-auto bg-[#121212]/95 backdrop-blur-sm border-b border-gray-800">
       <div className="container mx-auto px-4 md:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20 px-4 sm:px-8 lg:px-[46px]">
           {/* Logo */}
           <div className="flex items-center gap-2">
             <div className="w-6 h-6 from-blue-500 to-purple-600 rounded-md flex items-center justify-center shadow-lg bg-[#ECF86E]">
-              <span className="text-[#111827] font-bold text-base">W</span>
+              <span className="text-[#121212] font-bold text-base">W</span>
             </div>
             <h1 className="lg:text-xl font-bold text-white text-base">
               Academy

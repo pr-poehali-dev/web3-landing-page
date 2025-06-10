@@ -131,7 +131,7 @@ function Navbar() {
         <div className="flex items-center space-x-6 lg:space-x-8">
           <div className="text-white flex items-center gap-2">
             <div className="w-8 h-8 bg-[#ECF86E] rounded-md flex items-center justify-center">
-              <span className="text-[#111827] font-bold text-base">W</span>
+              <span className="text-[#121212] font-bold text-base">W</span>
             </div>
             <span className="font-bold text-xl">Academy</span>
           </div>
@@ -280,7 +280,7 @@ export const GalaxyInteractiveHeroSection = () => {
     <div className="relative min-h-screen">
       <Navbar />
       <div className="absolute inset-0 z-0 pointer-events-auto">
-        <Suspense fallback={<div className="w-full h-screen bg-[#111827]" />}>
+        <Suspense fallback={<div className="w-full h-screen bg-[#121212]" />}>
           <HeroSplineBackground />
         </Suspense>
       </div>

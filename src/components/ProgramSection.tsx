@@ -101,10 +101,10 @@ const ProgramSection = () => {
 
               {module.isSpecial && (
                 <div className="text-left md:text-right mt-3 md:mt-0 md:ml-8 pl-16 md:pl-0">
-                  <div className="text-sm font-medium text-[#111827]">
+                  <div className="text-sm font-medium text-[#121212]">
                     {module.duration}
                   </div>
-                  <div className="text-sm text-[#111827]">
+                  <div className="text-sm text-[#121212]">
                     {module.projects}
                   </div>
                 </div>
