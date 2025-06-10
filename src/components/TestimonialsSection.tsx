@@ -79,7 +79,7 @@ const TestimonialsSection = () => {
         <div className="grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-start">
           {/* Левая колонка - заголовок */}
           <div className="lg:sticky lg:top-20">
-            <h2 className="text-2xl md:text-3xl lg:text-[36px] font-bold text-gray-900 mb-3 md:mb-4">
+            <h2 className="text-2xl md:text-3xl lg:text-[36px] font-bold text-[#121212] mb-3 md:mb-4">
               Отзывы наших студентов
             </h2>
             <p className="text-gray-600 text-base md:text-lg leading-relaxed">

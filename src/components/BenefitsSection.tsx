@@ -53,7 +53,7 @@ const BenefitsSection = () => {
     <section className="bg-white relative py-[102px]">
       <div className="container mx-auto px-6 md:px-6 lg:px-8 max-w-7xl">
         <div className="mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900 text-left">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#121212] text-left">
             Почему выбирают нас
           </h2>
         </div>
@@ -67,7 +67,7 @@ const BenefitsSection = () => {
           <div className="space-y-8 lg:order-2">
             <div className="px-0 md:p-8">
               <h3
-                className="text-3xl font-bold mb-6 text-gray-900 transition-all duration-700 ease-in-out transform"
+                className="text-3xl font-bold mb-6 text-[#121212] transition-all duration-700 ease-in-out transform"
                 key={`title-${activeIndex}`}
               >
                 {activeBenefit.title}

@@ -57,7 +57,7 @@ const ProgramSection = () => {
     <section className="bg-gradient-to-b from-white to-gray-50 py-8 md:py-16">
       <div className="container mx-auto px-3 md:px-6 lg:px-8 max-w-7xl">
         <div className="mb-8 md:mb-16">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-4 text-gray-900">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-4 text-[#121212]">
             Программа курса
           </h2>
           <p className="text-gray-600 max-w-2xl text-base md:text-lg">
@@ -81,7 +81,7 @@ const ProgramSection = () => {
                   </span>
                 </div>
                 <div className="flex-1 min-w-0">
-                  <h3 className="text-lg md:text-xl font-semibold text-gray-900 mb-2 group-hover:text-[#F87250] transition-colors md:mx-[276px]">
+                  <h3 className="text-lg md:text-xl font-semibold text-[#121212] mb-2 group-hover:text-[#F87250] transition-colors md:mx-[276px]">
                     {module.title}
                   </h3>
                   <p className="text-gray-600 text-sm md:text-base leading-relaxed md:mx-[276px]">
@@ -92,7 +92,7 @@ const ProgramSection = () => {
 
               {!module.isSpecial && (
                 <div className="text-left md:text-right mt-3 md:mt-0 md:ml-8 space-y-1 pl-16 md:pl-0">
-                  <div className="text-sm font-medium text-gray-900">
+                  <div className="text-sm font-medium text-[#121212]">
                     {module.duration}
                   </div>
                   <div className="text-sm text-gray-500">{module.projects}</div>

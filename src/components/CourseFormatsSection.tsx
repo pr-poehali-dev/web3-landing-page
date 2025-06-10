@@ -19,12 +19,12 @@ const CourseFormatsSection = () => {
             </div>
 
             <div className="text-gray-600 text-sm mb-2">Web3-разработчик</div>
-            <h3 className="text-lg md:text-xl font-semibold text-gray-900 mb-4 md:mb-6 min-h-[3rem] md:min-h-[3rem] flex items-start">
+            <h3 className="text-lg md:text-xl font-semibold text-[#121212] mb-4 md:mb-6 min-h-[3rem] md:min-h-[3rem] flex items-start">
               Разработка dApps и интеграция со смарт-контрактами
             </h3>
 
             <div className="mb-4 md:mb-6">
-              <div className="text-2xl md:text-3xl font-bold text-gray-900 mb-1">
+              <div className="text-2xl md:text-3xl font-bold text-[#121212] mb-1">
                 24 900 ₽/мес
                 <span className="text-base md:text-lg text-gray-400 line-through ml-2">
                   29 900 ₽/мес
@@ -81,12 +81,12 @@ const CourseFormatsSection = () => {
             <div className="text-gray-600 text-sm mb-2 flex items-center">
               Web3-разработчик расширенный
             </div>
-            <h3 className="text-lg md:text-xl font-semibold text-gray-900 mb-4 md:mb-6 min-h-[3rem] md:min-h-[3rem] flex items-start">
+            <h3 className="text-lg md:text-xl font-semibold text-[#121212] mb-4 md:mb-6 min-h-[3rem] md:min-h-[3rem] flex items-start">
               Fullstack Web3: от DeFi протоколов до NFT маркетплейсов
             </h3>
 
             <div className="mb-4 md:mb-6">
-              <div className="text-2xl md:text-3xl font-bold text-gray-900 mb-1">
+              <div className="text-2xl md:text-3xl font-bold text-[#121212] mb-1">
                 34 900 ₽/мес
                 <span className="text-base md:text-lg text-gray-400 line-through ml-2">
                   39 900 ₽/mес

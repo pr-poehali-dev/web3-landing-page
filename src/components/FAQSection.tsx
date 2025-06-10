@@ -50,7 +50,7 @@ const FAQSection = () => {
         <div className="grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-start">
           {/* Левая колонка - заголовок */}
           <div className="lg:sticky lg:top-20">
-            <h2 className="text-2xl md:text-3xl lg:text-[36px] font-bold text-gray-900 mb-3 md:mb-4">
+            <h2 className="text-2xl md:text-3xl lg:text-[36px] font-bold text-[#121212] mb-3 md:mb-4">
               Частые вопросы
             </h2>
             <p className="text-gray-600 text-base md:text-lg leading-relaxed"></p>
@@ -69,7 +69,7 @@ const FAQSection = () => {
                   value={`item-${index}`}
                   className="rounded-lg px-4 md:px-6 border-0 py-0"
                 >
-                  <AccordionTrigger className="text-left text-base md:text-lg font-medium text-gray-900 hover:no-underline hover:text-gray-700 py-4 md:py-6">
+                  <AccordionTrigger className="text-left text-base md:text-lg font-medium text-[#121212] hover:no-underline hover:text-gray-700 py-4 md:py-6">
                     {faq.question}
                   </AccordionTrigger>
                   <AccordionContent className="text-gray-600 text-sm md:text-base leading-relaxed pb-4 md:pb-6">

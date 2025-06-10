@@ -40,7 +40,7 @@ const TabbedSection = () => {
     <section className="bg-gradient-to-b from-gray-50 to-white relative my-0 py-16 md:py-20 lg:py-[102px]">
       <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-7xl">
         <div className="mb-8 md:mb-12 lg:mb-16">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-4 text-gray-900">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-4 text-[#121212]">
             Фундамент вашего Web3-мастерства
           </h2>
           <p className="text-gray-600 max-w-2xl text-base md:text-lg">
@@ -58,7 +58,7 @@ const TabbedSection = () => {
                   onClick={() => setActiveTab(tab)}
                   className={`flex-shrink-0 md:flex-1 md:min-w-0 px-4 md:px-4 py-2 md:py-3 rounded-lg font-medium transition-all duration-300 cursor-pointer text-center text-sm md:text-sm whitespace-nowrap ${
                     activeTab === tab
-                      ? "bg-[#ECF86E] text-gray-900 shadow-lg"
+                      ? "bg-[#ECF86E] text-[#121212] shadow-lg"
                       : "bg-gray-100 border border-gray-200 text-gray-600 hover:text-white hover:bg-[#F87250]"
                   }`}
                   type="button"
@@ -75,7 +75,7 @@ const TabbedSection = () => {
           <div className="w-full">
             {activeTab === "Наставники" && (
               <>
-                <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 mb-4 md:mb-6">
+                <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-[#121212] mb-4 md:mb-6">
                   Опытные разработчики
                 </h3>
                 <p className="text-base md:text-lg text-gray-700 leading-relaxed">
@@ -87,7 +87,7 @@ const TabbedSection = () => {
             )}
             {activeTab === "Ревьюеры" && (
               <>
-                <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 mb-4 md:mb-6">
+                <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-[#121212] mb-4 md:mb-6">
                   Проверяют код и дают обратную связь
                 </h3>
                 <p className="text-base md:text-lg text-gray-700 leading-relaxed">
@@ -99,7 +99,7 @@ const TabbedSection = () => {
             )}
             {activeTab === "Кураторы" && (
               <>
-                <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 mb-4 md:mb-6">
+                <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-[#121212] mb-4 md:mb-6">
                   Следят за прогрессом и мотивируют двигаться дальше
                 </h3>
                 <p className="text-base md:text-lg text-gray-700 leading-relaxed">
@@ -111,7 +111,7 @@ const TabbedSection = () => {
             )}
             {activeTab === "Техподдержка" && (
               <>
-                <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 mb-4 md:mb-6">
+                <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-[#121212] mb-4 md:mb-6">
                   Решает любые вопросы быстро и качественно
                 </h3>
                 <p className="text-base md:text-lg text-gray-700 leading-relaxed">
@@ -123,7 +123,7 @@ const TabbedSection = () => {
             )}
             {activeTab === "Сообщество" && (
               <>
-                <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 mb-4 md:mb-6">
+                <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-[#121212] mb-4 md:mb-6">
                   Студенты и выпускники всегда готовы помочь
                 </h3>
                 <p className="text-base md:text-lg text-gray-700 leading-relaxed">
@@ -149,7 +149,7 @@ const TabbedSection = () => {
                       className="w-12 h-12 md:w-16 md:h-16 rounded-full object-cover border-2 border-gray-300 flex-shrink-0"
                     />
                     <div className="min-w-0">
-                      <h4 className="font-semibold text-gray-900 text-base md:text-lg group-hover:text-gray-900 transition-colors">
+                      <h4 className="font-semibold text-[#121212] text-base md:text-lg group-hover:text-[#121212] transition-colors">
                         {mentor.name}
                       </h4>
                       <p className="text-gray-600 text-xs md:text-sm mb-1">
@@ -198,7 +198,7 @@ const TabbedSection = () => {
                       className="w-12 h-12 md:w-16 md:h-16 rounded-full object-cover border-2 border-gray-300 flex-shrink-0"
                     />
                     <div className="min-w-0">
-                      <h4 className="font-semibold text-gray-900 text-base md:text-lg group-hover:text-gray-900 transition-colors">
+                      <h4 className="font-semibold text-[#121212] text-base md:text-lg group-hover:text-[#121212] transition-colors">
                         {reviewer.name}
                       </h4>
                       <p className="text-gray-600 text-xs md:text-sm mb-1">
@@ -247,7 +247,7 @@ const TabbedSection = () => {
                       className="w-12 h-12 md:w-16 md:h-16 rounded-full object-cover border-2 border-gray-300 flex-shrink-0"
                     />
                     <div className="min-w-0">
-                      <h4 className="font-semibold text-gray-900 text-base md:text-lg group-hover:text-gray-900 transition-colors">
+                      <h4 className="font-semibold text-[#121212] text-base md:text-lg group-hover:text-[#121212] transition-colors">
                         {curator.name}
                       </h4>
                       <p className="text-gray-600 text-xs md:text-sm mb-1">
