@@ -122,12 +122,7 @@ const Header = () => {
                   >
                     Войти
                   </Button>
-                  <Button
-                    className="bg-[#ECF86E] text-black hover:bg-[#E5F563] font-medium w-full"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    Все курсы
-                  </Button>
+                </div>
                 </div>
               </nav>
             </div>
