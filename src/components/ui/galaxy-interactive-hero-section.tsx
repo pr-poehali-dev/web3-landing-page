@@ -184,7 +184,7 @@ function Navbar() {
             className="bg-[#8200DB29] hover:bg-black/50 text-white font-semibold py-2 px-5 rounded-full text-sm md:text-base border border-[#322D36]"
             style={{ backdropFilter: "blur(8px)" }}
           >
-            Записаться
+            Контакты{" "}
           </a>
           <button
             className="lg:hidden text-white p-2"
