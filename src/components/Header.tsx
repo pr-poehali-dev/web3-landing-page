@@ -65,10 +65,10 @@ const Header = () => {
           </div>
         </div>
 
-        {/* Mobile Menu */}
+        {/* Mobile Menu - Dropdown */}
         {isMobileMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 border-t border-gray-700">
-            <nav className="flex flex-col space-y-4 pt-4">
+          <div className="md:hidden absolute top-full left-0 right-0 bg-gray-900 border-b border-gray-700 shadow-lg z-40">
+            <nav className="flex flex-col space-y-4 p-4">
               <a
                 href="#"
                 className="hover:text-gray-300 transition-colors font-medium text-white"
@@ -99,7 +99,7 @@ const Header = () => {
               >
                 Тарифы
               </a>
-              <div className="flex flex-col space-y-3 pt-4">
+              <div className="flex flex-col space-y-3 pt-4 border-t border-gray-700">
                 <Button
                   variant="ghost"
                   className="text-white hover:text-gray-300 font-medium justify-start"
