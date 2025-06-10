@@ -12,8 +12,8 @@ const HeroSection = () => {
     >
       {/* Integrated Header */}
       <header className="relative z-50 px-4 md:px-6 lg:px-8 py-4">
-        <div className="container mx-auto px-[13px]">
-          <div className="flex items-center justify-between px-0">
+        <div className="container mx-auto px-[62px]">
+          <div className="flex items-center justify-between">
             {/* Logo */}
             <div className="flex items-center space-x-2">
               <div className="w-8 h-8 bg-[#ECF86E] rounded-lg flex items-center justify-center">
