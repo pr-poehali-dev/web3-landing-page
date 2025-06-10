@@ -267,7 +267,7 @@ function Navbar() {
 
 function CTAButtons() {
   return (
-    <div className="flex pointer-events-auto flex-col sm:flex-row items-start space-y-3 sm:space-y-0 sm:space-x-3">
+    <div className="flex pointer-events-auto flex-col sm:flex-row items-start space-y-3 sm:space-y-0 sm:space-x-3 px-4">
       <button
         className="from-purple-600 to-blue-600 px-6 py-3 rounded-lg hover:from-purple-700 hover:to-blue-700 transition-all duration-300 font-medium bg-[#ECF86E] text-gray-900"
         style={{ backdropFilter: "blur(8px)" }}
