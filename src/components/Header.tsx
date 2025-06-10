@@ -20,7 +20,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 from-blue-500 to-purple-600 rounded-lg flex items-center justify-center shadow-lg bg-[#ECF86E]">
-              <span className="text-white font-bold text-xl">W</span>
+              <span className="text-[#111827] font-bold text-xl">W</span>
             </div>
             <h1 className="lg:text-3xl font-bold text-white text-lg">
               Academy
