@@ -49,21 +49,25 @@ const TabbedSection = () => {
         </div>
 
         {/* Tabs */}
-        <div className="flex flex-wrap md:flex-nowrap justify-center md:justify-between gap-2 mb-8 md:mb-12 lg:mb-16 w-full">
-          {tabs.map((tab) => (
-            <button
-              key={tab}
-              onClick={() => setActiveTab(tab)}
-              className={`flex-1 min-w-0 px-2 md:px-4 py-2 md:py-3 rounded-lg font-medium transition-all duration-300 cursor-pointer text-center text-xs md:text-sm ${
-                activeTab === tab
-                  ? "bg-[#ECF86E] text-gray-900 shadow-lg"
-                  : "bg-gray-100 border border-gray-200 text-gray-600 hover:text-white hover:bg-[#F87250]"
-              }`}
-              type="button"
-            >
-              {tab}
-            </button>
-          ))}
+        <div className="mb-8 md:mb-12 lg:mb-16 w-full">
+          <div className="overflow-x-auto scrollbar-hide md:overflow-visible">
+            <div className="flex md:justify-between gap-2 w-max md:w-full">
+              {tabs.map((tab) => (
+                <button
+                  key={tab}
+                  onClick={() => setActiveTab(tab)}
+                  className={`flex-shrink-0 md:flex-1 md:min-w-0 px-4 md:px-4 py-2 md:py-3 rounded-lg font-medium transition-all duration-300 cursor-pointer text-center text-sm md:text-sm whitespace-nowrap ${
+                    activeTab === tab
+                      ? "bg-[#ECF86E] text-gray-900 shadow-lg"
+                      : "bg-gray-100 border border-gray-200 text-gray-600 hover:text-white hover:bg-[#F87250]"
+                  }`}
+                  type="button"
+                >
+                  {tab}
+                </button>
+              ))}
+            </div>
+          </div>
         </div>
 
         {/* Content */}
