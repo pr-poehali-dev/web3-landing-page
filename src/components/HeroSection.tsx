@@ -3,11 +3,11 @@ import { Button } from "@/components/ui/button";
 const HeroSection = () => {
   return (
     <section
-      className="relative min-h-[60vh] sm:h-[60vh] flex items-center pt-32 sm:pt-36"
+      className="relative min-h-[60vh] sm:h-[60vh] flex items-center sm:pt-36 py-[303px]"
       style={{ backgroundColor: "#111827" }}
     >
       <div className="container mx-auto px-4 md:px-6 lg:px-8 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center h-full px-4 sm:px-8 lg:px-[46px]">
+        <div className="grid lg:grid-cols-2 gap-12 items-center h-full sm:px-8 lg:px-[46px] py-[7px] px-[54px] my-0 mx-0">
           {/* Left Content */}
           <div className="space-y-6 sm:space-y-8 px-0 sm:px-3">
             {/* Main Title */}

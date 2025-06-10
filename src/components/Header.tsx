@@ -3,37 +3,37 @@ import { Button } from "@/components/ui/button";
 const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200">
-      <div className="container mx-auto px-4 md:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+      <div className="container mx-auto md:px-6 lg:px-8 bg-gray-900 px-[98px]">
+        <div className="flex items-center justify-between h-16 bg-gray-900">
           {/* Navigation Links */}
-          <nav className="flex items-center space-x-8">
+          <nav className="flex items-center space-x-8 bg-[#ffffff00]">
             <a
               href="#"
-              className="text-gray-900 hover:text-gray-600 transition-colors font-medium"
+              className="hover:text-gray-600 transition-colors font-medium text-[#ffffff]"
             >
               О профессии
             </a>
             <a
               href="#"
-              className="text-gray-900 hover:text-gray-600 transition-colors font-medium"
+              className="hover:text-gray-600 transition-colors font-medium text-[#ffffff]"
             >
               Программа
             </a>
             <a
               href="#"
-              className="text-gray-900 hover:text-gray-600 transition-colors font-medium"
+              className="hover:text-gray-600 transition-colors font-medium text-[#ffffff]"
             >
               Трудоустройство
             </a>
             <a
               href="#"
-              className="text-gray-900 hover:text-gray-600 transition-colors font-medium"
+              className="hover:text-gray-600 transition-colors font-medium text-[#ffffff]"
             >
               Как мы учим
             </a>
             <a
               href="#"
-              className="text-gray-900 hover:text-gray-600 transition-colors font-medium"
+              className="hover:text-gray-600 transition-colors font-medium text-[#ffffff]"
             >
               Тарифы
             </a>
@@ -44,9 +44,7 @@ const Header = () => {
             <Button
               variant="ghost"
               className="text-gray-900 hover:text-gray-600 font-medium"
-            >
-              Компаниям
-            </Button>
+            ></Button>
             <Button className="bg-black text-white hover:bg-gray-800 font-medium px-6">
               Все курсы
             </Button>
