@@ -58,33 +58,13 @@ const BenefitsSection = () => {
           </h2>
         </div>
 
-        <div className="space-y-12 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-12 lg:items-start">
-          {/* Правая часть - текст (первая на мобильных) */}
-          <div className="space-y-8 order-1 lg:order-2">
-            <div className="p-8 px-0">
-              <h3
-                className="font-bold mb-6 text-gray-900 transition-all duration-700 ease-in-out transform text-sm"
-                key={`title-${activeIndex}`}
-              >
-                {activeBenefit.title}
-              </h3>
-              <p
-                className="text-gray-700 leading-relaxed mb-8 transition-all duration-700 ease-in-out transform text-lg"
-                key={`desc-${activeIndex}`}
-              >
-                {activeBenefit.description}
-              </p>
-
-              <div className="text-sm text-gray-600"></div>
-            </div>
-          </div>
-
-          {/* Левая часть - изображения (вторая на мобильных) */}
-          <div
-            className="space-y-6 order-2 lg:order-1"
-            onMouseEnter={() => setIsPaused(true)}
-            onMouseLeave={() => setIsPaused(false)}
-          >
+        <div
+          className="grid lg:grid-cols-2 gap-12 items-start flex flex-col-reverse lg:flex-row lg:grid"
+          onMouseEnter={() => setIsPaused(true)}
+          onMouseLeave={() => setIsPaused(false)}
+        >
+          {/* Левая часть - изображения */}
+          <div className="space-y-6">
             {/* Основное изображение */}
             <div className="relative">
               {/* Terminal frame */}
