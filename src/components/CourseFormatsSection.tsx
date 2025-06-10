@@ -10,7 +10,7 @@ const CourseFormatsSection = () => {
         </h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
-          <div className="bg-white rounded-2xl p-6 md:p-8 shadow-sm h-full flex flex-col">
+          <div className="bg-white rounded-2xl p-4 md:p-8 shadow-sm h-full flex flex-col">
             <div
               className="inline-block text-white px-3 py-1 rounded-md text-sm font-medium mb-4 w-fit"
               style={{ backgroundColor: "#F87250" }}
@@ -54,7 +54,7 @@ const CourseFormatsSection = () => {
               </div>
             </div>
 
-            <div className="flex items-start gap-3 mt-4 md:mt-6 bg-gray-50 rounded-xl mt-auto p-0 md:p-3 md:py-4">
+            <div className="flex items-start gap-3 mt-4 md:mt-6 bg-gray-50 rounded-xl mt-auto p-3 md:p-3 md:py-4">
               <div className="w-5 h-5 md:w-6 md:h-6 rounded-full flex-shrink-0 flex items-center justify-center bg-[#F87250]">
                 <span className="text-xs font-bold">✓</span>
               </div>
@@ -70,7 +70,7 @@ const CourseFormatsSection = () => {
             </div>
           </div>
 
-          <div className="bg-white rounded-2xl p-6 md:p-8 shadow-sm h-full flex flex-col">
+          <div className="bg-white rounded-2xl p-4 md:p-8 shadow-sm h-full flex flex-col">
             <div
               className="inline-block text-white px-3 py-1 rounded-md text-sm font-medium mb-4 w-fit"
               style={{ backgroundColor: "#F87250" }}
@@ -116,7 +116,7 @@ const CourseFormatsSection = () => {
               </div>
             </div>
 
-            <div className="flex items-start gap-3 mt-4 md:mt-6 bg-blue-50 rounded-xl mt-auto p-0 md:p-3 md:py-4">
+            <div className="flex items-start gap-3 mt-4 md:mt-6 bg-blue-50 rounded-xl mt-auto p-3 md:p-3 md:py-4">
               <div className="w-5 h-5 md:w-6 md:h-6 rounded-full flex-shrink-0 flex items-center justify-center bg-[#F87250]">
                 <span className="text-xs text-white">★</span>
               </div>
