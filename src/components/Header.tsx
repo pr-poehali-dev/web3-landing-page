@@ -67,7 +67,7 @@ const Header = () => {
 
         {/* Mobile Menu - Dropdown */}
         {isMobileMenuOpen && (
-          <div className="md:hidden absolute top-full left-0 right-0 bg-gray-900 border-b border-gray-700 shadow-lg z-40">
+          <div className="md:hidden absolute top-full left-0 right-0 bg-gray-900 border-b border-gray-700 shadow-lg z-50 animate-fade-in">
             <nav className="flex flex-col space-y-4 p-4">
               <a
                 href="#"
