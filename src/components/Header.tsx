@@ -1,12 +1,16 @@
 import { Button } from "@/components/ui/button";
+import { useState } from "react";
+import Icon from "@/components/ui/icon";
 
 const Header = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   return (
     <header className="relative top-0 left-0 right-0 z-50 bg-gray-900 border-b border-gray-700">
       <div className="px-4 md:px-6 lg:px-8 py-4">
         <div className="flex items-center justify-between">
-          {/* Navigation Links */}
-          <nav className="flex items-center space-x-8">
+          {/* Desktop Navigation Links */}
+          <nav className="hidden md:flex items-center space-x-8">
             <a
               href="#"
               className="hover:text-gray-300 transition-colors font-medium text-white"
@@ -39,8 +43,16 @@ const Header = () => {
             </a>
           </nav>
 
-          {/* Right Side Buttons */}
-          <div className="flex items-center space-x-4">
+          {/* Mobile Menu Button */}
+          <button
+            className="md:hidden text-white"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          >
+            <Icon name={isMobileMenuOpen ? "X" : "Menu"} size={24} />
+          </button>
+
+          {/* Desktop Right Side Buttons */}
+          <div className="hidden md:flex items-center space-x-4">
             <Button
               variant="ghost"
               className="text-white hover:text-gray-300 font-medium"
@@ -52,6 +64,44 @@ const Header = () => {
             </Button>
           </div>
         </div>
+
+        {/* Mobile Menu */}
+        {isMobileMenuOpen && (
+          <div className="md:hidden mt-4 pb-4 border-t border-gray-700">
+            <nav className="flex flex-col space-y-4 pt-4">
+              <a
+                href="#"
+                className="hover:text-gray-300 transition-colors font-medium text-white"
+              >
+                О профессии
+              </a>
+              <a
+                href="#"
+                className="hover:text-gray-300 transition-colors font-medium text-white"
+              >
+                Программа
+              </a>
+              <a
+                href="#"
+                className="hover:text-gray-300 transition-colors font-medium text-white"
+              >
+                Трудоустройство
+              </a>
+              <a
+                href="#"
+                className="hover:text-gray-300 transition-colors font-medium text-white"
+              >
+                Как мы учим
+              </a>
+              <a
+                href="#"
+                className="hover:text-gray-300 transition-colors font-medium text-white"
+              >
+                Тарифы
+              </a>
+            </nav>
+          </div>
+        )}
       </div>
     </header>
   );
