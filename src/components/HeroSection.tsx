@@ -26,25 +26,25 @@ const HeroSection = () => {
             <nav className="hidden md:flex items-center space-x-8">
               <a
                 href="#program"
-                className="text-gray-300 hover:text-white transition-colors"
+                className="text-gray-300 hover:text-white transition-colors scroll-smooth"
               >
                 Программа
               </a>
               <a
                 href="#testimonials"
-                className="text-gray-300 hover:text-white transition-colors"
+                className="text-gray-300 hover:text-white transition-colors scroll-smooth"
               >
                 Отзывы
               </a>
               <a
                 href="#formats"
-                className="text-gray-300 hover:text-white transition-colors"
+                className="text-gray-300 hover:text-white transition-colors scroll-smooth"
               >
                 Форматы
               </a>
               <a
                 href="#faq"
-                className="text-gray-300 hover:text-white transition-colors"
+                className="text-gray-300 hover:text-white transition-colors scroll-smooth"
               >
                 FAQ
               </a>
@@ -65,25 +65,29 @@ const HeroSection = () => {
               <nav className="flex flex-col space-y-4 pt-4">
                 <a
                   href="#program"
-                  className="text-gray-300 hover:text-white transition-colors"
+                  className="text-gray-300 hover:text-white transition-colors scroll-smooth"
+                  onClick={() => setIsMenuOpen(false)}
                 >
                   Программа
                 </a>
                 <a
                   href="#testimonials"
-                  className="text-gray-300 hover:text-white transition-colors"
+                  className="text-gray-300 hover:text-white transition-colors scroll-smooth"
+                  onClick={() => setIsMenuOpen(false)}
                 >
                   Отзывы
                 </a>
                 <a
                   href="#formats"
-                  className="text-gray-300 hover:text-white transition-colors"
+                  className="text-gray-300 hover:text-white transition-colors scroll-smooth"
+                  onClick={() => setIsMenuOpen(false)}
                 >
                   Форматы
                 </a>
                 <a
                   href="#faq"
-                  className="text-gray-300 hover:text-white transition-colors"
+                  className="text-gray-300 hover:text-white transition-colors scroll-smooth"
+                  onClick={() => setIsMenuOpen(false)}
                 >
                   FAQ
                 </a>
