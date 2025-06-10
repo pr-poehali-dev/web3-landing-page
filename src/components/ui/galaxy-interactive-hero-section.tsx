@@ -177,6 +177,13 @@ function Navbar() {
             href="#"
             className="text-gray-300 hover:text-white transition-colors text-sm md:text-base"
           ></a>
+          <a
+            href="#"
+            className="bg-[#8200DB29] hover:bg-black/50 text-white font-semibold py-2 px-5 rounded-full text-sm md:text-base border border-[#322D36]"
+            style={{ backdropFilter: "blur(8px)" }}
+          >
+            Контакты{" "}
+          </a>
           <button
             className="lg:hidden text-white p-2"
             onClick={toggleMobileMenu}
