@@ -269,7 +269,7 @@ function CTAButtons() {
   return (
     <div className="flex pointer-events-auto flex-col sm:flex-row items-start space-y-3 sm:space-y-0 sm:space-x-3">
       <button
-        className="hover:bg-black/50 font-semibold py-2 sm:py-3 px-6 sm:px-8 rounded-full transition duration-300 w-full sm:w-auto border border-[#322D36] bg-[#ECF86E] text-gray-900"
+        className="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-6 py-3 rounded-lg hover:from-purple-700 hover:to-blue-700 transition-all duration-300 font-medium"
         style={{ backdropFilter: "blur(8px)" }}
       >
         Оставить заявку
