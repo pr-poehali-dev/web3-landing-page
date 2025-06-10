@@ -19,10 +19,12 @@ const Header = () => {
         <div className="flex items-center justify-between h-16 lg:h-20 px-4 sm:px-8 lg:px-[46px]">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <div className="w-5 h-5 from-blue-500 to-purple-600 rounded-md flex items-center justify-center shadow-lg bg-[#ECF86E]">
-              <span className="text-[#111827] font-bold text-sm">W</span>
+            <div className="w-6 h-6 from-blue-500 to-purple-600 rounded-md flex items-center justify-center shadow-lg bg-[#ECF86E]">
+              <span className="text-[#111827] font-bold text-base">W</span>
             </div>
-            <h1 className="lg:text-lg font-bold text-white text-sm">Academy</h1>
+            <h1 className="lg:text-xl font-bold text-white text-base">
+              Academy
+            </h1>
           </div>
 
           {/* Desktop Navigation */}
