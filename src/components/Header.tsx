@@ -40,7 +40,7 @@ const Header = () => {
             <Button
               variant="outline"
               size="sm"
-              className="border-[#ECF86E] text-[#ECF86E] bg-transparent hover:bg-[#ECF86E]/10 hover:text-[#ECF86E] transition-colors duration-200"
+              className="border-[#ECF86E] text-[#ECF86E] bg-transparent hover:bg-transparent hover:text-white transition-colors duration-200"
             >
               Контакты
             </Button>
